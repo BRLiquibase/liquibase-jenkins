@@ -1,0 +1,34 @@
+pipeline {
+    agent any
+
+    environment {
+        LB_USERNAME    = credentials('pg-username')
+        LB_PASSWORD    = credentials('pg-password')
+        LB_LICENSE_KEY = credentials('lb-pro-license')
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                git branch: 'main',
+                    url: 'https://github.com/your-org/your-repo.git',
+                    credentialsId: 'github-creds'
+            }
+        }
+
+        stage('Run Deploy Flow') {
+            steps {
+                sh '''
+                    liquibase flow \
+                      --flow-file=flow/deploy.flow.yaml
+                '''
+            }
+        }
+    }
+
+    post {
+        failure {
+            echo 'Deploy failed. Trigger rollback pipeline manually or via downstream job.'
+        }
+    }
+}

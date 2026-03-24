@@ -1,0 +1,8 @@
+stages:
+  - stage:
+      name: Rollback Last Update
+      actions:
+        - type: liquibase
+          command: rollbackOneUpdate
+          cmdArgs:
+            force: true

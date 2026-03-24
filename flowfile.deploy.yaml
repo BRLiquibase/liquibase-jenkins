@@ -1,0 +1,20 @@
+stages:
+  - stage:
+      name: Validate
+      actions:
+        - type: liquibase
+          command: validate
+
+  - stage:
+      name: Status Check
+      actions:
+        - type: liquibase
+          command: status
+          cmdArgs:
+            verbose: true
+
+  - stage:
+      name: Deploy
+      actions:
+        - type: liquibase
+          command: update

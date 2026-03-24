@@ -1,0 +1,34 @@
+pipeline {
+    agent any
+
+    environment {
+        LB_USERNAME    = credentials('pg-username')
+        LB_PASSWORD    = credentials('pg-password')
+        LB_LICENSE_KEY = credentials('lb-pro-license')
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                git branch: 'main',
+                    url: 'https://github.com/your-org/your-repo.git',
+                    credentialsId: 'github-creds'
+            }
+        }
+
+        stage('Rollback Last Update') {
+            steps {
+                sh '''
+                    liquibase flow \
+                      --flow-file=flow/rollback.flow.yaml
+                '''
+            }
+        }
+    }
+
+    post {
+        success {
+            echo 'Rollback complete.'
+        }
+    }
+}
