@@ -1,0 +1,5 @@
+{
+  "liquibase.properties": {
+    "defaultPropertiesFile": "/Users/benriley/Documents/GitHub/liquibase-cicd/liquibase.properties"
+  }
+}
