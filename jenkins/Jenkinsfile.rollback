@@ -20,7 +20,7 @@ pipeline {
             steps {
                 sh '''
                     liquibase flow \
-                      --flow-file=flow/rollback.flow.yaml
+                      --flow-file=flowfile.rollback.yaml
                 '''
             }
         }

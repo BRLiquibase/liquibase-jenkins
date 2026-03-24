@@ -20,7 +20,7 @@ pipeline {
             steps {
                 sh '''
                     liquibase flow \
-                      --flow-file=flow/deploy.flow.yaml
+                      --flow-file=flowfile.deploy.yaml
                 '''
             }
         }
