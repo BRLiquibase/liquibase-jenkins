@@ -11,7 +11,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/your-org/your-repo.git',
+                    url: 'https://github.com/BRLiquibase/liquibase-jenkins.git',
                     credentialsId: 'github-creds'
             }
         }
@@ -19,7 +19,7 @@ pipeline {
         stage('Rollback Last Update') {
             steps {
                 sh '''
-                    liquibase flow \
+                    /Users/benriley/Documents/GitHub/liquibase-secure-5.0.0/liquibase flow \
                       --flow-file=flowfile.rollback.yaml
                 '''
             }
