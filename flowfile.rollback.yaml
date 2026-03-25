@@ -3,5 +3,5 @@ stages:
     actions:
       - type: liquibase
         command: rollbackOneUpdate
-        cmdArgs:
-          force: true
+        cmdArgs: { force: "true" }
+        globalArgs: { report-enabled: "true", reports-open: "false", report-path: "reports/", report-name: "rollback-report.html" }

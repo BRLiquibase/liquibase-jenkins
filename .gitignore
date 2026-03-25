@@ -1,0 +1,29 @@
+# Liquibase reports
+reports/*.html
+
+# Liquibase runtime files
+*.liquibase.lock
+liquibase.flowfilestatus.yaml
+
+# Credentials / local overrides
+liquibase.local.properties
+*.env
+
+# macOS
+.DS_Store
+
+# IntelliJ / VS Code
+.idea/
+.vscode/
+*.iml
+
+# Java
+*.class
+*.jar
+target/
+
+# Node (if any tooling)
+node_modules/
+
+# Logs
+*.log

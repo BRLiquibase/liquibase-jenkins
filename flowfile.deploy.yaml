@@ -1,17 +1,6 @@
 stages:
-  Validate:
-    actions:
-      - type: liquibase
-        command: validate
-
-  StatusCheck:
-    actions:
-      - type: liquibase
-        command: status
-        cmdArgs:
-          verbose: true
-
   Deploy:
     actions:
       - type: liquibase
         command: update
+        globalArgs: { report-enabled: true, reports-open: "false", report-path: "reports/", report-name: "deploy-report.html" }

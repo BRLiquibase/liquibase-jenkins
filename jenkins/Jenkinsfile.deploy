@@ -5,6 +5,7 @@ pipeline {
         LB_USERNAME    = credentials('pg-username')
         LB_PASSWORD    = credentials('pg-password')
         LB_LICENSE_KEY = credentials('lb-pro-license')
+        LB             = '/Users/benriley/Documents/GitHub/liquibase-secure-5.0.0/liquibase'
     }
 
     stages {
@@ -16,19 +17,31 @@ pipeline {
             }
         }
 
-        stage('Run Deploy Flow') {
+        stage('Pre-Deploy Checks') {
             steps {
-                sh '''
-                    /Users/benriley/Documents/GitHub/liquibase-secure-5.0.0/liquibase flow \
-                      --flow-file=flowfile.deploy.yaml
-                '''
+                sh '$LB flow --flow-file=flowfile.checks.yaml'
+            }
+        }
+
+        stage('Approval') {
+            steps {
+                input message: 'Checks passed. Approve deployment?', ok: 'Deploy'
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                sh '$LB flow --flow-file=flowfile.deploy.yaml'
             }
         }
     }
 
     post {
+        always {
+            archiveArtifacts artifacts: 'reports/*.html', allowEmptyArchive: true
+        }
         failure {
-            echo 'Deploy failed. Trigger rollback pipeline manually.'
+            echo 'Pipeline failed. Trigger rollback manually if needed.'
         }
     }
 }
