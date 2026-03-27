@@ -9,3 +9,11 @@ CREATE TABLE AussieRules (
 );
 
 --rollback DROP TABLE AussieRules;
+
+--changeset benriley:1774379681429
+create table Cricket (
+    id SERIAL PRIMARY KEY,
+    rule_name VARCHAR(255) NOT NULL,
+    description TEXT
+);
+--rollback DROP TABLE Cricket;
