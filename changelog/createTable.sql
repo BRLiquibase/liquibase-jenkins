@@ -1,13 +1,13 @@
 --liquibase formatted sql
 --changeset benriley:1775562144634
 
-CREATE TABLE Soccer (
+CREATE TABLE Football (
     id SERIAL PRIMARY KEY,
-    rule_name VARCHAR(255) NOT NULL,
-    description TEXT
-);
+    football VARCHAR(255) NOT NULL,
+    player TEXT
+);  
 
---rollback DROP TABLE Soccer;
+--rollback DROP TABLE Football;
 
 
 
