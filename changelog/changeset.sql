@@ -25,6 +25,17 @@ CREATE table Rugby (
     rule_name VARCHAR(255) NOT NULL,
     description TEXT
 );
+
 --rollback DROP TABLE Rugby;
+
+
+--changeset benriley:4CreateSoccerTable
+CREATE TABLE Soccer (
+    id SERIAL PRIMARY KEY,
+    rule_name VARCHAR(255) NOT NULL,
+    description TEXT
+);
+
+
 
 
