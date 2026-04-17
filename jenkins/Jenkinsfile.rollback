@@ -1,6 +1,12 @@
 pipeline {
     agent any
 
+    parameters {
+        string(name: 'CHANGESET_ID',     defaultValue: '', description: 'Changeset ID to roll back')
+        string(name: 'CHANGESET_AUTHOR', defaultValue: '', description: 'Author of the changeset')
+        string(name: 'CHANGESET_PATH',   defaultValue: '', description: 'Path to the changelog file')
+    }
+
     environment {
         LB_USERNAME    = credentials('pg-username')
         LB_PASSWORD    = credentials('pg-password')
