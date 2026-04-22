@@ -36,6 +36,16 @@ CREATE TABLE Soccer (
     description TEXT
 );
 
+--rollback DROP TABLE Soccer;
+
+--changeset benriley:5CreateTennisTable
+CREATE TABLE Tennis (
+    id SERIAL PRIMARY KEY,
+    rule_name VARCHAR(255) NOT NULL,
+    description TEXT
+);
+
+--rollback DROP TABLE Tennis;
 
 
 
