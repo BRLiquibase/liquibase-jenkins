@@ -1,51 +1,47 @@
 --liquibase formatted sql
 
---changeset benriley:1CreateAussieRulesTable
+--changeset benriley:1CreateAccountsTable
 --description Insert SQL change objects here https://docs.liquibase.com/change-types/home.html
-CREATE TABLE AussieRules (
+CREATE TABLE Accounts (
     id SERIAL PRIMARY KEY,
-    rule_name VARCHAR(255) NOT NULL,
+    account_name VARCHAR(255) NOT NULL,
     description TEXT
 );
 
---rollback DROP TABLE AussieRules;
+--rollback DROP TABLE Accounts;
 
---changeset benriley:2CreateCricketTable
-create table Cricket (
+--changeset benriley:2CreateTransactionsTable
+CREATE TABLE Transactions (
     id SERIAL PRIMARY KEY,
-    rule_name VARCHAR(255) NOT NULL,
+    account_name VARCHAR(255) NOT NULL,
     description TEXT
 );
---rollback DROP TABLE Cricket;
+--rollback DROP TABLE Transactions;
 
-
---changeset benriley:3CreateRugbyTable
-CREATE table Rugby (
+--changeset benriley:3CreateLedgerTable
+CREATE TABLE Ledger (
     id SERIAL PRIMARY KEY,
-    rule_name VARCHAR(255) NOT NULL,
-    description TEXT
-);
-
---rollback DROP TABLE Rugby;
-
-
---changeset benriley:4CreateSoccerTable
-CREATE TABLE Soccer (
-    id SERIAL PRIMARY KEY,
-    rule_name VARCHAR(255) NOT NULL,
+    account_name VARCHAR(255) NOT NULL,
     description TEXT
 );
 
---rollback DROP TABLE Soccer;
+--rollback DROP TABLE Ledger;
 
---changeset benriley:5CreateTennisTable
-CREATE TABLE Tennis (
+--changeset benriley:4CreatePortfolioTable
+CREATE TABLE Portfolio (
     id SERIAL PRIMARY KEY,
-    rule_name VARCHAR(255) NOT NULL,
+    account_name VARCHAR(255) NOT NULL,
     description TEXT
 );
 
---rollback DROP TABLE Tennis;
+--rollback DROP TABLE Portfolio;
 
+--changeset benriley:5CreateAuditLogTable
+CREATE TABLE AuditLog (
+    id SERIAL PRIMARY KEY,
+    account_name VARCHAR(255) NOT NULL,
+    description TEXT
+);
 
+--rollback DROP TABLE AuditLog;
 
