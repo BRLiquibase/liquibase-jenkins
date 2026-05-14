@@ -1,6 +1,6 @@
 --liquibase formatted sql
 
---changeset benriley:1CreateAccountsTable
+--changeset Alaina:1CreateAccountsTable
 --description Insert SQL change objects here https://docs.liquibase.com/change-types/home.html
 CREATE TABLE Accounts (
     id SERIAL PRIMARY KEY,
@@ -44,4 +44,14 @@ CREATE TABLE AuditLog (
 );
 
 --rollback DROP TABLE AuditLog;
+
+--changeset benriley:6CreateDBTable
+CREATE TABLE DBTable (
+    id SERIAL PRIMARY KEY,
+    account_name VARCHAR(255) NOT NULL,
+    description TEXT
+);
+
+--rollback DROP TABLE DBTable;
+
 
