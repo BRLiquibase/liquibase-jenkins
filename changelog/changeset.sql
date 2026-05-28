@@ -55,10 +55,19 @@ CREATE TABLE DBTable (
 --rollback DROP TABLE DBTable;
 
 --changeset benriley:7CreateDataWarehouseTable
-CREAT TABLE DataWarehouse (
+CREATE TABLE DataWarehouse (
     id SERIAL PRIMARY KEY,
     account_name VARCHAR(255) NOT NULL,
     description TEXT
 );
 
 --rollback DROP TABLE DataWarehouse;
+
+--changeset benriley:8CreateDataLakeTable
+CREATE TABLE DataLake (
+    id SERIAL PRIMARY KEY,
+    account_name VARCHAR(255) NOT NULL,
+    description TEXT
+);
+
+--rollback DROP TABLE DataLake;
