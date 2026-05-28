@@ -21,11 +21,8 @@ stages:
       # Rollback specific changeset by ID and author
       #
       - type: liquibase
-        command: rollback-one-changeset
+        command: rollback-one-update
         cmdArgs: 
-          changeset-id: "${CHANGESET_ID}"
-          changeset-author: "${CHANGESET_AUTHOR}"
-          changeset-path: "${CHANGESET_PATH}"
           force: "true"
 
 ## The endStage ALWAYS RUNS. 

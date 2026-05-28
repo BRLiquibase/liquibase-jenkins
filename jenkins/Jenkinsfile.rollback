@@ -1,16 +1,15 @@
 pipeline {
     agent any
 
-    parameters {
-        string(name: 'CHANGESET_ID',     defaultValue: '', description: 'Changeset ID to roll back')
-        string(name: 'CHANGESET_AUTHOR', defaultValue: '', description: 'Author of the changeset')
-        string(name: 'CHANGESET_PATH',   defaultValue: '', description: 'Path to the changelog file')
-    }
-
     environment {
         LB_USERNAME    = credentials('pg-username')
         LB_PASSWORD    = credentials('pg-password')
         LB_LICENSE_KEY = credentials('lb-pro-license')
+        LB             = '/Users/benriley/Documents/GitHub/liquibase-secure-5.0.0/liquibase'
+        LIQUIBASE_INSIGHTS_ENABLED               = 'true'
+        LIQUIBASE_INSIGHTS_API_URL               = 'http://localhost:3000/api/operations/ingest'
+        LIQUIBASE_INSIGHTS_AUTH_TOKEN            = credentials('insights-api-key')
+        LIQUIBASE_INSIGHTS_CONNECTION_IDENTIFIER = 'conn-large-buckets'
     }
 
     stages {
@@ -24,10 +23,7 @@ pipeline {
 
         stage('Rollback Last Update') {
             steps {
-                sh '''
-                    /Users/benriley/Documents/GitHub/liquibase-secure-5.0.0/liquibase flow \
-                      --flow-file=flowfile.rollback.yaml
-                '''
+                sh '$LB flow --flow-file=flowfile.rollback.yaml'
             }
         }
     }
