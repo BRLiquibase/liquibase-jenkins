@@ -1,6 +1,6 @@
 --liquibase formatted sql
 
---changeset BenRiley:1CreateAccountsTable context:dev,test,prod label:R1.0
+--changeset Allen:1CreateAccountsTable context:dev label:R1.0
 --description Insert SQL change objects here https://docs.liquibase.com/change-types/home.html
 CREATE TABLE Accounts (
     id SERIAL PRIMARY KEY,
@@ -55,7 +55,7 @@ CREATE TABLE DBTable (
 --rollback DROP TABLE DBTable;
 
 --changeset benriley:7CreateDataWarehouseTable
-CREATE TABLE DataWarehouse (
+CREAT TABLE DataWarehouse (
     id SERIAL PRIMARY KEY,
     account_name VARCHAR(255) NOT NULL,
     description TEXT
