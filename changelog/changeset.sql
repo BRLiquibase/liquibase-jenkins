@@ -70,3 +70,4 @@ CREATE TABLE DataLake (
     description TEXT
 );
 
+--rollback DROP TABLE DataLake;
