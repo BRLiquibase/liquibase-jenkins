@@ -54,3 +54,11 @@ CREATE TABLE DBTable (
 
 --rollback DROP TABLE DBTable;
 
+--changeset benriley:7CreateDataWarehouseTable
+CREAT TABLE DataWarehouse (
+    id SERIAL PRIMARY KEY,
+    account_name VARCHAR(255) NOT NULL,
+    description TEXT
+);
+
+--rollback DROP TABLE DataWarehouse;
