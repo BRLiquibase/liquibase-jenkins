@@ -1,6 +1,6 @@
 --liquibase formatted sql
 
---changeset Allen:1CreateAccountsTable context:dev label:R1.0
+--changeset BenRiley:1CreateAccountsTable context:dev,test,prod label:R1.0
 --description Insert SQL change objects here https://docs.liquibase.com/change-types/home.html
 CREATE TABLE Accounts (
     id SERIAL PRIMARY KEY,
@@ -70,4 +70,3 @@ CREATE TABLE DataLake (
     description TEXT
 );
 
---rollback DROP TABLE DataLake;
