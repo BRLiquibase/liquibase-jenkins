@@ -8,7 +8,7 @@ CREATE TABLE Accounts (
     description TEXT
 );
 
---rollback DROP TABLE Accounts;
+
 
 --changeset benriley:2CreateTransactionsTable
 CREATE TABLE Transactions (
@@ -71,3 +71,13 @@ CREATE TABLE DataLake (
 );
 
 --rollback DROP TABLE DataLake;
+
+--changeset Ritu:9PeruTable
+--description Create a new table named Peru to store account information related to Peru operations.
+CREATE TABLE Peru (
+    id SERIAL PRIMARY KEY,
+    account_name VARCHAR(255) NOT NULL,
+    description TEXT
+);
+
+--rollback DROP TABLE Peru;
