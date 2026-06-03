@@ -1875,3 +1875,701 @@ cannot be located.  The changelog author 'Allen' does not match the changeset au
 	... 24 more
 
 [2026-05-28 09:46:27] INFO [liquibase.ui] Logs saved to liquibase.json
+[2026-06-02 10:13:54] INFO [liquibase.ui] ####################################################
+##   _     _             _ _                      ##
+##  | |   (_)           (_) |                     ##
+##  | |    _  __ _ _   _ _| |__   __ _ ___  ___   ##
+##  | |   | |/ _` | | | | | '_ \ / _` / __|/ _ \  ##
+##  | |___| | (_| | |_| | | |_) | (_| \__ \  __/  ##
+##  \_____/_|\__, |\__,_|_|_.__/ \__,_|___/\___|  ##
+##              | |                               ##
+##              |_|                               ##
+##                                                ## 
+##  Get documentation at docs.liquibase.com       ##
+##  Get certified courses at learn.liquibase.com  ## 
+##                                                ##
+####################################################
+Starting Liquibase Secure at 10:13:54 using Java 25.0.1 (version 5.1.0 #57 built at 2026-02-20 18:21:28 UTC)
+[2026-06-02 10:13:54] INFO [liquibase.ui] Liquibase Secure Version: 5.1.0
+[2026-06-02 10:13:54] INFO [liquibase.ui] Liquibase Secure license issued to Liquibase_SA, valid until Thu Dec 31 00:00:00 GMT 2026
+[2026-06-02 10:13:54] INFO [liquibase.integration] Starting command execution.
+[2026-06-02 10:13:55] WARNING [liquibase.configuration] Potentially ignored key(s) in file exists at path liquibase.properties
+ - 'liquibase.dbclhistory.file'
+[2026-06-02 10:13:56] INFO [liquibase.database] Set default schema name to public
+[2026-06-02 10:13:56] INFO [liquibase.changelog] Creating database changelog table with name: public.databasechangelog
+[2026-06-02 10:13:57] INFO [liquibase.changelog] Reading from public.databasechangelog
+[2026-06-02 10:13:57] INFO [liquibase.snapshot] Creating snapshot for jdbc:postgresql://localhost:5440/postgres
+[2026-06-02 10:13:57] INFO [liquibase.snapshot] Loaded 4 tables for schema public
+[2026-06-02 10:13:57] INFO [liquibase.command] Command execution complete
+[2026-06-02 10:13:58] INFO [liquibase.ui] Logs saved to liquibase.json
+[2026-06-02 10:13:58] INFO [liquibase.ui] Liquibase command 'status' was executed successfully.
+[2026-06-02 10:20:44] INFO [liquibase.ui] ####################################################
+##   _     _             _ _                      ##
+##  | |   (_)           (_) |                     ##
+##  | |    _  __ _ _   _ _| |__   __ _ ___  ___   ##
+##  | |   | |/ _` | | | | | '_ \ / _` / __|/ _ \  ##
+##  | |___| | (_| | |_| | | |_) | (_| \__ \  __/  ##
+##  \_____/_|\__, |\__,_|_|_.__/ \__,_|___/\___|  ##
+##              | |                               ##
+##              |_|                               ##
+##                                                ## 
+##  Get documentation at docs.liquibase.com       ##
+##  Get certified courses at learn.liquibase.com  ## 
+##                                                ##
+####################################################
+Starting Liquibase Secure at 10:20:44 using Java 25.0.1 (version 5.1.0 #57 built at 2026-02-20 18:21:28 UTC)
+[2026-06-02 10:20:44] INFO [liquibase.ui] Liquibase Secure Version: 5.1.0
+[2026-06-02 10:20:44] INFO [liquibase.ui] Liquibase Secure license issued to Liquibase_SA, valid until Thu Dec 31 00:00:00 GMT 2026
+[2026-06-02 10:20:44] INFO [liquibase.integration] Starting command execution.
+[2026-06-02 10:20:45] WARNING [liquibase.configuration] Potentially ignored key(s) in file exists at path liquibase.properties
+ - 'liquibase.dbclhistory.file'
+[2026-06-02 10:20:46] INFO [liquibase.database] Set default schema name to public
+[2026-06-02 10:20:47] INFO [liquibase.lockservice] Successfully acquired change log lock
+[2026-06-02 10:20:48] INFO [liquibase.changelog] Reading from public.databasechangelog
+[2026-06-02 10:20:48] INFO [liquibase.ui] Defaulting to last deployment ID '0391827872'
+[2026-06-02 10:20:48] INFO [liquibase.command] Rollback command encountered an exception.
+[2026-06-02 10:20:48] SEVERE [liquibase.command] 
+Error executing rollback for the deployment ID '0391827872'.
+[2026-06-02 10:20:48] INFO [liquibase] Secure Rollback One Update Report created!
+* File '/Users/benriley/Documents/GitHub/liquibase-jenkins/Rollback-one-update-report-02-Jun-2026-102048.html' was created.
+** To suppress Rollback One Update reports add command arg 'liquibase rollback-one-update --report-enabled=false'
+** To suppress all Secure Reports set liquibase.reports.enabled=false, or LIQUIBASE_REPORTS_ENABLED=false
+[2026-06-02 10:20:48] INFO [liquibase.ui] Secure Rollback One Update Report created!
+* File '/Users/benriley/Documents/GitHub/liquibase-jenkins/Rollback-one-update-report-02-Jun-2026-102048.html' was created.
+** To suppress Rollback One Update reports add command arg 'liquibase rollback-one-update --report-enabled=false'
+** To suppress all Secure Reports set liquibase.reports.enabled=false, or LIQUIBASE_REPORTS_ENABLED=false
+[2026-06-02 10:20:57] INFO [liquibase.lockservice] Successfully released change log lock
+[2026-06-02 10:20:57] INFO [liquibase.ext] Resetting CouchbaseLockService
+[2026-06-02 10:20:57] INFO [liquibase.command] Logging exception.
+[2026-06-02 10:20:57] INFO [liquibase.ui] ERROR: Exception Details
+[2026-06-02 10:20:57] INFO [liquibase.ui] ERROR: Exception Primary Class:  LiquibaseException
+[2026-06-02 10:20:57] INFO [liquibase.ui] ERROR: Exception Primary Reason:  
+
+
+There are changesets associated with the deployment ID '0391827872' which cannot be rolled back.
+No rollback was performed.
+
+Changesets which cannot be rolled back:
+changelog/changeset.sql::1CreateAccountsTable::Allen
+
+[2026-06-02 10:20:57] INFO [liquibase.ui] ERROR: Exception Primary Source:  5.1.0
+[2026-06-02 10:20:57] INFO [liquibase.command] Command execution complete
+[2026-06-02 10:20:58] SEVERE [liquibase.integration] Error executing rollback for the deployment ID '0391827872':
+
+
+
+There are changesets associated with the deployment ID '0391827872' which cannot be rolled back.
+No rollback was performed.
+
+Changesets which cannot be rolled back:
+changelog/changeset.sql::1CreateAccountsTable::Allen
+liquibase.exception.CommandExecutionException: liquibase.exception.LiquibaseException: 
+Error executing rollback for the deployment ID '0391827872':
+
+
+
+There are changesets associated with the deployment ID '0391827872' which cannot be rolled back.
+No rollback was performed.
+
+Changesets which cannot be rolled back:
+changelog/changeset.sql::1CreateAccountsTable::Allen
+
+	at liquibase.command.CommandScope.lambda$execute$5(SourceFile:370)
+	at liquibase.Scope.child(SourceFile:253)
+	at liquibase.Scope.child(SourceFile:229)
+	at liquibase.command.CommandScope.execute(SourceFile:258)
+	at liquibase.integration.commandline.CommandRunner.call(SourceFile:51)
+	at liquibase.integration.commandline.CommandRunner.call(SourceFile:21)
+	at picocli.CommandLine.executeUserObject(CommandLine.java:2031)
+	at picocli.CommandLine.access$1500(CommandLine.java:148)
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2469)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2461)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2423)
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2277)
+	at picocli.CommandLine$RunLast.execute(CommandLine.java:2425)
+	at picocli.CommandLine.execute(CommandLine.java:2174)
+	at liquibase.integration.commandline.LiquibaseCommandLine.lambda$execute$2(SourceFile:442)
+	at liquibase.Scope.child(SourceFile:253)
+	at liquibase.Scope.child(SourceFile:229)
+	at liquibase.integration.commandline.LiquibaseCommandLine.lambda$execute$3(SourceFile:417)
+	at liquibase.Scope.child(SourceFile:253)
+	at liquibase.Scope.child(SourceFile:229)
+	at liquibase.integration.commandline.LiquibaseCommandLine.execute(SourceFile:414)
+	at liquibase.integration.commandline.LiquibaseCommandLine.main(SourceFile:117)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at liquibase.integration.commandline.LiquibaseLauncher.main(SourceFile:120)
+Caused by: liquibase.exception.LiquibaseException: 
+Error executing rollback for the deployment ID '0391827872':
+
+
+
+There are changesets associated with the deployment ID '0391827872' which cannot be rolled back.
+No rollback was performed.
+
+Changesets which cannot be rolled back:
+changelog/changeset.sql::1CreateAccountsTable::Allen
+
+	at com.datical.liquibase.ext.command.RollbackOneUpdateCommandStep.handleRollbackError(SourceFile:281)
+	at com.datical.liquibase.ext.command.RollbackOneUpdateCommandStep.doRun(SourceFile:199)
+	at com.datical.liquibase.ext.command.RollbackOneUpdateCommandStep.run(SourceFile:97)
+	at liquibase.command.CommandScope.lambda$execute$5(SourceFile:314)
+	... 24 more
+Caused by: liquibase.exception.LiquibaseException: 
+
+
+There are changesets associated with the deployment ID '0391827872' which cannot be rolled back.
+No rollback was performed.
+
+Changesets which cannot be rolled back:
+changelog/changeset.sql::1CreateAccountsTable::Allen
+
+	at com.datical.liquibase.ext.command.RollbackOneUpdateCommandStep.validateDeploymentIdFilter(SourceFile:255)
+	at com.datical.liquibase.ext.command.RollbackOneUpdateCommandStep.doRun(SourceFile:162)
+	... 26 more
+
+[2026-06-02 10:20:58] INFO [liquibase.ui] Logs saved to liquibase.json
+[2026-06-02 14:33:03] INFO [liquibase.ui] ####################################################
+##   _     _             _ _                      ##
+##  | |   (_)           (_) |                     ##
+##  | |    _  __ _ _   _ _| |__   __ _ ___  ___   ##
+##  | |   | |/ _` | | | | | '_ \ / _` / __|/ _ \  ##
+##  | |___| | (_| | |_| | | |_) | (_| \__ \  __/  ##
+##  \_____/_|\__, |\__,_|_|_.__/ \__,_|___/\___|  ##
+##              | |                               ##
+##              |_|                               ##
+##                                                ## 
+##  Get documentation at docs.liquibase.com       ##
+##  Get certified courses at learn.liquibase.com  ## 
+##                                                ##
+####################################################
+Starting Liquibase Secure at 14:33:03 using Java 25.0.1 (version 5.1.0 #57 built at 2026-02-20 18:21:28 UTC)
+[2026-06-02 14:33:03] INFO [liquibase.ui] Liquibase Secure Version: 5.1.0
+[2026-06-02 14:33:03] INFO [liquibase.ui] Liquibase Secure license issued to Liquibase_SA, valid until Thu Dec 31 00:00:00 GMT 2026
+[2026-06-02 14:33:03] INFO [liquibase.integration] Starting command execution.
+[2026-06-02 14:33:03] WARNING [liquibase.configuration] Potentially ignored key(s) in file exists at path liquibase.properties
+ - 'liquibase.dbclhistory.file'
+[2026-06-02 14:33:03] INFO [liquibase.command] Logging exception.
+[2026-06-02 14:33:03] INFO [liquibase.ui] ERROR: Exception Details
+[2026-06-02 14:33:03] INFO [liquibase.ui] ERROR: Exception Primary Class:  ConnectException
+[2026-06-02 14:33:03] INFO [liquibase.ui] ERROR: Exception Primary Reason:  Connection refused
+[2026-06-02 14:33:03] INFO [liquibase.ui] ERROR: Exception Primary Source:  5.1.0
+[2026-06-02 14:33:03] INFO [liquibase.command] Command execution complete
+[2026-06-02 14:33:04] SEVERE [liquibase.integration] Connection could not be created to jdbc:postgresql://localhost:5440/postgres with driver org.postgresql.Driver.  Connection to localhost:5440 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+  - Caused by: Connection refused
+liquibase.exception.CommandExecutionException: liquibase.exception.DatabaseException: liquibase.exception.DatabaseException: liquibase.exception.DatabaseException: liquibase.exception.DatabaseException: liquibase.exception.DatabaseException: Connection could not be created to jdbc:postgresql://localhost:5440/postgres with driver org.postgresql.Driver.  Connection to localhost:5440 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at liquibase.command.CommandScope.lambda$execute$5(SourceFile:370)
+	at liquibase.Scope.child(SourceFile:253)
+	at liquibase.Scope.child(SourceFile:229)
+	at liquibase.command.CommandScope.execute(SourceFile:258)
+	at liquibase.integration.commandline.CommandRunner.call(SourceFile:51)
+	at liquibase.integration.commandline.CommandRunner.call(SourceFile:21)
+	at picocli.CommandLine.executeUserObject(CommandLine.java:2031)
+	at picocli.CommandLine.access$1500(CommandLine.java:148)
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2469)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2461)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2423)
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2277)
+	at picocli.CommandLine$RunLast.execute(CommandLine.java:2425)
+	at picocli.CommandLine.execute(CommandLine.java:2174)
+	at liquibase.integration.commandline.LiquibaseCommandLine.lambda$execute$2(SourceFile:442)
+	at liquibase.Scope.child(SourceFile:253)
+	at liquibase.Scope.child(SourceFile:229)
+	at liquibase.integration.commandline.LiquibaseCommandLine.lambda$execute$3(SourceFile:417)
+	at liquibase.Scope.child(SourceFile:253)
+	at liquibase.Scope.child(SourceFile:229)
+	at liquibase.integration.commandline.LiquibaseCommandLine.execute(SourceFile:414)
+	at liquibase.integration.commandline.LiquibaseCommandLine.main(SourceFile:117)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at liquibase.integration.commandline.LiquibaseLauncher.main(SourceFile:120)
+Caused by: liquibase.exception.DatabaseException: liquibase.exception.DatabaseException: liquibase.exception.DatabaseException: liquibase.exception.DatabaseException: liquibase.exception.DatabaseException: Connection could not be created to jdbc:postgresql://localhost:5440/postgres with driver org.postgresql.Driver.  Connection to localhost:5440 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at liquibase.command.core.helpers.DbUrlConnectionCommandStep.obtainDatabase(SourceFile:126)
+	at liquibase.command.core.helpers.DbUrlConnectionCommandStep.run(SourceFile:86)
+	at liquibase.command.CommandScope.lambda$execute$5(SourceFile:314)
+	... 24 more
+Caused by: liquibase.exception.DatabaseException: liquibase.exception.DatabaseException: liquibase.exception.DatabaseException: liquibase.exception.DatabaseException: Connection could not be created to jdbc:postgresql://localhost:5440/postgres with driver org.postgresql.Driver.  Connection to localhost:5440 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at liquibase.command.core.helpers.AbstractDatabaseConnectionCommandStep.createDatabaseObject(SourceFile:115)
+	at liquibase.command.core.helpers.DbUrlConnectionCommandStep.lambda$obtainDatabase$0(SourceFile:113)
+	at liquibase.Scope.lambda$child$0(SourceFile:244)
+	at liquibase.Scope.child(SourceFile:253)
+	at liquibase.Scope.child(SourceFile:243)
+	at liquibase.Scope.child(SourceFile:222)
+	at liquibase.command.core.helpers.DbUrlConnectionCommandStep.obtainDatabase(SourceFile:112)
+	... 26 more
+Caused by: liquibase.exception.DatabaseException: liquibase.exception.DatabaseException: liquibase.exception.DatabaseException: Connection could not be created to jdbc:postgresql://localhost:5440/postgres with driver org.postgresql.Driver.  Connection to localhost:5440 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at liquibase.database.DatabaseFactory.openConnection(SourceFile:241)
+	at liquibase.database.DatabaseFactory.openConnection(SourceFile:188)
+	at liquibase.database.DatabaseFactory.openDatabase(SourceFile:153)
+	at liquibase.command.core.helpers.AbstractDatabaseConnectionCommandStep.createDatabaseObject(SourceFile:83)
+	... 32 more
+Caused by: liquibase.exception.DatabaseException: liquibase.exception.DatabaseException: Connection could not be created to jdbc:postgresql://localhost:5440/postgres with driver org.postgresql.Driver.  Connection to localhost:5440 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at liquibase.database.ConnectionServiceFactory.create(SourceFile:35)
+	at liquibase.database.DatabaseFactory.openConnection(SourceFile:238)
+	... 35 more
+Caused by: liquibase.exception.DatabaseException: Connection could not be created to jdbc:postgresql://localhost:5440/postgres with driver org.postgresql.Driver.  Connection to localhost:5440 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at liquibase.database.jvm.JdbcConnection.open(SourceFile:61)
+	at com.datical.liquibase.ext.database.jvm.ProJdbcConnection.open(SourceFile:33)
+	at liquibase.database.ConnectionServiceFactory.create(SourceFile:32)
+	... 36 more
+Caused by: org.postgresql.util.PSQLException: Connection to localhost:5440 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:373)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:57)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:290)
+	at org.postgresql.Driver.makeConnection(Driver.java:448)
+	at org.postgresql.Driver.connect(Driver.java:298)
+	at liquibase.database.jvm.JdbcConnection.open(SourceFile:53)
+	... 38 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:639)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:550)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:594)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:284)
+	at java.base/java.net.Socket.connect(Socket.java:659)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:261)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:122)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:146)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:289)
+	... 43 more
+
+[2026-06-02 14:33:04] INFO [liquibase.ui] Logs saved to liquibase.json
+[2026-06-02 14:33:20] INFO [liquibase.ui] ####################################################
+##   _     _             _ _                      ##
+##  | |   (_)           (_) |                     ##
+##  | |    _  __ _ _   _ _| |__   __ _ ___  ___   ##
+##  | |   | |/ _` | | | | | '_ \ / _` / __|/ _ \  ##
+##  | |___| | (_| | |_| | | |_) | (_| \__ \  __/  ##
+##  \_____/_|\__, |\__,_|_|_.__/ \__,_|___/\___|  ##
+##              | |                               ##
+##              |_|                               ##
+##                                                ## 
+##  Get documentation at docs.liquibase.com       ##
+##  Get certified courses at learn.liquibase.com  ## 
+##                                                ##
+####################################################
+Starting Liquibase Secure at 14:33:20 using Java 25.0.1 (version 5.1.0 #57 built at 2026-02-20 18:21:28 UTC)
+[2026-06-02 14:33:21] INFO [liquibase.ui] Liquibase Secure Version: 5.1.0
+[2026-06-02 14:33:21] INFO [liquibase.ui] Liquibase Secure license issued to Liquibase_SA, valid until Thu Dec 31 00:00:00 GMT 2026
+[2026-06-02 14:33:21] INFO [liquibase.integration] Starting command execution.
+[2026-06-02 14:33:21] WARNING [liquibase.configuration] Potentially ignored key(s) in file exists at path liquibase.properties
+ - 'liquibase.dbclhistory.file'
+[2026-06-02 14:33:22] INFO [liquibase.database] Set default schema name to public
+[2026-06-02 14:33:22] INFO [liquibase.changelog] Creating database changelog table with name: public.databasechangelog
+[2026-06-02 14:33:22] INFO [liquibase.changelog] Reading from public.databasechangelog
+[2026-06-02 14:33:22] INFO [liquibase.snapshot] Creating snapshot for jdbc:postgresql://localhost:5433/postgres
+[2026-06-02 14:33:22] INFO [liquibase.snapshot] Loaded 4 tables for schema public
+[2026-06-02 14:33:22] INFO [liquibase.command] Command execution complete
+[2026-06-02 14:33:22] INFO [liquibase.ui] Logs saved to liquibase.json
+[2026-06-02 14:33:22] INFO [liquibase.ui] Liquibase command 'status' was executed successfully.
+[2026-06-02 14:33:27] INFO [liquibase.ui] ####################################################
+##   _     _             _ _                      ##
+##  | |   (_)           (_) |                     ##
+##  | |    _  __ _ _   _ _| |__   __ _ ___  ___   ##
+##  | |   | |/ _` | | | | | '_ \ / _` / __|/ _ \  ##
+##  | |___| | (_| | |_| | | |_) | (_| \__ \  __/  ##
+##  \_____/_|\__, |\__,_|_|_.__/ \__,_|___/\___|  ##
+##              | |                               ##
+##              |_|                               ##
+##                                                ## 
+##  Get documentation at docs.liquibase.com       ##
+##  Get certified courses at learn.liquibase.com  ## 
+##                                                ##
+####################################################
+Starting Liquibase Secure at 14:33:27 using Java 25.0.1 (version 5.1.0 #57 built at 2026-02-20 18:21:28 UTC)
+[2026-06-02 14:33:27] INFO [liquibase.ui] Liquibase Secure Version: 5.1.0
+[2026-06-02 14:33:27] INFO [liquibase.ui] Liquibase Secure license issued to Liquibase_SA, valid until Thu Dec 31 00:00:00 GMT 2026
+[2026-06-02 14:33:27] INFO [liquibase.integration] Starting command execution.
+[2026-06-02 14:33:28] WARNING [liquibase.configuration] Potentially ignored key(s) in file exists at path liquibase.properties
+ - 'liquibase.dbclhistory.file'
+[2026-06-02 14:33:28] INFO [liquibase.database] Set default schema name to public
+[2026-06-02 14:33:28] INFO [liquibase.changelog] Reading from public.databasechangelog
+[2026-06-02 14:33:28] INFO [liquibase.lockservice] Successfully acquired change log lock
+[2026-06-02 14:33:28] INFO [liquibase.command] Using deploymentId: 0407206604
+[2026-06-02 14:33:28] INFO [liquibase.changelog] Reading from public.databasechangelog
+[2026-06-02 14:33:28] INFO [liquibase.ui] Running Changeset: changelog/changeset.sql::1CreateAccountsTable::Allen
+[2026-06-02 14:33:28] INFO [liquibase.changelog] Custom SQL executed
+[2026-06-02 14:33:28] INFO [liquibase.changelog] ChangeSet changelog/changeset.sql::1CreateAccountsTable::Allen ran successfully in 22ms
+[2026-06-02 14:33:28] INFO [liquibase.sqlgenerator] Creating database history table with name: public.databasechangeloghistory
+[2026-06-02 14:33:28] INFO [liquibase.ui] INFO: A new table 'databasechangeloghistory' was created in 'postgres.public' to track database changing Liquibase operations. The Pro property 'liquibase.dbclhistory.enabled=true' was configured on the CLI, or as Environment Variable or defaults file property, etc. To pause collecting history, set to 'false'. Learn more at https://docs.liquibase.com/DATABASECHANGELOGHISTORY
+[2026-06-02 14:33:28] INFO [liquibase.ui] Running Changeset: changelog/changeset.sql::2CreateTransactionsTable::benriley
+[2026-06-02 14:33:28] INFO [liquibase.changelog] Custom SQL executed
+[2026-06-02 14:33:28] INFO [liquibase.changelog] ChangeSet changelog/changeset.sql::2CreateTransactionsTable::benriley ran successfully in 14ms
+[2026-06-02 14:33:28] INFO [liquibase.ui] Running Changeset: changelog/changeset.sql::3CreateLedgerTable::benriley
+[2026-06-02 14:33:28] INFO [liquibase.changelog] Custom SQL executed
+[2026-06-02 14:33:29] INFO [liquibase.changelog] ChangeSet changelog/changeset.sql::3CreateLedgerTable::benriley ran successfully in 14ms
+[2026-06-02 14:33:29] INFO [liquibase.ui] Running Changeset: changelog/changeset.sql::4CreatePortfolioTable::benriley
+[2026-06-02 14:33:29] INFO [liquibase.changelog] Custom SQL executed
+[2026-06-02 14:33:29] INFO [liquibase.changelog] ChangeSet changelog/changeset.sql::4CreatePortfolioTable::benriley ran successfully in 19ms
+[2026-06-02 14:33:29] INFO [liquibase.ui] Running Changeset: changelog/changeset.sql::5CreateAuditLogTable::benriley
+[2026-06-02 14:33:29] INFO [liquibase.changelog] Custom SQL executed
+[2026-06-02 14:33:29] INFO [liquibase.changelog] ChangeSet changelog/changeset.sql::5CreateAuditLogTable::benriley ran successfully in 15ms
+[2026-06-02 14:33:29] INFO [liquibase.ui] Running Changeset: changelog/changeset.sql::6CreateDBTable::benriley
+[2026-06-02 14:33:29] INFO [liquibase.changelog] Custom SQL executed
+[2026-06-02 14:33:29] INFO [liquibase.changelog] ChangeSet changelog/changeset.sql::6CreateDBTable::benriley ran successfully in 19ms
+[2026-06-02 14:33:29] INFO [liquibase.ui] Running Changeset: changelog/changeset.sql::7CreateDataWarehouseTable::benriley
+[2026-06-02 14:33:29] INFO [liquibase.changelog] Custom SQL executed
+[2026-06-02 14:33:29] INFO [liquibase.changelog] ChangeSet changelog/changeset.sql::7CreateDataWarehouseTable::benriley ran successfully in 11ms
+[2026-06-02 14:33:29] INFO [liquibase.ui] Running Changeset: changelog/changeset.sql::8CreateDataLakeTable::benriley
+[2026-06-02 14:33:29] INFO [liquibase.changelog] Custom SQL executed
+[2026-06-02 14:33:29] INFO [liquibase.changelog] ChangeSet changelog/changeset.sql::8CreateDataLakeTable::benriley ran successfully in 18ms
+[2026-06-02 14:33:29] INFO [liquibase.ui] Running Changeset: changelog/changeset.sql::9PeruTable::Ritu
+[2026-06-02 14:33:29] INFO [liquibase.changelog] Custom SQL executed
+[2026-06-02 14:33:29] INFO [liquibase.changelog] ChangeSet changelog/changeset.sql::9PeruTable::Ritu ran successfully in 33ms
+[2026-06-02 14:33:29] INFO [liquibase.util] UPDATE SUMMARY
+[2026-06-02 14:33:29] INFO [liquibase.util] Run:                          9
+[2026-06-02 14:33:29] INFO [liquibase.util] Previously run:               0
+[2026-06-02 14:33:29] INFO [liquibase.util] Filtered out:                 0
+[2026-06-02 14:33:29] INFO [liquibase.util] Failed deployment:            0
+[2026-06-02 14:33:29] INFO [liquibase.util] -------------------------------
+[2026-06-02 14:33:29] INFO [liquibase.util] Total change sets:            9
+[2026-06-02 14:33:29] INFO [liquibase.util] Update summary generated
+[2026-06-02 14:33:29] INFO [liquibase.command] Update command completed successfully.
+[2026-06-02 14:33:29] INFO [liquibase.ui] Liquibase: Update has been successful. Rows affected: 0
+[2026-06-02 14:33:29] INFO [liquibase.lockservice] Successfully released change log lock
+[2026-06-02 14:33:29] INFO [liquibase] Secure Update Report created!
+* File '/Users/benriley/Documents/GitHub/liquibase-jenkins/Update-report-02-Jun-2026-143329.html' was created.
+** To suppress Update reports add command arg 'liquibase update --report-enabled=false'
+** To suppress all Secure Reports set liquibase.reports.enabled=false, or LIQUIBASE_REPORTS_ENABLED=false
+[2026-06-02 14:33:29] INFO [liquibase.ui] Secure Update Report created!
+* File '/Users/benriley/Documents/GitHub/liquibase-jenkins/Update-report-02-Jun-2026-143329.html' was created.
+** To suppress Update reports add command arg 'liquibase update --report-enabled=false'
+** To suppress all Secure Reports set liquibase.reports.enabled=false, or LIQUIBASE_REPORTS_ENABLED=false
+[2026-06-02 14:33:31] INFO [liquibase.ext] Resetting CouchbaseLockService
+[2026-06-02 14:33:31] INFO [liquibase.command] Command execution complete
+[2026-06-02 14:33:31] INFO [liquibase.ui] Logs saved to liquibase.json
+[2026-06-02 14:33:31] INFO [liquibase.ui] Liquibase command 'update' was executed successfully.
+[2026-06-03 11:37:30] INFO [liquibase.ui] ####################################################
+##   _     _             _ _                      ##
+##  | |   (_)           (_) |                     ##
+##  | |    _  __ _ _   _ _| |__   __ _ ___  ___   ##
+##  | |   | |/ _` | | | | | '_ \ / _` / __|/ _ \  ##
+##  | |___| | (_| | |_| | | |_) | (_| \__ \  __/  ##
+##  \_____/_|\__, |\__,_|_|_.__/ \__,_|___/\___|  ##
+##              | |                               ##
+##              |_|                               ##
+##                                                ## 
+##  Get documentation at docs.liquibase.com       ##
+##  Get certified courses at learn.liquibase.com  ## 
+##                                                ##
+####################################################
+Starting Liquibase Secure at 11:37:30 using Java 25.0.1 (version 5.1.0 #57 built at 2026-02-20 18:21:28 UTC)
+[2026-06-03 11:37:30] INFO [liquibase.ui] Liquibase Secure Version: 5.1.0
+[2026-06-03 11:37:30] INFO [liquibase.ui] Liquibase Secure license issued to Liquibase_SA, valid until Thu Dec 31 00:00:00 GMT 2026
+[2026-06-03 11:37:31] INFO [liquibase.integration] Starting command execution.
+[2026-06-03 11:37:31] WARNING [liquibase.configuration] Potentially ignored key(s) in file exists at path liquibase.properties
+ - 'liquibase.dbclhistory.file'
+[2026-06-03 11:37:31] INFO [liquibase.database] Set default schema name to public
+[2026-06-03 11:37:31] INFO [liquibase.changelog] Creating database changelog table with name: public.databasechangelog
+[2026-06-03 11:37:32] INFO [liquibase.changelog] Reading from public.databasechangelog
+[2026-06-03 11:37:32] INFO [liquibase.snapshot] Creating snapshot for jdbc:postgresql://localhost:5433/postgres
+[2026-06-03 11:37:32] INFO [liquibase.snapshot] Loaded 4 tables for schema public
+[2026-06-03 11:37:32] INFO [liquibase.command] Command execution complete
+[2026-06-03 11:37:32] INFO [liquibase.ui] Logs saved to liquibase.json
+[2026-06-03 11:37:32] INFO [liquibase.ui] Liquibase command 'status' was executed successfully.
+[2026-06-03 11:41:33] INFO [liquibase.ui] ####################################################
+##   _     _             _ _                      ##
+##  | |   (_)           (_) |                     ##
+##  | |    _  __ _ _   _ _| |__   __ _ ___  ___   ##
+##  | |   | |/ _` | | | | | '_ \ / _` / __|/ _ \  ##
+##  | |___| | (_| | |_| | | |_) | (_| \__ \  __/  ##
+##  \_____/_|\__, |\__,_|_|_.__/ \__,_|___/\___|  ##
+##              | |                               ##
+##              |_|                               ##
+##                                                ## 
+##  Get documentation at docs.liquibase.com       ##
+##  Get certified courses at learn.liquibase.com  ## 
+##                                                ##
+####################################################
+Starting Liquibase Secure at 11:41:33 using Java 25.0.1 (version 5.1.0 #57 built at 2026-02-20 18:21:28 UTC)
+[2026-06-03 11:41:33] INFO [liquibase.ui] Liquibase Secure Version: 5.1.0
+[2026-06-03 11:41:33] INFO [liquibase.ui] Liquibase Secure license issued to Liquibase_SA, valid until Thu Dec 31 00:00:00 GMT 2026
+[2026-06-03 11:41:33] INFO [liquibase.integration] Starting command execution.
+[2026-06-03 11:41:34] WARNING [liquibase.configuration] Potentially ignored key(s) in file exists at path liquibase.properties
+ - 'liquibase.dbclhistory.file'
+[2026-06-03 11:41:34] INFO [liquibase.database] Set default schema name to public
+[2026-06-03 11:41:34] INFO [liquibase.changelog] Reading from public.databasechangelog
+[2026-06-03 11:41:34] INFO [liquibase.command] Command execution complete
+[2026-06-03 11:41:35] INFO [liquibase.ui] Logs saved to liquibase.json
+[2026-06-03 11:41:35] INFO [liquibase.ui] Liquibase command 'status' was executed successfully.
+[2026-06-03 11:42:33] INFO [liquibase.ui] ####################################################
+##   _     _             _ _                      ##
+##  | |   (_)           (_) |                     ##
+##  | |    _  __ _ _   _ _| |__   __ _ ___  ___   ##
+##  | |   | |/ _` | | | | | '_ \ / _` / __|/ _ \  ##
+##  | |___| | (_| | |_| | | |_) | (_| \__ \  __/  ##
+##  \_____/_|\__, |\__,_|_|_.__/ \__,_|___/\___|  ##
+##              | |                               ##
+##              |_|                               ##
+##                                                ## 
+##  Get documentation at docs.liquibase.com       ##
+##  Get certified courses at learn.liquibase.com  ## 
+##                                                ##
+####################################################
+Starting Liquibase Secure at 11:42:33 using Java 25.0.1 (version 5.1.0 #57 built at 2026-02-20 18:21:28 UTC)
+[2026-06-03 11:42:33] INFO [liquibase.ui] Liquibase Secure Version: 5.1.0
+[2026-06-03 11:42:33] INFO [liquibase.ui] Liquibase Secure license issued to Liquibase_SA, valid until Thu Dec 31 00:00:00 GMT 2026
+[2026-06-03 11:42:33] INFO [liquibase.integration] Starting command execution.
+[2026-06-03 11:42:34] WARNING [liquibase.configuration] Potentially ignored key(s) in file exists at path liquibase.properties
+ - 'liquibase.dbclhistory.file'
+[2026-06-03 11:42:34] INFO [liquibase.database] Set default schema name to public
+[2026-06-03 11:42:34] INFO [liquibase.changelog] Reading from public.databasechangelog
+[2026-06-03 11:42:34] INFO [liquibase.command] Command execution complete
+[2026-06-03 11:42:35] INFO [liquibase.ui] Logs saved to liquibase.json
+[2026-06-03 11:42:35] INFO [liquibase.ui] Liquibase command 'status' was executed successfully.
+[2026-06-03 11:43:08] INFO [liquibase.ui] ####################################################
+##   _     _             _ _                      ##
+##  | |   (_)           (_) |                     ##
+##  | |    _  __ _ _   _ _| |__   __ _ ___  ___   ##
+##  | |   | |/ _` | | | | | '_ \ / _` / __|/ _ \  ##
+##  | |___| | (_| | |_| | | |_) | (_| \__ \  __/  ##
+##  \_____/_|\__, |\__,_|_|_.__/ \__,_|___/\___|  ##
+##              | |                               ##
+##              |_|                               ##
+##                                                ## 
+##  Get documentation at docs.liquibase.com       ##
+##  Get certified courses at learn.liquibase.com  ## 
+##                                                ##
+####################################################
+Starting Liquibase Secure at 11:43:08 using Java 25.0.1 (version 5.1.0 #57 built at 2026-02-20 18:21:28 UTC)
+[2026-06-03 11:43:08] INFO [liquibase.ui] Liquibase Secure Version: 5.1.0
+[2026-06-03 11:43:08] INFO [liquibase.ui] Liquibase Secure license issued to Liquibase_SA, valid until Thu Dec 31 00:00:00 GMT 2026
+[2026-06-03 11:43:08] INFO [liquibase.integration] Starting command execution.
+[2026-06-03 11:43:08] WARNING [liquibase.configuration] Potentially ignored key(s) in file exists at path liquibase.properties
+ - 'liquibase.dbclhistory.file'
+[2026-06-03 11:43:08] INFO [liquibase.database] Set default schema name to public
+[2026-06-03 11:43:08] INFO [liquibase.changelog] Reading from public.databasechangelog
+[2026-06-03 11:43:08] INFO [liquibase.lockservice] Successfully acquired change log lock
+[2026-06-03 11:43:08] INFO [liquibase.command] Using deploymentId: 0483387308
+[2026-06-03 11:43:08] INFO [liquibase.changelog] Reading from public.databasechangelog
+[2026-06-03 11:43:09] INFO [liquibase.ui] Running Changeset: changelog/changeset.sql::1CreateAccountsTable::benriley
+[2026-06-03 11:43:09] INFO [liquibase.changelog] Custom SQL executed
+[2026-06-03 11:43:09] INFO [liquibase.changelog] ChangeSet changelog/changeset.sql::1CreateAccountsTable::benriley ran successfully in 29ms
+[2026-06-03 11:43:09] INFO [liquibase.sqlgenerator] Creating database history table with name: public.databasechangeloghistory
+[2026-06-03 11:43:09] INFO [liquibase.ui] INFO: A new table 'databasechangeloghistory' was created in 'postgres.public' to track database changing Liquibase operations. The Pro property 'liquibase.dbclhistory.enabled=true' was configured on the CLI, or as Environment Variable or defaults file property, etc. To pause collecting history, set to 'false'. Learn more at https://docs.liquibase.com/DATABASECHANGELOGHISTORY
+[2026-06-03 11:43:09] INFO [liquibase.ui] Running Changeset: changelog/changeset.sql::2CreateTransactionsTable::benriley
+[2026-06-03 11:43:09] INFO [liquibase.changelog] Custom SQL executed
+[2026-06-03 11:43:09] INFO [liquibase.changelog] ChangeSet changelog/changeset.sql::2CreateTransactionsTable::benriley ran successfully in 18ms
+[2026-06-03 11:43:09] INFO [liquibase.ui] Running Changeset: changelog/changeset.sql::3CreateLedgerTable::benriley
+[2026-06-03 11:43:09] INFO [liquibase.changelog] Custom SQL executed
+[2026-06-03 11:43:09] INFO [liquibase.changelog] ChangeSet changelog/changeset.sql::3CreateLedgerTable::benriley ran successfully in 11ms
+[2026-06-03 11:43:09] INFO [liquibase.ui] Running Changeset: changelog/changeset.sql::4CreatePortfolioTable::benriley
+[2026-06-03 11:43:09] INFO [liquibase.changelog] Custom SQL executed
+[2026-06-03 11:43:09] INFO [liquibase.changelog] ChangeSet changelog/changeset.sql::4CreatePortfolioTable::benriley ran successfully in 10ms
+[2026-06-03 11:43:09] INFO [liquibase.ui] Running Changeset: changelog/changeset.sql::5CreateAuditLogTable::benriley
+[2026-06-03 11:43:09] INFO [liquibase.changelog] Custom SQL executed
+[2026-06-03 11:43:09] INFO [liquibase.changelog] ChangeSet changelog/changeset.sql::5CreateAuditLogTable::benriley ran successfully in 10ms
+[2026-06-03 11:43:09] INFO [liquibase.ui] Running Changeset: changelog/changeset.sql::6CreateDBTable::benriley
+[2026-06-03 11:43:09] INFO [liquibase.changelog] Custom SQL executed
+[2026-06-03 11:43:09] INFO [liquibase.changelog] ChangeSet changelog/changeset.sql::6CreateDBTable::benriley ran successfully in 8ms
+[2026-06-03 11:43:09] INFO [liquibase.ui] Running Changeset: changelog/changeset.sql::7CreateDataWarehouseTable::benriley
+[2026-06-03 11:43:09] INFO [liquibase.changelog] Custom SQL executed
+[2026-06-03 11:43:09] INFO [liquibase.changelog] ChangeSet changelog/changeset.sql::7CreateDataWarehouseTable::benriley ran successfully in 7ms
+[2026-06-03 11:43:09] INFO [liquibase.ui] Running Changeset: changelog/changeset.sql::8CreateDataLakeTable::benriley
+[2026-06-03 11:43:09] INFO [liquibase.changelog] Custom SQL executed
+[2026-06-03 11:43:09] INFO [liquibase.changelog] ChangeSet changelog/changeset.sql::8CreateDataLakeTable::benriley ran successfully in 9ms
+[2026-06-03 11:43:09] INFO [liquibase.ui] Running Changeset: changelog/changeset.sql::9CreateAnalyticsTable::benriley
+[2026-06-03 11:43:09] INFO [liquibase.changelog] Custom SQL executed
+[2026-06-03 11:43:09] INFO [liquibase.changelog] ChangeSet changelog/changeset.sql::9CreateAnalyticsTable::benriley ran successfully in 8ms
+[2026-06-03 11:43:09] INFO [liquibase.ui] Running Changeset: changelog/tables.sql::10-demotables::benriley
+[2026-06-03 11:43:09] INFO [liquibase.changelog] Custom SQL executed
+[2026-06-03 11:43:09] INFO [liquibase.changelog] ChangeSet changelog/tables.sql::10-demotables::benriley ran successfully in 9ms
+[2026-06-03 11:43:09] INFO [liquibase.util] UPDATE SUMMARY
+[2026-06-03 11:43:09] INFO [liquibase.util] Run:                         10
+[2026-06-03 11:43:09] INFO [liquibase.util] Previously run:               0
+[2026-06-03 11:43:09] INFO [liquibase.util] Filtered out:                 0
+[2026-06-03 11:43:09] INFO [liquibase.util] Failed deployment:            0
+[2026-06-03 11:43:09] INFO [liquibase.util] -------------------------------
+[2026-06-03 11:43:09] INFO [liquibase.util] Total change sets:           10
+[2026-06-03 11:43:09] INFO [liquibase.util] Update summary generated
+[2026-06-03 11:43:09] INFO [liquibase.command] Update command completed successfully.
+[2026-06-03 11:43:09] INFO [liquibase.ui] Liquibase: Update has been successful. Rows affected: 0
+[2026-06-03 11:43:09] INFO [liquibase.lockservice] Successfully released change log lock
+[2026-06-03 11:43:09] INFO [liquibase] Secure Update Report created!
+* File '/Users/benriley/Documents/GitHub/liquibase-jenkins/Update-report-03-Jun-2026-114309.html' was created.
+** To suppress Update reports add command arg 'liquibase update --report-enabled=false'
+** To suppress all Secure Reports set liquibase.reports.enabled=false, or LIQUIBASE_REPORTS_ENABLED=false
+[2026-06-03 11:43:09] INFO [liquibase.ui] Secure Update Report created!
+* File '/Users/benriley/Documents/GitHub/liquibase-jenkins/Update-report-03-Jun-2026-114309.html' was created.
+** To suppress Update reports add command arg 'liquibase update --report-enabled=false'
+** To suppress all Secure Reports set liquibase.reports.enabled=false, or LIQUIBASE_REPORTS_ENABLED=false
+[2026-06-03 11:43:11] INFO [liquibase.ext] Resetting CouchbaseLockService
+[2026-06-03 11:43:11] INFO [liquibase.command] Command execution complete
+[2026-06-03 11:43:12] INFO [liquibase.ui] Logs saved to liquibase.json
+[2026-06-03 11:43:12] INFO [liquibase.ui] Liquibase command 'update' was executed successfully.
+[2026-06-03 11:43:47] INFO [liquibase.ui] ####################################################
+##   _     _             _ _                      ##
+##  | |   (_)           (_) |                     ##
+##  | |    _  __ _ _   _ _| |__   __ _ ___  ___   ##
+##  | |   | |/ _` | | | | | '_ \ / _` / __|/ _ \  ##
+##  | |___| | (_| | |_| | | |_) | (_| \__ \  __/  ##
+##  \_____/_|\__, |\__,_|_|_.__/ \__,_|___/\___|  ##
+##              | |                               ##
+##              |_|                               ##
+##                                                ## 
+##  Get documentation at docs.liquibase.com       ##
+##  Get certified courses at learn.liquibase.com  ## 
+##                                                ##
+####################################################
+Starting Liquibase Secure at 11:43:47 using Java 25.0.1 (version 5.1.0 #57 built at 2026-02-20 18:21:28 UTC)
+[2026-06-03 11:43:47] INFO [liquibase.ui] Liquibase Secure Version: 5.1.0
+[2026-06-03 11:43:47] INFO [liquibase.ui] Liquibase Secure license issued to Liquibase_SA, valid until Thu Dec 31 00:00:00 GMT 2026
+[2026-06-03 11:43:47] INFO [liquibase.integration] Starting command execution.
+[2026-06-03 11:43:47] WARNING [liquibase.configuration] Potentially ignored key(s) in file exists at path liquibase.properties
+ - 'liquibase.dbclhistory.file'
+[2026-06-03 11:43:48] INFO [liquibase.database] Set default schema name to public
+[2026-06-03 11:43:48] INFO [liquibase.lockservice] Successfully acquired change log lock
+[2026-06-03 11:43:48] INFO [liquibase.changelog] Reading from public.databasechangelog
+[2026-06-03 11:43:48] INFO [liquibase.ui] Defaulting to last deployment ID '0483387308'
+[2026-06-03 11:43:48] INFO [liquibase.command] Rollback command encountered an exception.
+[2026-06-03 11:43:48] SEVERE [liquibase.command] 
+Error executing rollback for the deployment ID '0483387308'.
+[2026-06-03 11:43:48] INFO [liquibase] Secure Rollback One Update Report created!
+* File '/Users/benriley/Documents/GitHub/liquibase-jenkins/Rollback-one-update-report-03-Jun-2026-114348.html' was created.
+** To suppress Rollback One Update reports add command arg 'liquibase rollback-one-update --report-enabled=false'
+** To suppress all Secure Reports set liquibase.reports.enabled=false, or LIQUIBASE_REPORTS_ENABLED=false
+[2026-06-03 11:43:48] INFO [liquibase.ui] Secure Rollback One Update Report created!
+* File '/Users/benriley/Documents/GitHub/liquibase-jenkins/Rollback-one-update-report-03-Jun-2026-114348.html' was created.
+** To suppress Rollback One Update reports add command arg 'liquibase rollback-one-update --report-enabled=false'
+** To suppress all Secure Reports set liquibase.reports.enabled=false, or LIQUIBASE_REPORTS_ENABLED=false
+[2026-06-03 11:43:49] INFO [liquibase.lockservice] Successfully released change log lock
+[2026-06-03 11:43:49] INFO [liquibase.ext] Resetting CouchbaseLockService
+[2026-06-03 11:43:49] INFO [liquibase.command] Logging exception.
+[2026-06-03 11:43:49] INFO [liquibase.ui] ERROR: Exception Details
+[2026-06-03 11:43:49] INFO [liquibase.ui] ERROR: Exception Primary Class:  LiquibaseException
+[2026-06-03 11:43:49] INFO [liquibase.ui] ERROR: Exception Primary Reason:  
+
+
+There are changesets associated with the deployment ID '0483387308' which cannot be rolled back.
+No rollback was performed.
+
+Changesets which cannot be rolled back:
+changelog/tables.sql::10-demotables::benriley
+
+[2026-06-03 11:43:49] INFO [liquibase.ui] ERROR: Exception Primary Source:  5.1.0
+[2026-06-03 11:43:49] INFO [liquibase.command] Command execution complete
+[2026-06-03 11:43:50] SEVERE [liquibase.integration] Error executing rollback for the deployment ID '0483387308':
+
+
+
+There are changesets associated with the deployment ID '0483387308' which cannot be rolled back.
+No rollback was performed.
+
+Changesets which cannot be rolled back:
+changelog/tables.sql::10-demotables::benriley
+liquibase.exception.CommandExecutionException: liquibase.exception.LiquibaseException: 
+Error executing rollback for the deployment ID '0483387308':
+
+
+
+There are changesets associated with the deployment ID '0483387308' which cannot be rolled back.
+No rollback was performed.
+
+Changesets which cannot be rolled back:
+changelog/tables.sql::10-demotables::benriley
+
+	at liquibase.command.CommandScope.lambda$execute$5(SourceFile:370)
+	at liquibase.Scope.child(SourceFile:253)
+	at liquibase.Scope.child(SourceFile:229)
+	at liquibase.command.CommandScope.execute(SourceFile:258)
+	at liquibase.integration.commandline.CommandRunner.call(SourceFile:51)
+	at liquibase.integration.commandline.CommandRunner.call(SourceFile:21)
+	at picocli.CommandLine.executeUserObject(CommandLine.java:2031)
+	at picocli.CommandLine.access$1500(CommandLine.java:148)
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2469)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2461)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2423)
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2277)
+	at picocli.CommandLine$RunLast.execute(CommandLine.java:2425)
+	at picocli.CommandLine.execute(CommandLine.java:2174)
+	at liquibase.integration.commandline.LiquibaseCommandLine.lambda$execute$2(SourceFile:442)
+	at liquibase.Scope.child(SourceFile:253)
+	at liquibase.Scope.child(SourceFile:229)
+	at liquibase.integration.commandline.LiquibaseCommandLine.lambda$execute$3(SourceFile:417)
+	at liquibase.Scope.child(SourceFile:253)
+	at liquibase.Scope.child(SourceFile:229)
+	at liquibase.integration.commandline.LiquibaseCommandLine.execute(SourceFile:414)
+	at liquibase.integration.commandline.LiquibaseCommandLine.main(SourceFile:117)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at liquibase.integration.commandline.LiquibaseLauncher.main(SourceFile:120)
+Caused by: liquibase.exception.LiquibaseException: 
+Error executing rollback for the deployment ID '0483387308':
+
+
+
+There are changesets associated with the deployment ID '0483387308' which cannot be rolled back.
+No rollback was performed.
+
+Changesets which cannot be rolled back:
+changelog/tables.sql::10-demotables::benriley
+
+	at com.datical.liquibase.ext.command.RollbackOneUpdateCommandStep.handleRollbackError(SourceFile:281)
+	at com.datical.liquibase.ext.command.RollbackOneUpdateCommandStep.doRun(SourceFile:199)
+	at com.datical.liquibase.ext.command.RollbackOneUpdateCommandStep.run(SourceFile:97)
+	at liquibase.command.CommandScope.lambda$execute$5(SourceFile:314)
+	... 24 more
+Caused by: liquibase.exception.LiquibaseException: 
+
+
+There are changesets associated with the deployment ID '0483387308' which cannot be rolled back.
+No rollback was performed.
+
+Changesets which cannot be rolled back:
+changelog/tables.sql::10-demotables::benriley
+
+	at com.datical.liquibase.ext.command.RollbackOneUpdateCommandStep.validateDeploymentIdFilter(SourceFile:255)
+	at com.datical.liquibase.ext.command.RollbackOneUpdateCommandStep.doRun(SourceFile:162)
+	... 26 more
+
+[2026-06-03 11:43:50] INFO [liquibase.ui] Logs saved to liquibase.json
+[2026-06-03 11:44:11] INFO [liquibase.ui] ####################################################
+##   _     _             _ _                      ##
+##  | |   (_)           (_) |                     ##
+##  | |    _  __ _ _   _ _| |__   __ _ ___  ___   ##
+##  | |   | |/ _` | | | | | '_ \ / _` / __|/ _ \  ##
+##  | |___| | (_| | |_| | | |_) | (_| \__ \  __/  ##
+##  \_____/_|\__, |\__,_|_|_.__/ \__,_|___/\___|  ##
+##              | |                               ##
+##              |_|                               ##
+##                                                ## 
+##  Get documentation at docs.liquibase.com       ##
+##  Get certified courses at learn.liquibase.com  ## 
+##                                                ##
+####################################################
+Starting Liquibase Secure at 11:44:11 using Java 25.0.1 (version 5.1.0 #57 built at 2026-02-20 18:21:28 UTC)
+[2026-06-03 11:44:11] INFO [liquibase.ui] Liquibase Secure Version: 5.1.0
+[2026-06-03 11:44:11] INFO [liquibase.ui] Liquibase Secure license issued to Liquibase_SA, valid until Thu Dec 31 00:00:00 GMT 2026
+[2026-06-03 11:44:11] INFO [liquibase.integration] Starting command execution.
+[2026-06-03 11:44:11] WARNING [liquibase.configuration] Potentially ignored key(s) in file exists at path liquibase.properties
+ - 'liquibase.dbclhistory.file'
+[2026-06-03 11:44:11] INFO [liquibase.database] Set default schema name to public
+[2026-06-03 11:44:11] INFO [liquibase.lockservice] Successfully acquired change log lock
+[2026-06-03 11:44:12] INFO [liquibase.changelog] Reading from public.databasechangelog
+[2026-06-03 11:44:12] INFO [liquibase.ui] Defaulting to last deployment ID '0483387308'
+[2026-06-03 11:44:12] INFO [liquibase.ui] Rolling Back Changeset: changelog/tables.sql::10-demotables::benriley
+[2026-06-03 11:44:12] INFO [liquibase.ui] Rolling Back Changeset: changelog/changeset.sql::9CreateAnalyticsTable::benriley
+[2026-06-03 11:44:12] INFO [liquibase.ui] Rolling Back Changeset: changelog/changeset.sql::8CreateDataLakeTable::benriley
+[2026-06-03 11:44:12] INFO [liquibase.ui] Rolling Back Changeset: changelog/changeset.sql::7CreateDataWarehouseTable::benriley
+[2026-06-03 11:44:12] INFO [liquibase.ui] Rolling Back Changeset: changelog/changeset.sql::6CreateDBTable::benriley
+[2026-06-03 11:44:12] INFO [liquibase.ui] Rolling Back Changeset: changelog/changeset.sql::5CreateAuditLogTable::benriley
+[2026-06-03 11:44:12] INFO [liquibase.ui] Rolling Back Changeset: changelog/changeset.sql::4CreatePortfolioTable::benriley
+[2026-06-03 11:44:12] INFO [liquibase.ui] Rolling Back Changeset: changelog/changeset.sql::3CreateLedgerTable::benriley
+[2026-06-03 11:44:12] INFO [liquibase.ui] Rolling Back Changeset: changelog/changeset.sql::2CreateTransactionsTable::benriley
+[2026-06-03 11:44:12] INFO [liquibase.ui] Rolling Back Changeset: changelog/changeset.sql::1CreateAccountsTable::benriley
+[2026-06-03 11:44:12] INFO [liquibase.command] Rollback command completed successfully.
+[2026-06-03 11:44:12] INFO [liquibase.command] Rollback command completed successfully.
+[2026-06-03 11:44:12] INFO [liquibase.ui] rollback-one-update executed for postgres@jdbc:postgresql://localhost:5433/postgres
+[2026-06-03 11:44:12] INFO [liquibase] Secure Rollback One Update Report created!
+* File '/Users/benriley/Documents/GitHub/liquibase-jenkins/Rollback-one-update-report-03-Jun-2026-114412.html' was created.
+** To suppress Rollback One Update reports add command arg 'liquibase rollback-one-update --report-enabled=false'
+** To suppress all Secure Reports set liquibase.reports.enabled=false, or LIQUIBASE_REPORTS_ENABLED=false
+[2026-06-03 11:44:12] INFO [liquibase.ui] Secure Rollback One Update Report created!
+* File '/Users/benriley/Documents/GitHub/liquibase-jenkins/Rollback-one-update-report-03-Jun-2026-114412.html' was created.
+** To suppress Rollback One Update reports add command arg 'liquibase rollback-one-update --report-enabled=false'
+** To suppress all Secure Reports set liquibase.reports.enabled=false, or LIQUIBASE_REPORTS_ENABLED=false
+[2026-06-03 11:44:13] INFO [liquibase.lockservice] Successfully released change log lock
+[2026-06-03 11:44:13] INFO [liquibase.ext] Resetting CouchbaseLockService
+[2026-06-03 11:44:13] INFO [liquibase.command] Command execution complete
+[2026-06-03 11:44:14] INFO [liquibase.ui] Logs saved to liquibase.json
+[2026-06-03 11:44:14] INFO [liquibase.ui] Liquibase command 'rollback-one-update' was executed successfully.

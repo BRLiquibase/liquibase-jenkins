@@ -1,6 +1,6 @@
 --liquibase formatted sql
 
---changeset Allen:1CreateAccountsTable context:dev label:R1.0
+--changeset benriley:1CreateAccountsTable context:dev label:R1.0
 --description Insert SQL change objects here https://docs.liquibase.com/change-types/home.html
 CREATE TABLE Accounts (
     id SERIAL PRIMARY KEY,
@@ -8,7 +8,7 @@ CREATE TABLE Accounts (
     description TEXT
 );
 
-
+--rollback DROP TABLE Accounts;
 
 --changeset benriley:2CreateTransactionsTable
 CREATE TABLE Transactions (
@@ -72,12 +72,16 @@ CREATE TABLE DataLake (
 
 --rollback DROP TABLE DataLake;
 
---changeset Ritu:9PeruTable
---description Create a new table named Peru to store account information related to Peru operations.
-CREATE TABLE Peru (
+
+--changeset benriley:9CreateAnalyticsTable
+CREATE TABLE Analytics (
     id SERIAL PRIMARY KEY,
     account_name VARCHAR(255) NOT NULL,
     description TEXT
-);
+);  
 
---rollback DROP TABLE Peru;
+--rollback DROP TABLE Analytics;
+
+--changeset briley:add-address-line3
+ALTER TABLE public.addresses ADD COLUMN address_line3 VARCHAR(100);
+--rollback ALTER TABLE public.addresses DROP COLUMN address_line3;

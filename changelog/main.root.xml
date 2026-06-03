@@ -8,6 +8,7 @@
 
   <modifyChangeSets>
     <include file="changeset.sql" relativeToChangelogFile="true"/>
+    <include file="tables.sql" relativeToChangelogFile="true"/>
   </modifyChangeSets>
 </databaseChangeLog>
 
