@@ -2,7 +2,7 @@
 ##########  learn more http://docs.liquibase.com/flow                  ##########
 
 ## USAGE:
-## export DEPLOYMENT_ID=12345678
+## export LIQUIBASE_COMMAND_DEPLOYMENT_ID=0654688620
 ## liquibase flow --flow-file=flowfile.rollback.yaml
 ## Or trigger via Jenkins with DEPLOYMENT_ID parameter.
 
@@ -15,7 +15,7 @@ stages:
         command: rollback-one-update
         cmdArgs:
           force: "true"
-          deployment-id: "${DEPLOYMENT_ID}"
+          deployment-id: "${LIQUIBASE_COMMAND_DEPLOYMENT_ID}"
 
 endStage:
   actions:

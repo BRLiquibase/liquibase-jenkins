@@ -18,7 +18,7 @@ pipeline {
         LIQUIBASE_INSIGHTS_API_URL               = 'http://localhost:3000/api/operations/ingest'
         LIQUIBASE_INSIGHTS_AUTH_TOKEN            = credentials('insights-api-key')
         LIQUIBASE_INSIGHTS_CONNECTION_IDENTIFIER = 'conn-large-buckets'
-        DEPLOYMENT_ID                            = "${params.DEPLOYMENT_ID}"
+        LIQUIBASE_COMMAND_DEPLOYMENT_ID          = "${params.DEPLOYMENT_ID}"
     }
 
     stages {
@@ -31,10 +31,10 @@ pipeline {
         }
 
         stage('Rollback By Deployment ID') {
-    steps {
-        sh '$LB flow --flow-file=flowfile.rollback.yaml --flow-variable DEPLOYMENT_ID=${DEPLOYMENT_ID}'
-    }
-}
+            steps {
+                sh '$LB flow --flow-file=flowfile.rollback.yaml'
+            }
+        }
     }
 
     post {
