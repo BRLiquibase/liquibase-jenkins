@@ -1,15 +1,24 @@
 pipeline {
     agent any
 
+    parameters {
+        string(
+            name: 'DEPLOYMENT_ID',
+            defaultValue: '',
+            description: 'Deployment ID to roll back (from DATABASECHANGELOG)'
+        )
+    }
+
     environment {
-        LB_USERNAME    = credentials('pg-username')
-        LB_PASSWORD    = credentials('pg-password')
-        LB_LICENSE_KEY = credentials('lb-pro-license')
-        LB             = '/Users/benriley/Documents/GitHub/liquibase-secure-5.0.0/liquibase'
+        LB_USERNAME                              = credentials('pg-username')
+        LB_PASSWORD                              = credentials('pg-password')
+        LB_LICENSE_KEY                           = credentials('lb-pro-license')
+        LB                                       = '/Users/benriley/Documents/GitHub/liquibase-secure-5.0.0/liquibase'
         LIQUIBASE_INSIGHTS_ENABLED               = 'true'
         LIQUIBASE_INSIGHTS_API_URL               = 'http://localhost:3000/api/operations/ingest'
         LIQUIBASE_INSIGHTS_AUTH_TOKEN            = credentials('insights-api-key')
         LIQUIBASE_INSIGHTS_CONNECTION_IDENTIFIER = 'conn-large-buckets'
+        DEPLOYMENT_ID                            = "${params.DEPLOYMENT_ID}"
     }
 
     stages {
@@ -21,7 +30,7 @@ pipeline {
             }
         }
 
-        stage('Rollback Last Update') {
+        stage('Rollback By Deployment ID') {
             steps {
                 sh '$LB flow --flow-file=flowfile.rollback.yaml'
             }

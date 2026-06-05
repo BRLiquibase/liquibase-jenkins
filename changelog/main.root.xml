@@ -8,7 +8,8 @@
 
   <modifyChangeSets>
     <include file="changeset.sql" relativeToChangelogFile="true"/>
-    <include file="tables.sql" relativeToChangelogFile="true"/>
+    <include file="users.sql" relativeToChangelogFile="true"/>
+    <include file="changelog.postgres.sql" relativeToChangelogFile="true"/>
   </modifyChangeSets>
 </databaseChangeLog>
 
