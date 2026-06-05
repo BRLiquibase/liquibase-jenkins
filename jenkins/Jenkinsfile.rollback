@@ -32,11 +32,11 @@ pipeline {
 
         stage('Rollback By Deployment ID') {
     steps {
-        sh '$LB flow --flow-file=flowfile.rollback.yaml -DDEPLOYMENT_ID=${DEPLOYMENT_ID}'
+        sh '$LB flow --flow-file=flowfile.rollback.yaml --flow-variable DEPLOYMENT_ID=${DEPLOYMENT_ID}'
     }
 }
     }
-    
+
     post {
         success {
             echo 'Rollback complete.'
