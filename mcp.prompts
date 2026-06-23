@@ -1,0 +1,55 @@
+### Table
+Use the liquibase-changelog-mcp-server MCP tool.
+Add a changeset to changelog.postgres.sql and register it in main.root.xml for an orders table:
+- order_id: UUID, primary key
+- customer_id: UUID, not null
+- order_date: timestamp, not null, default now()
+- status: varchar(50), not null, default 'pending'
+- total_amount: numeric(10,2), not null
+- labels: finance,orders
+- contexts: dev
+
+### View
+Use the liquibase-changelog-mcp-server MCP tool.
+Add a changeset to changelog.postgres.sql and register it in main.root.xml for a view called active_users:
+- Select user_id, email, username, tenant_id from users where is_active = true
+- labels: finance,reporting
+- contexts: dev
+
+### Index
+Use the liquibase-changelog-mcp-server MCP tool.
+Add a changeset to changelog.postgres.sql and register it in main.root.xml for an index on orders(customer_id).
+- labels: finance,performance
+- contexts: dev
+
+
+
+
+### Bulk Changelog Generation
+Use the liquibase-changelog-mcp-server MCP tool.
+
+Generate 100 changesets in changelog.postgres.sql and register the file in main.root.xml.
+Each changeset creates a simple finance-themed table (e.g. payments, invoices, ledger_entries, fx_rates, audit_logs).
+
+Apply these rules:
+- labels: finance
+- contexts: dev
+- Vary column types across changesets (varchar, numeric, timestamp, boolean, UUID)
+
+Introduce these mistakes across the changesets. Do not annotate or flag them:
+- 10-15 changesets with no rollback defined (triggers RollbackRequired)
+- 3-4 changesets with no comment (triggers ChangesetCommentCheck)
+- 10-11 changesets missing a context (triggers ChangesetContextCheck)
+- 10-11 changesets missing a label (triggers ChangesetLabelCheck)
+- 1-2 changesets containing a DROP TABLE statement (triggers ChangeDropTableWarn)
+- 1-2 changesets containing a DROP COLUMN statement (triggers ChangeDropColumnWarn)
+- 1-2 changesets containing a TRUNCATE statement (triggers ChangeTruncateTableWarn)
+- 1-2 changesets with runInTransaction set to false (triggers CheckRunInTransactionValue)
+- 1-2 changesets with a SELECT * in a view or inline SQL (triggers SqlSelectStarWarn)
+- 1-2 changesets with a GRANT statement (triggers SqlGrantWarn)
+- 1-2 changesets with a REVOKE statement (triggers SqlRevokeWarn)
+- 1-2 changesets with a USE DATABASE statement (triggers WarnOnUseDatabase)
+- 1-2 changesets with a table exceeding 20 columns (triggers TableColumnLimit)
+- 1-2 changesets modifying a column data type (triggers ModifyDataTypeWarn)
+
+Do not flag or annotate the mistakes. Leave them to be discovered.
