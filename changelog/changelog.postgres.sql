@@ -36,8 +36,3 @@ ALTER TABLE transactions
   FOREIGN KEY (account_id) REFERENCES accounts(account_id);
 --rollback ALTER TABLE transactions DROP CONSTRAINT fk_transactions_account_id;
 
-
---changeset benriley:DropSensitiveColumn labels:V1.0 context:dev,test
---comment Remove legacy status field
-ALTER TABLE accounts DROP COLUMN status;
---rollback ALTER TABLE accounts ADD COLUMN status varchar(50) NOT NULL DEFAULT 'active';
