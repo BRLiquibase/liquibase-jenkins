@@ -14,7 +14,6 @@ CREATE TABLE transactions (
 );
 --rollback DROP TABLE transactions;
 
-
 --changeset benriley:CreateAccountsTable labels:V1.0 context:dev,test
 --comment Create accounts table
 CREATE TABLE accounts (
