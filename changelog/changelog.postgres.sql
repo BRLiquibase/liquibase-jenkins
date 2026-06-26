@@ -14,6 +14,7 @@ CREATE TABLE transactions (
 );
 --rollback DROP TABLE transactions;
 
+
 --changeset benriley:CreateAccountsTable labels:V1.0 context:dev,test
 --comment Create accounts table
 CREATE TABLE accounts (
@@ -35,3 +36,15 @@ ALTER TABLE transactions
   FOREIGN KEY (account_id) REFERENCES accounts(account_id);
 --rollback ALTER TABLE transactions DROP CONSTRAINT fk_transactions_account_id;
 
+--changeset benriley:Createtable labels:V1.0 context:dev,test
+
+create table audit_log (
+  log_id UUID NOT NULL PRIMARY KEY,
+  entity_name varchar(100) NOT NULL,
+  entity_id UUID NOT NULL,
+  action varchar(50) NOT NULL,
+  performed_by varchar(100) NOT NULL,
+  performed_at timestamp NOT NULL DEFAULT now(),
+  details text
+);
+--rollback DROP TABLE audit_log;
