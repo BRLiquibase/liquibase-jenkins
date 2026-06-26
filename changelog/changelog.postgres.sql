@@ -37,7 +37,7 @@ ALTER TABLE transactions
 --rollback ALTER TABLE transactions DROP CONSTRAINT fk_transactions_account_id;
 
 --changeset benriley:Createtable labels:V1.0 context:dev,test
-
+--comment Link transactions to accounts
 create table audit_log (
   log_id UUID NOT NULL PRIMARY KEY,
   entity_name varchar(100) NOT NULL,
