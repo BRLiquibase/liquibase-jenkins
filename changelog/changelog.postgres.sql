@@ -47,7 +47,7 @@ create table audit_log (
   performed_at timestamp NOT NULL DEFAULT now(),
   details text
 );
- DROP TABLE audit_log;
+--rollback DROP TABLE audit_log;
 
 --changeset benriley:CreateCustomerAccountsTable labels:V1.0 context:dev,test
 --comment Create customer accounts table for SAP HANA
