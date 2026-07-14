@@ -47,4 +47,22 @@ create table audit_log (
   performed_at timestamp NOT NULL DEFAULT now(),
   details text
 );
---rollback DROP TABLE audit_log;
+ DROP TABLE audit_log;
+
+--changeset benriley:CreateCustomerAccountsTable labels:V1.0 context:dev,test
+--comment Create customer accounts table for SAP HANA
+CREATE COLUMN TABLE customer_accounts (
+  customer_account_id BIGINT NOT NULL PRIMARY KEY,
+  customer_number NVARCHAR(50) NOT NULL,
+  account_name NVARCHAR(200) NOT NULL,
+  account_type NVARCHAR(50) NOT NULL,
+  opening_balance DECIMAL(15,2) NOT NULL DEFAULT 0.00,
+  currency_code NVARCHAR(3) NOT NULL DEFAULT 'USD',
+  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  status NVARCHAR(20) NOT NULL DEFAULT 'ACTIVE',
+  is_active BOOLEAN NOT NULL DEFAULT TRUE,
+  CONSTRAINT uk_customer_accounts_customer_number UNIQUE (customer_number)
+);
+--rollback DROP TABLE customer_accounts;
+
+
