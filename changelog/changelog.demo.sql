@@ -14,3 +14,19 @@ CREATE TABLE yeti (
   updated_at timestamp NOT NULL DEFAULT now()
 );
 --rollback DROP TABLE yeti;
+
+--changeset benriley:CreateTaxReturnTable labels:demo context:dev,test
+--comment Create PostgreSQL demo table tax_return
+CREATE TABLE tax_return (
+  tax_return_id UUID NOT NULL PRIMARY KEY,
+  taxpayer_name varchar(200) NOT NULL,
+  tax_year integer NOT NULL,
+  filing_status varchar(50) NOT NULL,
+  gross_income numeric(12,2) NOT NULL,
+  taxable_income numeric(12,2) NOT NULL,
+  tax_due numeric(12,2) NOT NULL,
+  filing_date date NOT NULL,
+  created_at timestamp NOT NULL DEFAULT now()
+);
+--rollback DROP TABLE tax_return;
+

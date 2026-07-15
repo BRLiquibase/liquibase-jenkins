@@ -14,7 +14,6 @@ CREATE TABLE transactions (
 );
 --rollback DROP TABLE transactions;
 
-
 --changeset benriley:CreateAccountsTable labels:V1.0 context:dev,test
 --comment Create accounts table
 CREATE TABLE accounts (
@@ -27,7 +26,6 @@ CREATE TABLE accounts (
   status varchar(50) NOT NULL DEFAULT 'active'
 );
 --rollback DROP TABLE accounts;
-
 
 --changeset benriley:AddForeignKeyTransactionsAccounts labels:V1.0 context:dev,test
 --comment Link transactions to accounts
@@ -47,19 +45,5 @@ create table audit_log (
   performed_at timestamp NOT NULL DEFAULT now(),
   details text
 );
---rollback DROP TABLE audit_log;
-
-
---changeset benriley:CreateTaxTable labels:demo context:dev,test
---comment Create PostgreSQL demo table tax
-CREATE TABLE tax (
-  tax_id UUID NOT NULL PRIMARY KEY,
-  tax_name varchar(100) NOT NULL,
-  tax_rate numeric(5,2) NOT NULL,
-  jurisdiction varchar(100) NOT NULL,
-  effective_from date NOT NULL,
-  effective_to date,
-  created_at timestamp NOT NULL DEFAULT now()
-);
---rollback DROP TABLE tax;
+DROP TABLE audit_log;
 
