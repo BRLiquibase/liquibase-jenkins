@@ -45,5 +45,5 @@ create table audit_log (
   performed_at timestamp NOT NULL DEFAULT now(),
   details text
 );
-DROP TABLE audit_log;
+--rollback DROP TABLE audit_log;
 
