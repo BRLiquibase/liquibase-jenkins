@@ -28,5 +28,17 @@ CREATE TABLE tax_return (
   filing_date date NOT NULL,
   created_at timestamp NOT NULL DEFAULT now()
 );
---rollback DROP TABLE tax_return;
+DROP TABLE tax_return;
 
+--changeset benriley:CreateFilesTable labels:demo context:dev,test
+--comment Create PostgreSQL demo table files
+CREATE TABLE files (
+  file_id UUID NOT NULL PRIMARY KEY,
+  file_name varchar(255) NOT NULL,
+  file_path varchar(500) NOT NULL,
+  file_size_bytes bigint,
+  content_type varchar(100),
+  uploaded_at timestamp NOT NULL DEFAULT now(),
+  is_active boolean NOT NULL DEFAULT true
+);
+--rollback DROP TABLE files;
