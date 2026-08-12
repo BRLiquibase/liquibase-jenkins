@@ -30,7 +30,7 @@ CREATE TABLE tax_return (
 );
 --rollback DROP TABLE tax_return;
 
---changeset benriley:CreateFilesTable labels:demo context:dev,test
+--changeset benriley:CreateFilesTable labels:demo context:dev,test,prod
 --comment Create PostgreSQL demo table files
 CREATE TABLE files (
   file_id UUID NOT NULL PRIMARY KEY,
@@ -41,4 +41,18 @@ CREATE TABLE files (
   uploaded_at timestamp NOT NULL DEFAULT now(),
   is_active boolean NOT NULL DEFAULT true
 );
---rollback DROP TABLE files;
+
+DROP TABLE files;
+
+--changeset benriley:CreateRickTable labels:demo context:dev,test
+--comment Create PostgreSQL demo table rick
+CREATE TABLE rick (
+  rick_id UUID NOT NULL PRIMARY KEY,
+  name varchar(100) NOT NULL,
+  description text,
+  created_at timestamp NOT NULL DEFAULT now(),
+  updated_at timestamp NOT NULL DEFAULT now()
+);
+--rollback DROP TABLE rick;
+
+
