@@ -10,7 +10,8 @@ pipeline {
         LIQUIBASE_INSIGHTS_API_URL               = 'https://insights-demo.liquibase.net/api/operations/ingest'
         LIQUIBASE_INSIGHTS_AUTH_TOKEN            = credentials('insights-api-key')
         LIQUIBASE_INSIGHTS_CONNECTION_IDENTIFIER = 'riley-jenkins'
-        LIQUIBASE_INSIGHTS_DEBUG=true
+        LIQUIBASE_INSIGHTS_CHANGELOG_IDENTIFIER =  'my-jenkins-changelog'
+        
     }
 
     stages {
