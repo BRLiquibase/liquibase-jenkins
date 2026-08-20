@@ -28,7 +28,7 @@ CREATE TABLE tax_return (
   filing_date date NOT NULL,
   created_at timestamp NOT NULL DEFAULT now()
 );
-DROP TABLE tax_return;
+--rollback DROP TABLE tax_return;
 
 --changeset benriley:CreateFilesTable labels:demo context:dev,test,prod
 --comment Create PostgreSQL demo table files
