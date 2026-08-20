@@ -42,17 +42,31 @@ CREATE TABLE files (
   is_active boolean NOT NULL DEFAULT true
 );
 
---rollback DROP TABLE files;
+ DROP TABLE files;
 
---changeset benriley:CreateRickTable labels:demo context:dev,test
+--changeset benriley:CreateNiceTable labels:demo context:dev,test
 --comment Create PostgreSQL demo table rick
-CREATE TABLE rick (
-  rick_id UUID NOT NULL PRIMARY KEY,
+CREATE TABLE NICE (
+  NICE_ID UUID NOT NULL PRIMARY KEY,
   name varchar(100) NOT NULL,
   description text,
   created_at timestamp NOT NULL DEFAULT now(),
   updated_at timestamp NOT NULL DEFAULT now()
 );
---rollback DROP TABLE rick;
+--rollback DROP TABLE NICE;
+
+--changeset benriley:CreateJenkinsTable labels:demo context:dev,test
+CREATE TABLE jenkins (
+  jenkins_id UUID NOT NULL PRIMARY KEY,
+  job_name varchar(200) NOT NULL,
+  build_number integer NOT NULL,
+  status varchar(50) NOT NULL,
+  triggered_by varchar(100),
+  triggered_at timestamp NOT NULL DEFAULT now(),
+  completed_at timestamp,
+  created_at timestamp NOT NULL DEFAULT now()
+);
+--rollback DROP TABLE jenkins;
+
 
 

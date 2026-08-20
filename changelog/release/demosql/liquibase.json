@@ -1,0 +1,1904 @@
+[2026-08-19 13:24:19] INFO [liquibase.ui] ####################################################
+##   _     _             _ _                      ##
+##  | |   (_)           (_) |                     ##
+##  | |    _  __ _ _   _ _| |__   __ _ ___  ___   ##
+##  | |   | |/ _` | | | | | '_ \ / _` / __|/ _ \  ##
+##  | |___| | (_| | |_| | | |_) | (_| \__ \  __/  ##
+##  \_____/_|\__, |\__,_|_|_.__/ \__,_|___/\___|  ##
+##              | |                               ##
+##              |_|                               ##
+##                                                ## 
+##  Get documentation at docs.liquibase.com       ##
+##  Get certified courses at learn.liquibase.com  ## 
+##                                                ##
+####################################################
+Starting Liquibase Secure at 13:24:19 using Java 25.0.1 (version 5.2.1 #63 built at 2026-07-08 14:39:13 UTC)
+[2026-08-19 13:24:19] INFO [liquibase.ui] Liquibase Secure Version: 5.2.1
+[2026-08-19 13:24:19] INFO [liquibase.ui] Liquibase Secure license issued to Liquibase_SA, valid until Thu Dec 31 00:00:00 GMT 2026
+[2026-08-19 13:24:19] INFO [liquibase.integration] Starting command execution.
+[2026-08-19 13:24:19] WARNING [liquibase.configuration] Potentially ignored key(s) in file exists at path liquibase.properties
+ - 'export'
+ - 'java'
+ - 'liquibase.dbclhistory.file'
+[2026-08-19 13:24:20] INFO [liquibase.database] Set default schema name to public
+[2026-08-19 13:24:20] INFO [liquibase.command] Logging exception.
+[2026-08-19 13:24:20] INFO [liquibase.ui] ERROR: Exception Details
+[2026-08-19 13:24:20] INFO [liquibase.ui] ERROR: Exception Primary Class:  ChangeLogParseException
+[2026-08-19 13:24:20] INFO [liquibase.ui] ERROR: Exception Primary Reason:  The file changelog/main.root.xml was not found in the configured search path:
+    - /Users/benriley/Documents/GitHub/liquibase-jenkins/changelog/release/demosql
+More locations can be added with the 'searchPath' parameter.
+[2026-08-19 13:24:20] INFO [liquibase.ui] ERROR: Exception Primary Source:  5.2.1
+[2026-08-19 13:24:20] INFO [liquibase.command] Command execution complete
+[2026-08-19 13:24:20] SEVERE [liquibase.integration] The file changelog/main.root.xml was not found in the configured search path:
+    - /Users/benriley/Documents/GitHub/liquibase-jenkins/changelog/release/demosql
+More locations can be added with the 'searchPath' parameter.
+liquibase.exception.CommandExecutionException: liquibase.exception.ChangeLogParseException: The file changelog/main.root.xml was not found in the configured search path:
+    - /Users/benriley/Documents/GitHub/liquibase-jenkins/changelog/release/demosql
+More locations can be added with the 'searchPath' parameter.
+	at liquibase.command.CommandScope.lambda$execute$5(SourceFile:402)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:239)
+	at liquibase.command.CommandScope.execute(SourceFile:290)
+	at liquibase.integration.commandline.CommandRunner.call(SourceFile:51)
+	at liquibase.integration.commandline.CommandRunner.call(SourceFile:21)
+	at picocli.CommandLine.executeUserObject(CommandLine.java:2031)
+	at picocli.CommandLine.access$1500(CommandLine.java:148)
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2469)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2461)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2423)
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2277)
+	at picocli.CommandLine$RunLast.execute(CommandLine.java:2425)
+	at picocli.CommandLine.execute(CommandLine.java:2174)
+	at liquibase.integration.commandline.LiquibaseCommandLine.lambda$execute$2(SourceFile:510)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:239)
+	at liquibase.integration.commandline.LiquibaseCommandLine.lambda$execute$3(SourceFile:485)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:239)
+	at liquibase.integration.commandline.LiquibaseCommandLine.execute(SourceFile:482)
+	at liquibase.integration.commandline.LiquibaseCommandLine.main(SourceFile:117)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at liquibase.integration.commandline.LiquibaseLauncher.main(SourceFile:120)
+Caused by: liquibase.exception.ChangeLogParseException: The file changelog/main.root.xml was not found in the configured search path:
+    - /Users/benriley/Documents/GitHub/liquibase-jenkins/changelog/release/demosql
+More locations can be added with the 'searchPath' parameter.
+	at liquibase.parser.core.xml.XMLChangeLogSAXParser.parseToNode(SourceFile:142)
+	at liquibase.parser.core.xml.AbstractChangeLogParser.parse(SourceFile:15)
+	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.lambda$getDatabaseChangeLog$0(SourceFile:185)
+	at liquibase.Scope.lambda$child$0(SourceFile:254)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:253)
+	at liquibase.Scope.child(SourceFile:232)
+	at liquibase.Scope.child(SourceFile:320)
+	at liquibase.Scope.child(SourceFile:324)
+	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.getDatabaseChangeLog(SourceFile:180)
+	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.run(SourceFile:97)
+	at liquibase.command.CommandScope.lambda$execute$5(SourceFile:346)
+	... 24 more
+
+[2026-08-19 13:24:20] INFO [liquibase.ui] Logs saved to liquibase.json
+[2026-08-19 13:24:36] INFO [liquibase.ui] ####################################################
+##   _     _             _ _                      ##
+##  | |   (_)           (_) |                     ##
+##  | |    _  __ _ _   _ _| |__   __ _ ___  ___   ##
+##  | |   | |/ _` | | | | | '_ \ / _` / __|/ _ \  ##
+##  | |___| | (_| | |_| | | |_) | (_| \__ \  __/  ##
+##  \_____/_|\__, |\__,_|_|_.__/ \__,_|___/\___|  ##
+##              | |                               ##
+##              |_|                               ##
+##                                                ## 
+##  Get documentation at docs.liquibase.com       ##
+##  Get certified courses at learn.liquibase.com  ## 
+##                                                ##
+####################################################
+Starting Liquibase Secure at 13:24:36 using Java 25.0.1 (version 5.2.1 #63 built at 2026-07-08 14:39:13 UTC)
+[2026-08-19 13:24:36] INFO [liquibase.ui] Liquibase Secure Version: 5.2.1
+[2026-08-19 13:24:36] INFO [liquibase.ui] Liquibase Secure license issued to Liquibase_SA, valid until Thu Dec 31 00:00:00 GMT 2026
+[2026-08-19 13:24:36] INFO [liquibase.integration] Starting command execution.
+[2026-08-19 13:24:36] WARNING [liquibase.configuration] Potentially ignored key(s) in file exists at path liquibase.properties
+ - 'export'
+ - 'java'
+ - 'liquibase.dbclhistory.file'
+[2026-08-19 13:24:37] INFO [liquibase.database] Set default schema name to public
+[2026-08-19 13:24:37] INFO [liquibase.command] Logging exception.
+[2026-08-19 13:24:37] INFO [liquibase.ui] ERROR: Exception Details
+[2026-08-19 13:24:37] INFO [liquibase.ui] ERROR: Exception Primary Class:  ChangeLogParseException
+[2026-08-19 13:24:37] INFO [liquibase.ui] ERROR: Exception Primary Reason:  The file release/demosql/demo.sql was not found in the configured search path:
+    - /Users/benriley/Documents/GitHub/liquibase-jenkins/changelog/release/demosql
+More locations can be added with the 'searchPath' parameter.
+[2026-08-19 13:24:37] INFO [liquibase.ui] ERROR: Exception Primary Source:  5.2.1
+[2026-08-19 13:24:37] INFO [liquibase.command] Command execution complete
+[2026-08-19 13:24:38] SEVERE [liquibase.integration] The file release/demosql/demo.sql was not found in the configured search path:
+    - /Users/benriley/Documents/GitHub/liquibase-jenkins/changelog/release/demosql
+More locations can be added with the 'searchPath' parameter.
+liquibase.exception.CommandExecutionException: liquibase.exception.ChangeLogParseException: liquibase.exception.SetupException: The file release/demosql/demo.sql was not found in the configured search path:
+    - /Users/benriley/Documents/GitHub/liquibase-jenkins/changelog/release/demosql
+More locations can be added with the 'searchPath' parameter.
+	at liquibase.command.CommandScope.lambda$execute$5(SourceFile:402)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:239)
+	at liquibase.command.CommandScope.execute(SourceFile:290)
+	at liquibase.integration.commandline.CommandRunner.call(SourceFile:51)
+	at liquibase.integration.commandline.CommandRunner.call(SourceFile:21)
+	at picocli.CommandLine.executeUserObject(CommandLine.java:2031)
+	at picocli.CommandLine.access$1500(CommandLine.java:148)
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2469)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2461)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2423)
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2277)
+	at picocli.CommandLine$RunLast.execute(CommandLine.java:2425)
+	at picocli.CommandLine.execute(CommandLine.java:2174)
+	at liquibase.integration.commandline.LiquibaseCommandLine.lambda$execute$2(SourceFile:510)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:239)
+	at liquibase.integration.commandline.LiquibaseCommandLine.lambda$execute$3(SourceFile:485)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:239)
+	at liquibase.integration.commandline.LiquibaseCommandLine.execute(SourceFile:482)
+	at liquibase.integration.commandline.LiquibaseCommandLine.main(SourceFile:117)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at liquibase.integration.commandline.LiquibaseLauncher.main(SourceFile:120)
+Caused by: liquibase.exception.ChangeLogParseException: liquibase.exception.SetupException: The file release/demosql/demo.sql was not found in the configured search path:
+    - /Users/benriley/Documents/GitHub/liquibase-jenkins/changelog/release/demosql
+More locations can be added with the 'searchPath' parameter.
+	at liquibase.parser.core.xml.AbstractChangeLogParser.parse(SourceFile:25)
+	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.lambda$getDatabaseChangeLog$0(SourceFile:185)
+	at liquibase.Scope.lambda$child$0(SourceFile:254)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:253)
+	at liquibase.Scope.child(SourceFile:232)
+	at liquibase.Scope.child(SourceFile:320)
+	at liquibase.Scope.child(SourceFile:324)
+	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.getDatabaseChangeLog(SourceFile:180)
+	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.run(SourceFile:97)
+	at liquibase.command.CommandScope.lambda$execute$5(SourceFile:346)
+	... 24 more
+Caused by: liquibase.exception.SetupException: The file release/demosql/demo.sql was not found in the configured search path:
+    - /Users/benriley/Documents/GitHub/liquibase-jenkins/changelog/release/demosql
+More locations can be added with the 'searchPath' parameter.
+	at liquibase.changelog.DatabaseChangeLog.handleInclude(SourceFile:716)
+	at liquibase.changelog.DatabaseChangeLog.handleChildNodeHelper(SourceFile:486)
+	at liquibase.changelog.DatabaseChangeLog.handleChildNode(SourceFile:470)
+	at liquibase.changelog.DatabaseChangeLog.load(SourceFile:437)
+	at liquibase.parser.core.xml.AbstractChangeLogParser.parse(SourceFile:23)
+	... 34 more
+Caused by: liquibase.exception.LiquibaseException: The file release/demosql/demo.sql was not found in the configured search path:
+    - /Users/benriley/Documents/GitHub/liquibase-jenkins/changelog/release/demosql
+More locations can be added with the 'searchPath' parameter.
+	at liquibase.changelog.DatabaseChangeLog.include(SourceFile:1206)
+	at liquibase.changelog.DatabaseChangeLog.handleInclude(SourceFile:705)
+	... 38 more
+Caused by: liquibase.exception.ChangeLogParseException: The file release/demosql/demo.sql was not found in the configured search path:
+    - /Users/benriley/Documents/GitHub/liquibase-jenkins/changelog/release/demosql
+More locations can be added with the 'searchPath' parameter.
+	at liquibase.changelog.DatabaseChangeLog.include(SourceFile:1167)
+	... 39 more
+
+[2026-08-19 13:24:38] INFO [liquibase.ui] Logs saved to liquibase.json
+[2026-08-19 13:25:04] INFO [liquibase.ui] ####################################################
+##   _     _             _ _                      ##
+##  | |   (_)           (_) |                     ##
+##  | |    _  __ _ _   _ _| |__   __ _ ___  ___   ##
+##  | |   | |/ _` | | | | | '_ \ / _` / __|/ _ \  ##
+##  | |___| | (_| | |_| | | |_) | (_| \__ \  __/  ##
+##  \_____/_|\__, |\__,_|_|_.__/ \__,_|___/\___|  ##
+##              | |                               ##
+##              |_|                               ##
+##                                                ## 
+##  Get documentation at docs.liquibase.com       ##
+##  Get certified courses at learn.liquibase.com  ## 
+##                                                ##
+####################################################
+Starting Liquibase Secure at 13:25:04 using Java 25.0.1 (version 5.2.1 #63 built at 2026-07-08 14:39:13 UTC)
+[2026-08-19 13:25:04] INFO [liquibase.ui] Liquibase Secure Version: 5.2.1
+[2026-08-19 13:25:04] INFO [liquibase.ui] Liquibase Secure license issued to Liquibase_SA, valid until Thu Dec 31 00:00:00 GMT 2026
+[2026-08-19 13:25:04] INFO [liquibase.integration] Starting command execution.
+[2026-08-19 13:25:05] WARNING [liquibase.configuration] Potentially ignored key(s) in file exists at path liquibase.properties
+ - 'export'
+ - 'java'
+ - 'liquibase.dbclhistory.file'
+[2026-08-19 13:25:05] INFO [liquibase.database] Set default schema name to public
+[2026-08-19 13:25:05] INFO [liquibase.changelog] Reading from public.databasechangelog
+[2026-08-19 13:25:06] INFO [liquibase.command] Command execution complete
+[2026-08-19 13:25:06] INFO [liquibase.ui] Logs saved to liquibase.json
+[2026-08-19 13:25:06] INFO [liquibase.ui] Liquibase command 'status' was executed successfully.
+[2026-08-19 13:25:36] INFO [liquibase.ui] ####################################################
+##   _     _             _ _                      ##
+##  | |   (_)           (_) |                     ##
+##  | |    _  __ _ _   _ _| |__   __ _ ___  ___   ##
+##  | |   | |/ _` | | | | | '_ \ / _` / __|/ _ \  ##
+##  | |___| | (_| | |_| | | |_) | (_| \__ \  __/  ##
+##  \_____/_|\__, |\__,_|_|_.__/ \__,_|___/\___|  ##
+##              | |                               ##
+##              |_|                               ##
+##                                                ## 
+##  Get documentation at docs.liquibase.com       ##
+##  Get certified courses at learn.liquibase.com  ## 
+##                                                ##
+####################################################
+Starting Liquibase Secure at 13:25:36 using Java 25.0.1 (version 5.2.1 #63 built at 2026-07-08 14:39:13 UTC)
+[2026-08-19 13:25:36] INFO [liquibase.ui] Liquibase Secure Version: 5.2.1
+[2026-08-19 13:25:36] INFO [liquibase.ui] Liquibase Secure license issued to Liquibase_SA, valid until Thu Dec 31 00:00:00 GMT 2026
+[2026-08-19 13:25:36] INFO [liquibase.integration] Starting command execution.
+[2026-08-19 13:25:36] WARNING [liquibase.configuration] Potentially ignored key(s) in file exists at path liquibase.properties
+ - 'export'
+ - 'java'
+ - 'liquibase.dbclhistory.file'
+[2026-08-19 13:25:37] INFO [liquibase.database] Set default schema name to public
+[2026-08-19 13:25:37] INFO [liquibase.changelog] Reading from public.databasechangelog
+[2026-08-19 13:25:37] INFO [liquibase.lockservice] Successfully acquired change log lock
+[2026-08-19 13:25:37] INFO [liquibase.command] Using deploymentId: 7142335254
+[2026-08-19 13:25:37] INFO [liquibase.changelog] Reading from public.databasechangelog
+[2026-08-19 13:25:37] INFO [liquibase.ui] Running Changeset: null.sql::105-add-column::jsmith
+[2026-08-19 13:25:37] SEVERE [liquibase.changelog] ChangeSet null.sql::105-add-column::jsmith encountered an exception.
+liquibase.exception.DatabaseException: ERROR: relation "accounts" does not exist [Failed SQL: (0) ALTER TABLE accounts ADD COLUMN risk_tier VARCHAR(10)]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(SourceFile:560)
+	at liquibase.executor.jvm.JdbcExecutor.execute(SourceFile:85)
+	at liquibase.executor.jvm.JdbcExecutor.execute(SourceFile:188)
+	at liquibase.executor.AbstractExecutor.execute(SourceFile:148)
+	at liquibase.database.AbstractJdbcDatabase.executeStatements(SourceFile:1188)
+	at liquibase.changelog.ChangeSet.execute(SourceFile:906)
+	at liquibase.changelog.visitor.UpdateVisitor.executeAcceptedChange(SourceFile:127)
+	at liquibase.changelog.visitor.UpdateVisitor.visit(SourceFile:71)
+	at liquibase.changelog.ChangeLogIterator.lambda$run$0(SourceFile:133)
+	at liquibase.Scope.lambda$child$0(SourceFile:254)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:253)
+	at liquibase.Scope.child(SourceFile:232)
+	at liquibase.changelog.ChangeLogIterator.lambda$run$1(SourceFile:122)
+	at liquibase.Scope.lambda$child$0(SourceFile:254)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:253)
+	at liquibase.Scope.child(SourceFile:232)
+	at liquibase.Scope.child(SourceFile:320)
+	at liquibase.Scope.child(SourceFile:324)
+	at liquibase.changelog.ChangeLogIterator.run(SourceFile:91)
+	at liquibase.command.core.AbstractUpdateCommandStep.lambda$run$1(SourceFile:126)
+	at liquibase.Scope.lambda$child$0(SourceFile:254)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:253)
+	at liquibase.Scope.child(SourceFile:232)
+	at liquibase.command.core.AbstractUpdateCommandStep.run(SourceFile:124)
+	at liquibase.command.core.UpdateCommandStep.run(SourceFile:100)
+	at com.datical.liquibase.ext.command.ProUpdateCommandStep.run(SourceFile:44)
+	at liquibase.command.CommandScope.lambda$execute$5(SourceFile:346)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:239)
+	at liquibase.command.CommandScope.execute(SourceFile:290)
+	at liquibase.integration.commandline.CommandRunner.call(SourceFile:51)
+	at liquibase.integration.commandline.CommandRunner.call(SourceFile:21)
+	at picocli.CommandLine.executeUserObject(CommandLine.java:2031)
+	at picocli.CommandLine.access$1500(CommandLine.java:148)
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2469)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2461)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2423)
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2277)
+	at picocli.CommandLine$RunLast.execute(CommandLine.java:2425)
+	at picocli.CommandLine.execute(CommandLine.java:2174)
+	at liquibase.integration.commandline.LiquibaseCommandLine.lambda$execute$2(SourceFile:510)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:239)
+	at liquibase.integration.commandline.LiquibaseCommandLine.lambda$execute$3(SourceFile:485)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:239)
+	at liquibase.integration.commandline.LiquibaseCommandLine.execute(SourceFile:482)
+	at liquibase.integration.commandline.LiquibaseCommandLine.main(SourceFile:117)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at liquibase.integration.commandline.LiquibaseLauncher.main(SourceFile:120)
+Caused by: org.postgresql.util.PSQLException: ERROR: relation "accounts" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2904)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2589)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:431)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:534)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:437)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:359)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:344)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:320)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:315)
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(SourceFile:552)
+	... 53 more
+
+[2026-08-19 13:25:37] INFO [liquibase.sqlgenerator] Creating database history table with name: public.databasechangeloghistory
+[2026-08-19 13:25:37] INFO [liquibase.ui] INFO: A new table 'databasechangeloghistory' was created in 'postgres.public' to track database changing Liquibase operations. The Pro property 'liquibase.dbclhistory.enabled=true' was configured on the CLI, or as Environment Variable or defaults file property, etc. To pause collecting history, set to 'false'. Learn more at https://docs.liquibase.com/DATABASECHANGELOGHISTORY
+[2026-08-19 13:25:37] INFO [liquibase.util] UPDATE SUMMARY
+[2026-08-19 13:25:37] INFO [liquibase.util] Run:                          0
+[2026-08-19 13:25:37] INFO [liquibase.util] Previously run:               0
+[2026-08-19 13:25:37] INFO [liquibase.util] Filtered out:                 0
+[2026-08-19 13:25:37] INFO [liquibase.util] Failed deployment:            3
+[2026-08-19 13:25:37] INFO [liquibase.util] -------------------------------
+[2026-08-19 13:25:37] INFO [liquibase.util] Total change sets:            3
+[2026-08-19 13:25:37] INFO [liquibase.util] Update summary generated
+[2026-08-19 13:25:37] INFO [liquibase.command] Update command encountered an exception.
+[2026-08-19 13:25:37] INFO [liquibase.lockservice] Successfully released change log lock
+[2026-08-19 13:25:37] WARNING [liquibase.configuration] Potentially ignored key(s) in file exists at path liquibase.properties
+ - 'changeLogFile'
+ - 'export'
+ - 'java'
+ - 'liquibase.dbclhistory.file'
+[2026-08-19 13:25:37] INFO [liquibase.command] Logging exception.
+[2026-08-19 13:25:37] INFO [liquibase.ui] ERROR: Exception Details
+[2026-08-19 13:25:37] INFO [liquibase.ui] ERROR: Exception Primary Class:  PSQLException
+[2026-08-19 13:25:37] INFO [liquibase.ui] ERROR: Exception Primary Reason:  ERROR: relation "accounts" does not exist
+[2026-08-19 13:25:37] INFO [liquibase.ui] ERROR: Exception Primary Source:  PostgreSQL 18.6 (Debian 18.6-1.pgdg13+2)
+[2026-08-19 13:25:37] INFO [liquibase.command] Command execution complete
+[2026-08-19 13:25:37] INFO [liquibase] Secure Update Report created!
+* File '/Users/benriley/Documents/GitHub/liquibase-jenkins/changelog/release/demosql/Update-report-19-Aug-2026-132537.html' was created.
+** To suppress Update reports add command arg 'liquibase update --report-enabled=false'
+** To suppress all Secure Reports set liquibase.reports.enabled=false, or LIQUIBASE_REPORTS_ENABLED=false
+[2026-08-19 13:25:37] INFO [liquibase.ui] Secure Update Report created!
+* File '/Users/benriley/Documents/GitHub/liquibase-jenkins/changelog/release/demosql/Update-report-19-Aug-2026-132537.html' was created.
+** To suppress Update reports add command arg 'liquibase update --report-enabled=false'
+** To suppress all Secure Reports set liquibase.reports.enabled=false, or LIQUIBASE_REPORTS_ENABLED=false
+[2026-08-19 13:25:38] INFO [liquibase.command] Logging exception.
+[2026-08-19 13:25:38] INFO [liquibase.ui] ERROR: Exception Details
+[2026-08-19 13:25:38] INFO [liquibase.ui] ERROR: Exception Primary Class:  PSQLException
+[2026-08-19 13:25:38] INFO [liquibase.ui] ERROR: Exception Primary Reason:  ERROR: relation "accounts" does not exist
+[2026-08-19 13:25:38] INFO [liquibase.ui] ERROR: Exception Primary Source:  PostgreSQL 18.6 (Debian 18.6-1.pgdg13+2)
+[2026-08-19 13:25:38] INFO [liquibase.command] Command execution complete
+[2026-08-19 13:25:39] SEVERE [liquibase.integration] Migration failed for changeset null.sql::105-add-column::jsmith:
+     Reason: liquibase.exception.DatabaseException: ERROR: relation "accounts" does not exist [Failed SQL: (0) ALTER TABLE accounts ADD COLUMN risk_tier VARCHAR(10)]
+liquibase.exception.CommandExecutionException: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset null.sql::105-add-column::jsmith:
+     Reason: liquibase.exception.DatabaseException: ERROR: relation "accounts" does not exist [Failed SQL: (0) ALTER TABLE accounts ADD COLUMN risk_tier VARCHAR(10)]
+	at liquibase.command.CommandScope.lambda$execute$5(SourceFile:402)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:239)
+	at liquibase.command.CommandScope.execute(SourceFile:290)
+	at com.datical.liquibase.ext.command.InternalRollbackOnErrorCommandStep.executeCommand(SourceFile:411)
+	at com.datical.liquibase.ext.command.ProUpdateCommandStep.run(SourceFile:60)
+	at liquibase.command.CommandScope.lambda$execute$5(SourceFile:346)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:239)
+	at liquibase.command.CommandScope.execute(SourceFile:290)
+	at liquibase.integration.commandline.CommandRunner.call(SourceFile:51)
+	at liquibase.integration.commandline.CommandRunner.call(SourceFile:21)
+	at picocli.CommandLine.executeUserObject(CommandLine.java:2031)
+	at picocli.CommandLine.access$1500(CommandLine.java:148)
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2469)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2461)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2423)
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2277)
+	at picocli.CommandLine$RunLast.execute(CommandLine.java:2425)
+	at picocli.CommandLine.execute(CommandLine.java:2174)
+	at liquibase.integration.commandline.LiquibaseCommandLine.lambda$execute$2(SourceFile:510)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:239)
+	at liquibase.integration.commandline.LiquibaseCommandLine.lambda$execute$3(SourceFile:485)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:239)
+	at liquibase.integration.commandline.LiquibaseCommandLine.execute(SourceFile:482)
+	at liquibase.integration.commandline.LiquibaseCommandLine.main(SourceFile:117)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at liquibase.integration.commandline.LiquibaseLauncher.main(SourceFile:120)
+Caused by: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset null.sql::105-add-column::jsmith:
+     Reason: liquibase.exception.DatabaseException: ERROR: relation "accounts" does not exist [Failed SQL: (0) ALTER TABLE accounts ADD COLUMN risk_tier VARCHAR(10)]
+	at liquibase.changelog.ChangeLogIterator.run(SourceFile:155)
+	at liquibase.command.core.AbstractUpdateCommandStep.lambda$run$1(SourceFile:126)
+	at liquibase.Scope.lambda$child$0(SourceFile:254)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:253)
+	at liquibase.Scope.child(SourceFile:232)
+	at liquibase.command.core.AbstractUpdateCommandStep.run(SourceFile:124)
+	at liquibase.command.core.UpdateCommandStep.run(SourceFile:100)
+	at com.datical.liquibase.ext.command.ProUpdateCommandStep.run(SourceFile:44)
+	... 25 more
+Caused by: liquibase.exception.MigrationFailedException: Migration failed for changeset null.sql::105-add-column::jsmith:
+     Reason: liquibase.exception.DatabaseException: ERROR: relation "accounts" does not exist [Failed SQL: (0) ALTER TABLE accounts ADD COLUMN risk_tier VARCHAR(10)]
+	at liquibase.changelog.ChangeSet.execute(SourceFile:964)
+	at liquibase.changelog.visitor.UpdateVisitor.executeAcceptedChange(SourceFile:127)
+	at liquibase.changelog.visitor.UpdateVisitor.visit(SourceFile:71)
+	at liquibase.changelog.ChangeLogIterator.lambda$run$0(SourceFile:133)
+	at liquibase.Scope.lambda$child$0(SourceFile:254)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:253)
+	at liquibase.Scope.child(SourceFile:232)
+	at liquibase.changelog.ChangeLogIterator.lambda$run$1(SourceFile:122)
+	at liquibase.Scope.lambda$child$0(SourceFile:254)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:253)
+	at liquibase.Scope.child(SourceFile:232)
+	at liquibase.Scope.child(SourceFile:320)
+	at liquibase.Scope.child(SourceFile:324)
+	at liquibase.changelog.ChangeLogIterator.run(SourceFile:91)
+	... 33 more
+Caused by: liquibase.exception.DatabaseException: ERROR: relation "accounts" does not exist [Failed SQL: (0) ALTER TABLE accounts ADD COLUMN risk_tier VARCHAR(10)]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(SourceFile:560)
+	at liquibase.executor.jvm.JdbcExecutor.execute(SourceFile:85)
+	at liquibase.executor.jvm.JdbcExecutor.execute(SourceFile:188)
+	at liquibase.executor.AbstractExecutor.execute(SourceFile:148)
+	at liquibase.database.AbstractJdbcDatabase.executeStatements(SourceFile:1188)
+	at liquibase.changelog.ChangeSet.execute(SourceFile:906)
+	... 48 more
+Caused by: org.postgresql.util.PSQLException: ERROR: relation "accounts" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2904)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2589)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:431)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:534)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:437)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:359)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:344)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:320)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:315)
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(SourceFile:552)
+	... 53 more
+
+[2026-08-19 13:25:39] INFO [liquibase.ui] Logs saved to liquibase.json
+[2026-08-19 13:28:28] INFO [liquibase.ui] ####################################################
+##   _     _             _ _                      ##
+##  | |   (_)           (_) |                     ##
+##  | |    _  __ _ _   _ _| |__   __ _ ___  ___   ##
+##  | |   | |/ _` | | | | | '_ \ / _` / __|/ _ \  ##
+##  | |___| | (_| | |_| | | |_) | (_| \__ \  __/  ##
+##  \_____/_|\__, |\__,_|_|_.__/ \__,_|___/\___|  ##
+##              | |                               ##
+##              |_|                               ##
+##                                                ## 
+##  Get documentation at docs.liquibase.com       ##
+##  Get certified courses at learn.liquibase.com  ## 
+##                                                ##
+####################################################
+Starting Liquibase Secure at 13:28:28 using Java 25.0.1 (version 5.2.1 #63 built at 2026-07-08 14:39:13 UTC)
+[2026-08-19 13:28:28] INFO [liquibase.ui] Liquibase Secure Version: 5.2.1
+[2026-08-19 13:28:28] INFO [liquibase.ui] Liquibase Secure license issued to Liquibase_SA, valid until Thu Dec 31 00:00:00 GMT 2026
+[2026-08-19 13:28:28] INFO [liquibase.integration] Starting command execution.
+[2026-08-19 13:28:28] WARNING [liquibase.configuration] Potentially ignored key(s) in file exists at path liquibase.properties
+ - 'export'
+ - 'java'
+ - 'liquibase.dbclhistory.file'
+[2026-08-19 13:28:29] INFO [liquibase.database] Set default schema name to public
+[2026-08-19 13:28:29] INFO [liquibase.changelog] Reading from public.databasechangelog
+[2026-08-19 13:28:29] INFO [liquibase.lockservice] Successfully acquired change log lock
+[2026-08-19 13:28:29] INFO [liquibase.command] Using deploymentId: 7142507336
+[2026-08-19 13:28:29] INFO [liquibase.changelog] Reading from public.databasechangelog
+[2026-08-19 13:28:29] INFO [liquibase.ui] Running Changeset: null.sql::104-create-table::jsmith
+[2026-08-19 13:28:29] INFO [liquibase.changelog] Custom SQL executed
+[2026-08-19 13:28:29] INFO [liquibase.changelog] ChangeSet null.sql::104-create-table::jsmith ran successfully in 25ms
+[2026-08-19 13:28:29] INFO [liquibase.ui] Running Changeset: null.sql::105-add-column::jsmith
+[2026-08-19 13:28:29] INFO [liquibase.changelog] Custom SQL executed
+[2026-08-19 13:28:29] INFO [liquibase.changelog] ChangeSet null.sql::105-add-column::jsmith ran successfully in 4ms
+[2026-08-19 13:28:29] INFO [liquibase.ui] Running Changeset: null.sql::106-backfill::jsmith
+[2026-08-19 13:28:29] INFO [liquibase.changelog] Custom SQL executed
+[2026-08-19 13:28:29] INFO [liquibase.changelog] ChangeSet null.sql::106-backfill::jsmith ran successfully in 3ms
+[2026-08-19 13:28:29] INFO [liquibase.ui] Running Changeset: null.sql::107-add-not-null::jsmith
+[2026-08-19 13:28:29] INFO [liquibase.changelog] Custom SQL executed
+[2026-08-19 13:28:29] INFO [liquibase.changelog] ChangeSet null.sql::107-add-not-null::jsmith ran successfully in 4ms
+[2026-08-19 13:28:29] INFO [liquibase.util] UPDATE SUMMARY
+[2026-08-19 13:28:29] INFO [liquibase.util] Run:                          4
+[2026-08-19 13:28:29] INFO [liquibase.util] Previously run:               0
+[2026-08-19 13:28:29] INFO [liquibase.util] Filtered out:                 0
+[2026-08-19 13:28:29] INFO [liquibase.util] Failed deployment:            0
+[2026-08-19 13:28:29] INFO [liquibase.util] -------------------------------
+[2026-08-19 13:28:29] INFO [liquibase.util] Total change sets:            4
+[2026-08-19 13:28:29] INFO [liquibase.util] Update summary generated
+[2026-08-19 13:28:29] INFO [liquibase.command] Update command completed successfully.
+[2026-08-19 13:28:29] INFO [liquibase.ui] Liquibase: Update has been successful. Rows affected: 0
+[2026-08-19 13:28:29] INFO [liquibase.lockservice] Successfully released change log lock
+[2026-08-19 13:28:29] INFO [liquibase] Secure Update Report created!
+* File '/Users/benriley/Documents/GitHub/liquibase-jenkins/changelog/release/demosql/Update-report-19-Aug-2026-132829.html' was created.
+** To suppress Update reports add command arg 'liquibase update --report-enabled=false'
+** To suppress all Secure Reports set liquibase.reports.enabled=false, or LIQUIBASE_REPORTS_ENABLED=false
+[2026-08-19 13:28:29] INFO [liquibase.ui] Secure Update Report created!
+* File '/Users/benriley/Documents/GitHub/liquibase-jenkins/changelog/release/demosql/Update-report-19-Aug-2026-132829.html' was created.
+** To suppress Update reports add command arg 'liquibase update --report-enabled=false'
+** To suppress all Secure Reports set liquibase.reports.enabled=false, or LIQUIBASE_REPORTS_ENABLED=false
+[2026-08-19 13:28:30] INFO [liquibase.ext] Resetting CouchbaseLockService
+[2026-08-19 13:28:30] INFO [liquibase.command] Command execution complete
+[2026-08-19 13:28:31] INFO [liquibase.ui] Logs saved to liquibase.json
+[2026-08-19 13:28:31] INFO [liquibase.ui] Liquibase command 'update' was executed successfully.
+[2026-08-19 13:30:04] INFO [liquibase.ui] ####################################################
+##   _     _             _ _                      ##
+##  | |   (_)           (_) |                     ##
+##  | |    _  __ _ _   _ _| |__   __ _ ___  ___   ##
+##  | |   | |/ _` | | | | | '_ \ / _` / __|/ _ \  ##
+##  | |___| | (_| | |_| | | |_) | (_| \__ \  __/  ##
+##  \_____/_|\__, |\__,_|_|_.__/ \__,_|___/\___|  ##
+##              | |                               ##
+##              |_|                               ##
+##                                                ## 
+##  Get documentation at docs.liquibase.com       ##
+##  Get certified courses at learn.liquibase.com  ## 
+##                                                ##
+####################################################
+Starting Liquibase Secure at 13:30:04 using Java 25.0.1 (version 5.2.1 #63 built at 2026-07-08 14:39:13 UTC)
+[2026-08-19 13:30:04] INFO [liquibase.ui] Liquibase Secure Version: 5.2.1
+[2026-08-19 13:30:04] INFO [liquibase.ui] Liquibase Secure license issued to Liquibase_SA, valid until Thu Dec 31 00:00:00 GMT 2026
+[2026-08-19 13:30:04] INFO [liquibase.integration] Starting command execution.
+[2026-08-19 13:30:04] WARNING [liquibase.configuration] Potentially ignored key(s) in file exists at path liquibase.properties
+ - 'export'
+ - 'java'
+ - 'liquibase.dbclhistory.file'
+[2026-08-19 13:30:05] INFO [liquibase.database] Set default schema name to public
+[2026-08-19 13:30:05] INFO [liquibase.changelog] Reading from public.databasechangelog
+[2026-08-19 13:30:05] INFO [liquibase.lockservice] Successfully acquired change log lock
+[2026-08-19 13:30:05] INFO [liquibase.command] Using deploymentId: 7142603543
+[2026-08-19 13:30:05] INFO [liquibase.changelog] Reading from public.databasechangelog
+[2026-08-19 13:30:05] INFO [liquibase.ui] Running Changeset: demo.sql::101::jsmith
+[2026-08-19 13:30:05] SEVERE [liquibase.changelog] ChangeSet demo.sql::101::jsmith encountered an exception.
+liquibase.exception.DatabaseException: ERROR: relation "orders" does not exist [Failed SQL: (0) ALTER TABLE orders ADD COLUMN promo_code VARCHAR(20)]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(SourceFile:560)
+	at liquibase.executor.jvm.JdbcExecutor.execute(SourceFile:85)
+	at liquibase.executor.jvm.JdbcExecutor.execute(SourceFile:188)
+	at liquibase.executor.AbstractExecutor.execute(SourceFile:148)
+	at liquibase.database.AbstractJdbcDatabase.executeStatements(SourceFile:1188)
+	at liquibase.changelog.ChangeSet.execute(SourceFile:906)
+	at liquibase.changelog.visitor.UpdateVisitor.executeAcceptedChange(SourceFile:127)
+	at liquibase.changelog.visitor.UpdateVisitor.visit(SourceFile:71)
+	at liquibase.changelog.ChangeLogIterator.lambda$run$0(SourceFile:133)
+	at liquibase.Scope.lambda$child$0(SourceFile:254)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:253)
+	at liquibase.Scope.child(SourceFile:232)
+	at liquibase.changelog.ChangeLogIterator.lambda$run$1(SourceFile:122)
+	at liquibase.Scope.lambda$child$0(SourceFile:254)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:253)
+	at liquibase.Scope.child(SourceFile:232)
+	at liquibase.Scope.child(SourceFile:320)
+	at liquibase.Scope.child(SourceFile:324)
+	at liquibase.changelog.ChangeLogIterator.run(SourceFile:91)
+	at liquibase.command.core.AbstractUpdateCommandStep.lambda$run$1(SourceFile:126)
+	at liquibase.Scope.lambda$child$0(SourceFile:254)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:253)
+	at liquibase.Scope.child(SourceFile:232)
+	at liquibase.command.core.AbstractUpdateCommandStep.run(SourceFile:124)
+	at liquibase.command.core.UpdateCommandStep.run(SourceFile:100)
+	at com.datical.liquibase.ext.command.ProUpdateCommandStep.run(SourceFile:44)
+	at liquibase.command.CommandScope.lambda$execute$5(SourceFile:346)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:239)
+	at liquibase.command.CommandScope.execute(SourceFile:290)
+	at liquibase.integration.commandline.CommandRunner.call(SourceFile:51)
+	at liquibase.integration.commandline.CommandRunner.call(SourceFile:21)
+	at picocli.CommandLine.executeUserObject(CommandLine.java:2031)
+	at picocli.CommandLine.access$1500(CommandLine.java:148)
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2469)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2461)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2423)
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2277)
+	at picocli.CommandLine$RunLast.execute(CommandLine.java:2425)
+	at picocli.CommandLine.execute(CommandLine.java:2174)
+	at liquibase.integration.commandline.LiquibaseCommandLine.lambda$execute$2(SourceFile:510)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:239)
+	at liquibase.integration.commandline.LiquibaseCommandLine.lambda$execute$3(SourceFile:485)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:239)
+	at liquibase.integration.commandline.LiquibaseCommandLine.execute(SourceFile:482)
+	at liquibase.integration.commandline.LiquibaseCommandLine.main(SourceFile:117)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at liquibase.integration.commandline.LiquibaseLauncher.main(SourceFile:120)
+Caused by: org.postgresql.util.PSQLException: ERROR: relation "orders" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2904)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2589)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:431)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:534)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:437)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:359)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:344)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:320)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:315)
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(SourceFile:552)
+	... 53 more
+
+[2026-08-19 13:30:05] INFO [liquibase.util] UPDATE SUMMARY
+[2026-08-19 13:30:05] INFO [liquibase.util] Run:                          0
+[2026-08-19 13:30:05] INFO [liquibase.util] Previously run:               4
+[2026-08-19 13:30:05] INFO [liquibase.util] Filtered out:                 0
+[2026-08-19 13:30:05] INFO [liquibase.util] Failed deployment:           10
+[2026-08-19 13:30:05] INFO [liquibase.util] -------------------------------
+[2026-08-19 13:30:05] INFO [liquibase.util] Total change sets:           10
+[2026-08-19 13:30:05] INFO [liquibase.util] Update summary generated
+[2026-08-19 13:30:05] INFO [liquibase.command] Update command encountered an exception.
+[2026-08-19 13:30:05] INFO [liquibase.lockservice] Successfully released change log lock
+[2026-08-19 13:30:05] WARNING [liquibase.configuration] Potentially ignored key(s) in file exists at path liquibase.properties
+ - 'changeLogFile'
+ - 'export'
+ - 'java'
+ - 'liquibase.dbclhistory.file'
+[2026-08-19 13:30:05] INFO [liquibase.command] Logging exception.
+[2026-08-19 13:30:05] INFO [liquibase.ui] ERROR: Exception Details
+[2026-08-19 13:30:05] INFO [liquibase.ui] ERROR: Exception Primary Class:  PSQLException
+[2026-08-19 13:30:05] INFO [liquibase.ui] ERROR: Exception Primary Reason:  ERROR: relation "orders" does not exist
+[2026-08-19 13:30:05] INFO [liquibase.ui] ERROR: Exception Primary Source:  PostgreSQL 18.6 (Debian 18.6-1.pgdg13+2)
+[2026-08-19 13:30:05] INFO [liquibase.command] Command execution complete
+[2026-08-19 13:30:05] INFO [liquibase] Secure Update Report created!
+* File '/Users/benriley/Documents/GitHub/liquibase-jenkins/changelog/release/demosql/Update-report-19-Aug-2026-133005.html' was created.
+** To suppress Update reports add command arg 'liquibase update --report-enabled=false'
+** To suppress all Secure Reports set liquibase.reports.enabled=false, or LIQUIBASE_REPORTS_ENABLED=false
+[2026-08-19 13:30:05] INFO [liquibase.ui] Secure Update Report created!
+* File '/Users/benriley/Documents/GitHub/liquibase-jenkins/changelog/release/demosql/Update-report-19-Aug-2026-133005.html' was created.
+** To suppress Update reports add command arg 'liquibase update --report-enabled=false'
+** To suppress all Secure Reports set liquibase.reports.enabled=false, or LIQUIBASE_REPORTS_ENABLED=false
+[2026-08-19 13:30:06] INFO [liquibase.command] Logging exception.
+[2026-08-19 13:30:06] INFO [liquibase.ui] ERROR: Exception Details
+[2026-08-19 13:30:06] INFO [liquibase.ui] ERROR: Exception Primary Class:  PSQLException
+[2026-08-19 13:30:06] INFO [liquibase.ui] ERROR: Exception Primary Reason:  ERROR: relation "orders" does not exist
+[2026-08-19 13:30:06] INFO [liquibase.ui] ERROR: Exception Primary Source:  PostgreSQL 18.6 (Debian 18.6-1.pgdg13+2)
+[2026-08-19 13:30:06] INFO [liquibase.command] Command execution complete
+[2026-08-19 13:30:07] SEVERE [liquibase.integration] Migration failed for changeset demo.sql::101::jsmith:
+     Reason: liquibase.exception.DatabaseException: ERROR: relation "orders" does not exist [Failed SQL: (0) ALTER TABLE orders ADD COLUMN promo_code VARCHAR(20)]
+liquibase.exception.CommandExecutionException: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset demo.sql::101::jsmith:
+     Reason: liquibase.exception.DatabaseException: ERROR: relation "orders" does not exist [Failed SQL: (0) ALTER TABLE orders ADD COLUMN promo_code VARCHAR(20)]
+	at liquibase.command.CommandScope.lambda$execute$5(SourceFile:402)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:239)
+	at liquibase.command.CommandScope.execute(SourceFile:290)
+	at com.datical.liquibase.ext.command.InternalRollbackOnErrorCommandStep.executeCommand(SourceFile:411)
+	at com.datical.liquibase.ext.command.ProUpdateCommandStep.run(SourceFile:60)
+	at liquibase.command.CommandScope.lambda$execute$5(SourceFile:346)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:239)
+	at liquibase.command.CommandScope.execute(SourceFile:290)
+	at liquibase.integration.commandline.CommandRunner.call(SourceFile:51)
+	at liquibase.integration.commandline.CommandRunner.call(SourceFile:21)
+	at picocli.CommandLine.executeUserObject(CommandLine.java:2031)
+	at picocli.CommandLine.access$1500(CommandLine.java:148)
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2469)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2461)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2423)
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2277)
+	at picocli.CommandLine$RunLast.execute(CommandLine.java:2425)
+	at picocli.CommandLine.execute(CommandLine.java:2174)
+	at liquibase.integration.commandline.LiquibaseCommandLine.lambda$execute$2(SourceFile:510)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:239)
+	at liquibase.integration.commandline.LiquibaseCommandLine.lambda$execute$3(SourceFile:485)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:239)
+	at liquibase.integration.commandline.LiquibaseCommandLine.execute(SourceFile:482)
+	at liquibase.integration.commandline.LiquibaseCommandLine.main(SourceFile:117)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at liquibase.integration.commandline.LiquibaseLauncher.main(SourceFile:120)
+Caused by: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset demo.sql::101::jsmith:
+     Reason: liquibase.exception.DatabaseException: ERROR: relation "orders" does not exist [Failed SQL: (0) ALTER TABLE orders ADD COLUMN promo_code VARCHAR(20)]
+	at liquibase.changelog.ChangeLogIterator.run(SourceFile:155)
+	at liquibase.command.core.AbstractUpdateCommandStep.lambda$run$1(SourceFile:126)
+	at liquibase.Scope.lambda$child$0(SourceFile:254)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:253)
+	at liquibase.Scope.child(SourceFile:232)
+	at liquibase.command.core.AbstractUpdateCommandStep.run(SourceFile:124)
+	at liquibase.command.core.UpdateCommandStep.run(SourceFile:100)
+	at com.datical.liquibase.ext.command.ProUpdateCommandStep.run(SourceFile:44)
+	... 25 more
+Caused by: liquibase.exception.MigrationFailedException: Migration failed for changeset demo.sql::101::jsmith:
+     Reason: liquibase.exception.DatabaseException: ERROR: relation "orders" does not exist [Failed SQL: (0) ALTER TABLE orders ADD COLUMN promo_code VARCHAR(20)]
+	at liquibase.changelog.ChangeSet.execute(SourceFile:964)
+	at liquibase.changelog.visitor.UpdateVisitor.executeAcceptedChange(SourceFile:127)
+	at liquibase.changelog.visitor.UpdateVisitor.visit(SourceFile:71)
+	at liquibase.changelog.ChangeLogIterator.lambda$run$0(SourceFile:133)
+	at liquibase.Scope.lambda$child$0(SourceFile:254)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:253)
+	at liquibase.Scope.child(SourceFile:232)
+	at liquibase.changelog.ChangeLogIterator.lambda$run$1(SourceFile:122)
+	at liquibase.Scope.lambda$child$0(SourceFile:254)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:253)
+	at liquibase.Scope.child(SourceFile:232)
+	at liquibase.Scope.child(SourceFile:320)
+	at liquibase.Scope.child(SourceFile:324)
+	at liquibase.changelog.ChangeLogIterator.run(SourceFile:91)
+	... 33 more
+Caused by: liquibase.exception.DatabaseException: ERROR: relation "orders" does not exist [Failed SQL: (0) ALTER TABLE orders ADD COLUMN promo_code VARCHAR(20)]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(SourceFile:560)
+	at liquibase.executor.jvm.JdbcExecutor.execute(SourceFile:85)
+	at liquibase.executor.jvm.JdbcExecutor.execute(SourceFile:188)
+	at liquibase.executor.AbstractExecutor.execute(SourceFile:148)
+	at liquibase.database.AbstractJdbcDatabase.executeStatements(SourceFile:1188)
+	at liquibase.changelog.ChangeSet.execute(SourceFile:906)
+	... 48 more
+Caused by: org.postgresql.util.PSQLException: ERROR: relation "orders" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2904)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2589)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:431)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:534)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:437)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:359)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:344)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:320)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:315)
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(SourceFile:552)
+	... 53 more
+
+[2026-08-19 13:30:07] INFO [liquibase.ui] Logs saved to liquibase.json
+[2026-08-19 13:31:01] INFO [liquibase.ui] ####################################################
+##   _     _             _ _                      ##
+##  | |   (_)           (_) |                     ##
+##  | |    _  __ _ _   _ _| |__   __ _ ___  ___   ##
+##  | |   | |/ _` | | | | | '_ \ / _` / __|/ _ \  ##
+##  | |___| | (_| | |_| | | |_) | (_| \__ \  __/  ##
+##  \_____/_|\__, |\__,_|_|_.__/ \__,_|___/\___|  ##
+##              | |                               ##
+##              |_|                               ##
+##                                                ## 
+##  Get documentation at docs.liquibase.com       ##
+##  Get certified courses at learn.liquibase.com  ## 
+##                                                ##
+####################################################
+Starting Liquibase Secure at 13:31:01 using Java 25.0.1 (version 5.2.1 #63 built at 2026-07-08 14:39:13 UTC)
+[2026-08-19 13:31:01] INFO [liquibase.ui] Liquibase Secure Version: 5.2.1
+[2026-08-19 13:31:01] INFO [liquibase.ui] Liquibase Secure license issued to Liquibase_SA, valid until Thu Dec 31 00:00:00 GMT 2026
+[2026-08-19 13:31:01] INFO [liquibase.integration] Starting command execution.
+[2026-08-19 13:31:02] WARNING [liquibase.configuration] Potentially ignored key(s) in file exists at path liquibase.properties
+ - 'export'
+ - 'java'
+ - 'liquibase.dbclhistory.file'
+[2026-08-19 13:31:04] INFO [liquibase.database] Set default schema name to public
+[2026-08-19 13:31:06] INFO [liquibase.changelog] Reading from public.databasechangelog
+[2026-08-19 13:31:06] INFO [liquibase.lockservice] Successfully acquired change log lock
+[2026-08-19 13:31:06] INFO [liquibase.command] Using deploymentId: 7142659749
+[2026-08-19 13:31:06] INFO [liquibase.changelog] Reading from public.databasechangelog
+[2026-08-19 13:31:06] INFO [liquibase.ui] Running Changeset: demo.sql::100-create-orders-table::jsmith
+[2026-08-19 13:31:07] INFO [liquibase.changelog] Custom SQL executed
+[2026-08-19 13:31:07] INFO [liquibase.changelog] ChangeSet demo.sql::100-create-orders-table::jsmith ran successfully in 105ms
+[2026-08-19 13:31:07] INFO [liquibase.ui] Running Changeset: demo.sql::101::jsmith::jsmith
+[2026-08-19 13:31:07] INFO [liquibase.changelog] Custom SQL executed
+[2026-08-19 13:31:07] INFO [liquibase.changelog] ChangeSet demo.sql::101::jsmith::jsmith ran successfully in 20ms
+[2026-08-19 13:31:07] INFO [liquibase.ui] Running Changeset: dml.sql::103::jsmith
+[2026-08-19 13:31:07] INFO [liquibase.changelog] Custom SQL executed
+[2026-08-19 13:31:07] INFO [liquibase.changelog] ChangeSet dml.sql::103::jsmith ran successfully in 17ms
+[2026-08-19 13:31:07] INFO [liquibase.ui] Running Changeset: dmltablealters.sql::105::jsmith
+[2026-08-19 13:31:07] SEVERE [liquibase.changelog] ChangeSet dmltablealters.sql::105::jsmith encountered an exception.
+liquibase.exception.DatabaseException: ERROR: column "risk_tier" of relation "accounts" already exists [Failed SQL: (0) ALTER TABLE accounts ADD COLUMN risk_tier VARCHAR(10)]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(SourceFile:560)
+	at liquibase.executor.jvm.JdbcExecutor.execute(SourceFile:85)
+	at liquibase.executor.jvm.JdbcExecutor.execute(SourceFile:188)
+	at liquibase.executor.AbstractExecutor.execute(SourceFile:148)
+	at liquibase.database.AbstractJdbcDatabase.executeStatements(SourceFile:1188)
+	at liquibase.changelog.ChangeSet.execute(SourceFile:906)
+	at liquibase.changelog.visitor.UpdateVisitor.executeAcceptedChange(SourceFile:127)
+	at liquibase.changelog.visitor.UpdateVisitor.visit(SourceFile:71)
+	at liquibase.changelog.ChangeLogIterator.lambda$run$0(SourceFile:133)
+	at liquibase.Scope.lambda$child$0(SourceFile:254)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:253)
+	at liquibase.Scope.child(SourceFile:232)
+	at liquibase.changelog.ChangeLogIterator.lambda$run$1(SourceFile:122)
+	at liquibase.Scope.lambda$child$0(SourceFile:254)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:253)
+	at liquibase.Scope.child(SourceFile:232)
+	at liquibase.Scope.child(SourceFile:320)
+	at liquibase.Scope.child(SourceFile:324)
+	at liquibase.changelog.ChangeLogIterator.run(SourceFile:91)
+	at liquibase.command.core.AbstractUpdateCommandStep.lambda$run$1(SourceFile:126)
+	at liquibase.Scope.lambda$child$0(SourceFile:254)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:253)
+	at liquibase.Scope.child(SourceFile:232)
+	at liquibase.command.core.AbstractUpdateCommandStep.run(SourceFile:124)
+	at liquibase.command.core.UpdateCommandStep.run(SourceFile:100)
+	at com.datical.liquibase.ext.command.ProUpdateCommandStep.run(SourceFile:44)
+	at liquibase.command.CommandScope.lambda$execute$5(SourceFile:346)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:239)
+	at liquibase.command.CommandScope.execute(SourceFile:290)
+	at liquibase.integration.commandline.CommandRunner.call(SourceFile:51)
+	at liquibase.integration.commandline.CommandRunner.call(SourceFile:21)
+	at picocli.CommandLine.executeUserObject(CommandLine.java:2031)
+	at picocli.CommandLine.access$1500(CommandLine.java:148)
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2469)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2461)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2423)
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2277)
+	at picocli.CommandLine$RunLast.execute(CommandLine.java:2425)
+	at picocli.CommandLine.execute(CommandLine.java:2174)
+	at liquibase.integration.commandline.LiquibaseCommandLine.lambda$execute$2(SourceFile:510)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:239)
+	at liquibase.integration.commandline.LiquibaseCommandLine.lambda$execute$3(SourceFile:485)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:239)
+	at liquibase.integration.commandline.LiquibaseCommandLine.execute(SourceFile:482)
+	at liquibase.integration.commandline.LiquibaseCommandLine.main(SourceFile:117)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at liquibase.integration.commandline.LiquibaseLauncher.main(SourceFile:120)
+Caused by: org.postgresql.util.PSQLException: ERROR: column "risk_tier" of relation "accounts" already exists
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2904)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2589)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:431)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:534)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:437)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:359)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:344)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:320)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:315)
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(SourceFile:552)
+	... 53 more
+
+[2026-08-19 13:31:07] INFO [liquibase.util] UPDATE SUMMARY
+[2026-08-19 13:31:07] INFO [liquibase.util] Run:                          3
+[2026-08-19 13:31:07] INFO [liquibase.util] Previously run:               4
+[2026-08-19 13:31:07] INFO [liquibase.util] Filtered out:                 0
+[2026-08-19 13:31:07] INFO [liquibase.util] Failed deployment:            8
+[2026-08-19 13:31:07] INFO [liquibase.util] -------------------------------
+[2026-08-19 13:31:07] INFO [liquibase.util] Total change sets:           11
+[2026-08-19 13:31:07] INFO [liquibase.util] Update summary generated
+[2026-08-19 13:31:07] INFO [liquibase.command] Update command encountered an exception.
+[2026-08-19 13:31:07] INFO [liquibase.lockservice] Successfully released change log lock
+[2026-08-19 13:31:07] WARNING [liquibase.configuration] Potentially ignored key(s) in file exists at path liquibase.properties
+ - 'changeLogFile'
+ - 'export'
+ - 'java'
+ - 'liquibase.dbclhistory.file'
+[2026-08-19 13:31:07] INFO [liquibase.command] Logging exception.
+[2026-08-19 13:31:07] INFO [liquibase.ui] ERROR: Exception Details
+[2026-08-19 13:31:07] INFO [liquibase.ui] ERROR: Exception Primary Class:  PSQLException
+[2026-08-19 13:31:07] INFO [liquibase.ui] ERROR: Exception Primary Reason:  ERROR: column "risk_tier" of relation "accounts" already exists
+[2026-08-19 13:31:07] INFO [liquibase.ui] ERROR: Exception Primary Source:  PostgreSQL 18.6 (Debian 18.6-1.pgdg13+2)
+[2026-08-19 13:31:07] INFO [liquibase.command] Command execution complete
+[2026-08-19 13:31:08] INFO [liquibase] Secure Update Report created!
+* File '/Users/benriley/Documents/GitHub/liquibase-jenkins/changelog/release/demosql/Update-report-19-Aug-2026-133107.html' was created.
+** To suppress Update reports add command arg 'liquibase update --report-enabled=false'
+** To suppress all Secure Reports set liquibase.reports.enabled=false, or LIQUIBASE_REPORTS_ENABLED=false
+[2026-08-19 13:31:08] INFO [liquibase.ui] Secure Update Report created!
+* File '/Users/benriley/Documents/GitHub/liquibase-jenkins/changelog/release/demosql/Update-report-19-Aug-2026-133107.html' was created.
+** To suppress Update reports add command arg 'liquibase update --report-enabled=false'
+** To suppress all Secure Reports set liquibase.reports.enabled=false, or LIQUIBASE_REPORTS_ENABLED=false
+[2026-08-19 13:31:11] INFO [liquibase.command] Logging exception.
+[2026-08-19 13:31:11] INFO [liquibase.ui] ERROR: Exception Details
+[2026-08-19 13:31:11] INFO [liquibase.ui] ERROR: Exception Primary Class:  PSQLException
+[2026-08-19 13:31:11] INFO [liquibase.ui] ERROR: Exception Primary Reason:  ERROR: column "risk_tier" of relation "accounts" already exists
+[2026-08-19 13:31:11] INFO [liquibase.ui] ERROR: Exception Primary Source:  PostgreSQL 18.6 (Debian 18.6-1.pgdg13+2)
+[2026-08-19 13:31:11] INFO [liquibase.command] Command execution complete
+[2026-08-19 13:31:12] SEVERE [liquibase.integration] Migration failed for changeset dmltablealters.sql::105::jsmith:
+     Reason: liquibase.exception.DatabaseException: ERROR: column "risk_tier" of relation "accounts" already exists [Failed SQL: (0) ALTER TABLE accounts ADD COLUMN risk_tier VARCHAR(10)]
+liquibase.exception.CommandExecutionException: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset dmltablealters.sql::105::jsmith:
+     Reason: liquibase.exception.DatabaseException: ERROR: column "risk_tier" of relation "accounts" already exists [Failed SQL: (0) ALTER TABLE accounts ADD COLUMN risk_tier VARCHAR(10)]
+	at liquibase.command.CommandScope.lambda$execute$5(SourceFile:402)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:239)
+	at liquibase.command.CommandScope.execute(SourceFile:290)
+	at com.datical.liquibase.ext.command.InternalRollbackOnErrorCommandStep.executeCommand(SourceFile:411)
+	at com.datical.liquibase.ext.command.ProUpdateCommandStep.run(SourceFile:60)
+	at liquibase.command.CommandScope.lambda$execute$5(SourceFile:346)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:239)
+	at liquibase.command.CommandScope.execute(SourceFile:290)
+	at liquibase.integration.commandline.CommandRunner.call(SourceFile:51)
+	at liquibase.integration.commandline.CommandRunner.call(SourceFile:21)
+	at picocli.CommandLine.executeUserObject(CommandLine.java:2031)
+	at picocli.CommandLine.access$1500(CommandLine.java:148)
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2469)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2461)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2423)
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2277)
+	at picocli.CommandLine$RunLast.execute(CommandLine.java:2425)
+	at picocli.CommandLine.execute(CommandLine.java:2174)
+	at liquibase.integration.commandline.LiquibaseCommandLine.lambda$execute$2(SourceFile:510)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:239)
+	at liquibase.integration.commandline.LiquibaseCommandLine.lambda$execute$3(SourceFile:485)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:239)
+	at liquibase.integration.commandline.LiquibaseCommandLine.execute(SourceFile:482)
+	at liquibase.integration.commandline.LiquibaseCommandLine.main(SourceFile:117)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at liquibase.integration.commandline.LiquibaseLauncher.main(SourceFile:120)
+Caused by: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset dmltablealters.sql::105::jsmith:
+     Reason: liquibase.exception.DatabaseException: ERROR: column "risk_tier" of relation "accounts" already exists [Failed SQL: (0) ALTER TABLE accounts ADD COLUMN risk_tier VARCHAR(10)]
+	at liquibase.changelog.ChangeLogIterator.run(SourceFile:155)
+	at liquibase.command.core.AbstractUpdateCommandStep.lambda$run$1(SourceFile:126)
+	at liquibase.Scope.lambda$child$0(SourceFile:254)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:253)
+	at liquibase.Scope.child(SourceFile:232)
+	at liquibase.command.core.AbstractUpdateCommandStep.run(SourceFile:124)
+	at liquibase.command.core.UpdateCommandStep.run(SourceFile:100)
+	at com.datical.liquibase.ext.command.ProUpdateCommandStep.run(SourceFile:44)
+	... 25 more
+Caused by: liquibase.exception.MigrationFailedException: Migration failed for changeset dmltablealters.sql::105::jsmith:
+     Reason: liquibase.exception.DatabaseException: ERROR: column "risk_tier" of relation "accounts" already exists [Failed SQL: (0) ALTER TABLE accounts ADD COLUMN risk_tier VARCHAR(10)]
+	at liquibase.changelog.ChangeSet.execute(SourceFile:964)
+	at liquibase.changelog.visitor.UpdateVisitor.executeAcceptedChange(SourceFile:127)
+	at liquibase.changelog.visitor.UpdateVisitor.visit(SourceFile:71)
+	at liquibase.changelog.ChangeLogIterator.lambda$run$0(SourceFile:133)
+	at liquibase.Scope.lambda$child$0(SourceFile:254)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:253)
+	at liquibase.Scope.child(SourceFile:232)
+	at liquibase.changelog.ChangeLogIterator.lambda$run$1(SourceFile:122)
+	at liquibase.Scope.lambda$child$0(SourceFile:254)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:253)
+	at liquibase.Scope.child(SourceFile:232)
+	at liquibase.Scope.child(SourceFile:320)
+	at liquibase.Scope.child(SourceFile:324)
+	at liquibase.changelog.ChangeLogIterator.run(SourceFile:91)
+	... 33 more
+Caused by: liquibase.exception.DatabaseException: ERROR: column "risk_tier" of relation "accounts" already exists [Failed SQL: (0) ALTER TABLE accounts ADD COLUMN risk_tier VARCHAR(10)]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(SourceFile:560)
+	at liquibase.executor.jvm.JdbcExecutor.execute(SourceFile:85)
+	at liquibase.executor.jvm.JdbcExecutor.execute(SourceFile:188)
+	at liquibase.executor.AbstractExecutor.execute(SourceFile:148)
+	at liquibase.database.AbstractJdbcDatabase.executeStatements(SourceFile:1188)
+	at liquibase.changelog.ChangeSet.execute(SourceFile:906)
+	... 48 more
+Caused by: org.postgresql.util.PSQLException: ERROR: column "risk_tier" of relation "accounts" already exists
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2904)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2589)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:431)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:534)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:437)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:359)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:344)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:320)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:315)
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(SourceFile:552)
+	... 53 more
+
+[2026-08-19 13:31:12] INFO [liquibase.ui] Logs saved to liquibase.json
+[2026-08-19 13:33:56] INFO [liquibase.ui] ####################################################
+##   _     _             _ _                      ##
+##  | |   (_)           (_) |                     ##
+##  | |    _  __ _ _   _ _| |__   __ _ ___  ___   ##
+##  | |   | |/ _` | | | | | '_ \ / _` / __|/ _ \  ##
+##  | |___| | (_| | |_| | | |_) | (_| \__ \  __/  ##
+##  \_____/_|\__, |\__,_|_|_.__/ \__,_|___/\___|  ##
+##              | |                               ##
+##              |_|                               ##
+##                                                ## 
+##  Get documentation at docs.liquibase.com       ##
+##  Get certified courses at learn.liquibase.com  ## 
+##                                                ##
+####################################################
+Starting Liquibase Secure at 13:33:56 using Java 25.0.1 (version 5.2.1 #63 built at 2026-07-08 14:39:13 UTC)
+[2026-08-19 13:33:56] INFO [liquibase.ui] Liquibase Secure Version: 5.2.1
+[2026-08-19 13:33:56] INFO [liquibase.ui] Liquibase Secure license issued to Liquibase_SA, valid until Thu Dec 31 00:00:00 GMT 2026
+[2026-08-19 13:33:56] INFO [liquibase.integration] Starting command execution.
+[2026-08-19 13:33:56] WARNING [liquibase.configuration] Potentially ignored key(s) in file exists at path liquibase.properties
+ - 'export'
+ - 'java'
+ - 'liquibase.dbclhistory.file'
+[2026-08-19 13:33:57] INFO [liquibase.database] Set default schema name to public
+[2026-08-19 13:33:57] INFO [liquibase.changelog] Reading from public.databasechangelog
+[2026-08-19 13:33:57] INFO [liquibase.lockservice] Successfully acquired change log lock
+[2026-08-19 13:33:57] INFO [liquibase.command] Using deploymentId: 7142835353
+[2026-08-19 13:33:57] INFO [liquibase.changelog] Reading from public.databasechangelog
+[2026-08-19 13:33:57] INFO [liquibase.ui] Running Changeset: demo.sql::100-create-orders-table::jsmith
+[2026-08-19 13:33:57] INFO [liquibase.changelog] Custom SQL executed
+[2026-08-19 13:33:57] INFO [liquibase.changelog] ChangeSet demo.sql::100-create-orders-table::jsmith ran successfully in 21ms
+[2026-08-19 13:33:57] INFO [liquibase.sqlgenerator] Creating database history table with name: public.databasechangeloghistory
+[2026-08-19 13:33:57] INFO [liquibase.ui] INFO: A new table 'databasechangeloghistory' was created in 'postgres.public' to track database changing Liquibase operations. The Pro property 'liquibase.dbclhistory.enabled=true' was configured on the CLI, or as Environment Variable or defaults file property, etc. To pause collecting history, set to 'false'. Learn more at https://docs.liquibase.com/DATABASECHANGELOGHISTORY
+[2026-08-19 13:33:57] INFO [liquibase.ui] Running Changeset: demo.sql::101::jsmith::jsmith
+[2026-08-19 13:33:57] INFO [liquibase.changelog] Custom SQL executed
+[2026-08-19 13:33:57] INFO [liquibase.changelog] ChangeSet demo.sql::101::jsmith::jsmith ran successfully in 4ms
+[2026-08-19 13:33:57] INFO [liquibase.ui] Running Changeset: dml.sql::103::jsmith
+[2026-08-19 13:33:57] INFO [liquibase.changelog] Custom SQL executed
+[2026-08-19 13:33:57] INFO [liquibase.changelog] ChangeSet dml.sql::103::jsmith ran successfully in 4ms
+[2026-08-19 13:33:57] INFO [liquibase.ui] Running Changeset: dmltablealters.sql::105::jsmith
+[2026-08-19 13:33:57] SEVERE [liquibase.changelog] ChangeSet dmltablealters.sql::105::jsmith encountered an exception.
+liquibase.exception.DatabaseException: ERROR: relation "accounts" does not exist [Failed SQL: (0) ALTER TABLE accounts ADD COLUMN risk_tier VARCHAR(10)]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(SourceFile:560)
+	at liquibase.executor.jvm.JdbcExecutor.execute(SourceFile:85)
+	at liquibase.executor.jvm.JdbcExecutor.execute(SourceFile:188)
+	at liquibase.executor.AbstractExecutor.execute(SourceFile:148)
+	at liquibase.database.AbstractJdbcDatabase.executeStatements(SourceFile:1188)
+	at liquibase.changelog.ChangeSet.execute(SourceFile:906)
+	at liquibase.changelog.visitor.UpdateVisitor.executeAcceptedChange(SourceFile:127)
+	at liquibase.changelog.visitor.UpdateVisitor.visit(SourceFile:71)
+	at liquibase.changelog.ChangeLogIterator.lambda$run$0(SourceFile:133)
+	at liquibase.Scope.lambda$child$0(SourceFile:254)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:253)
+	at liquibase.Scope.child(SourceFile:232)
+	at liquibase.changelog.ChangeLogIterator.lambda$run$1(SourceFile:122)
+	at liquibase.Scope.lambda$child$0(SourceFile:254)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:253)
+	at liquibase.Scope.child(SourceFile:232)
+	at liquibase.Scope.child(SourceFile:320)
+	at liquibase.Scope.child(SourceFile:324)
+	at liquibase.changelog.ChangeLogIterator.run(SourceFile:91)
+	at liquibase.command.core.AbstractUpdateCommandStep.lambda$run$1(SourceFile:126)
+	at liquibase.Scope.lambda$child$0(SourceFile:254)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:253)
+	at liquibase.Scope.child(SourceFile:232)
+	at liquibase.command.core.AbstractUpdateCommandStep.run(SourceFile:124)
+	at liquibase.command.core.UpdateCommandStep.run(SourceFile:100)
+	at com.datical.liquibase.ext.command.ProUpdateCommandStep.run(SourceFile:44)
+	at liquibase.command.CommandScope.lambda$execute$5(SourceFile:346)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:239)
+	at liquibase.command.CommandScope.execute(SourceFile:290)
+	at liquibase.integration.commandline.CommandRunner.call(SourceFile:51)
+	at liquibase.integration.commandline.CommandRunner.call(SourceFile:21)
+	at picocli.CommandLine.executeUserObject(CommandLine.java:2031)
+	at picocli.CommandLine.access$1500(CommandLine.java:148)
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2469)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2461)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2423)
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2277)
+	at picocli.CommandLine$RunLast.execute(CommandLine.java:2425)
+	at picocli.CommandLine.execute(CommandLine.java:2174)
+	at liquibase.integration.commandline.LiquibaseCommandLine.lambda$execute$2(SourceFile:510)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:239)
+	at liquibase.integration.commandline.LiquibaseCommandLine.lambda$execute$3(SourceFile:485)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:239)
+	at liquibase.integration.commandline.LiquibaseCommandLine.execute(SourceFile:482)
+	at liquibase.integration.commandline.LiquibaseCommandLine.main(SourceFile:117)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at liquibase.integration.commandline.LiquibaseLauncher.main(SourceFile:120)
+Caused by: org.postgresql.util.PSQLException: ERROR: relation "accounts" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2904)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2589)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:431)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:534)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:437)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:359)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:344)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:320)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:315)
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(SourceFile:552)
+	... 53 more
+
+[2026-08-19 13:33:57] INFO [liquibase.util] UPDATE SUMMARY
+[2026-08-19 13:33:57] INFO [liquibase.util] Run:                          3
+[2026-08-19 13:33:57] INFO [liquibase.util] Previously run:               0
+[2026-08-19 13:33:57] INFO [liquibase.util] Filtered out:                 0
+[2026-08-19 13:33:57] INFO [liquibase.util] Failed deployment:            8
+[2026-08-19 13:33:57] INFO [liquibase.util] -------------------------------
+[2026-08-19 13:33:57] INFO [liquibase.util] Total change sets:           11
+[2026-08-19 13:33:57] INFO [liquibase.util] Update summary generated
+[2026-08-19 13:33:57] INFO [liquibase.command] Update command encountered an exception.
+[2026-08-19 13:33:57] INFO [liquibase.lockservice] Successfully released change log lock
+[2026-08-19 13:33:57] WARNING [liquibase.configuration] Potentially ignored key(s) in file exists at path liquibase.properties
+ - 'changeLogFile'
+ - 'export'
+ - 'java'
+ - 'liquibase.dbclhistory.file'
+[2026-08-19 13:33:57] INFO [liquibase.command] Logging exception.
+[2026-08-19 13:33:57] INFO [liquibase.ui] ERROR: Exception Details
+[2026-08-19 13:33:57] INFO [liquibase.ui] ERROR: Exception Primary Class:  PSQLException
+[2026-08-19 13:33:57] INFO [liquibase.ui] ERROR: Exception Primary Reason:  ERROR: relation "accounts" does not exist
+[2026-08-19 13:33:57] INFO [liquibase.ui] ERROR: Exception Primary Source:  PostgreSQL 18.6 (Debian 18.6-1.pgdg13+2)
+[2026-08-19 13:33:57] INFO [liquibase.command] Command execution complete
+[2026-08-19 13:33:57] INFO [liquibase] Secure Update Report created!
+* File '/Users/benriley/Documents/GitHub/liquibase-jenkins/changelog/release/demosql/Update-report-19-Aug-2026-133357.html' was created.
+** To suppress Update reports add command arg 'liquibase update --report-enabled=false'
+** To suppress all Secure Reports set liquibase.reports.enabled=false, or LIQUIBASE_REPORTS_ENABLED=false
+[2026-08-19 13:33:57] INFO [liquibase.ui] Secure Update Report created!
+* File '/Users/benriley/Documents/GitHub/liquibase-jenkins/changelog/release/demosql/Update-report-19-Aug-2026-133357.html' was created.
+** To suppress Update reports add command arg 'liquibase update --report-enabled=false'
+** To suppress all Secure Reports set liquibase.reports.enabled=false, or LIQUIBASE_REPORTS_ENABLED=false
+[2026-08-19 13:33:58] INFO [liquibase.command] Logging exception.
+[2026-08-19 13:33:58] INFO [liquibase.ui] ERROR: Exception Details
+[2026-08-19 13:33:58] INFO [liquibase.ui] ERROR: Exception Primary Class:  PSQLException
+[2026-08-19 13:33:58] INFO [liquibase.ui] ERROR: Exception Primary Reason:  ERROR: relation "accounts" does not exist
+[2026-08-19 13:33:58] INFO [liquibase.ui] ERROR: Exception Primary Source:  PostgreSQL 18.6 (Debian 18.6-1.pgdg13+2)
+[2026-08-19 13:33:58] INFO [liquibase.command] Command execution complete
+[2026-08-19 13:33:59] SEVERE [liquibase.integration] Migration failed for changeset dmltablealters.sql::105::jsmith:
+     Reason: liquibase.exception.DatabaseException: ERROR: relation "accounts" does not exist [Failed SQL: (0) ALTER TABLE accounts ADD COLUMN risk_tier VARCHAR(10)]
+liquibase.exception.CommandExecutionException: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset dmltablealters.sql::105::jsmith:
+     Reason: liquibase.exception.DatabaseException: ERROR: relation "accounts" does not exist [Failed SQL: (0) ALTER TABLE accounts ADD COLUMN risk_tier VARCHAR(10)]
+	at liquibase.command.CommandScope.lambda$execute$5(SourceFile:402)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:239)
+	at liquibase.command.CommandScope.execute(SourceFile:290)
+	at com.datical.liquibase.ext.command.InternalRollbackOnErrorCommandStep.executeCommand(SourceFile:411)
+	at com.datical.liquibase.ext.command.ProUpdateCommandStep.run(SourceFile:60)
+	at liquibase.command.CommandScope.lambda$execute$5(SourceFile:346)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:239)
+	at liquibase.command.CommandScope.execute(SourceFile:290)
+	at liquibase.integration.commandline.CommandRunner.call(SourceFile:51)
+	at liquibase.integration.commandline.CommandRunner.call(SourceFile:21)
+	at picocli.CommandLine.executeUserObject(CommandLine.java:2031)
+	at picocli.CommandLine.access$1500(CommandLine.java:148)
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2469)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2461)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2423)
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2277)
+	at picocli.CommandLine$RunLast.execute(CommandLine.java:2425)
+	at picocli.CommandLine.execute(CommandLine.java:2174)
+	at liquibase.integration.commandline.LiquibaseCommandLine.lambda$execute$2(SourceFile:510)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:239)
+	at liquibase.integration.commandline.LiquibaseCommandLine.lambda$execute$3(SourceFile:485)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:239)
+	at liquibase.integration.commandline.LiquibaseCommandLine.execute(SourceFile:482)
+	at liquibase.integration.commandline.LiquibaseCommandLine.main(SourceFile:117)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at liquibase.integration.commandline.LiquibaseLauncher.main(SourceFile:120)
+Caused by: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset dmltablealters.sql::105::jsmith:
+     Reason: liquibase.exception.DatabaseException: ERROR: relation "accounts" does not exist [Failed SQL: (0) ALTER TABLE accounts ADD COLUMN risk_tier VARCHAR(10)]
+	at liquibase.changelog.ChangeLogIterator.run(SourceFile:155)
+	at liquibase.command.core.AbstractUpdateCommandStep.lambda$run$1(SourceFile:126)
+	at liquibase.Scope.lambda$child$0(SourceFile:254)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:253)
+	at liquibase.Scope.child(SourceFile:232)
+	at liquibase.command.core.AbstractUpdateCommandStep.run(SourceFile:124)
+	at liquibase.command.core.UpdateCommandStep.run(SourceFile:100)
+	at com.datical.liquibase.ext.command.ProUpdateCommandStep.run(SourceFile:44)
+	... 25 more
+Caused by: liquibase.exception.MigrationFailedException: Migration failed for changeset dmltablealters.sql::105::jsmith:
+     Reason: liquibase.exception.DatabaseException: ERROR: relation "accounts" does not exist [Failed SQL: (0) ALTER TABLE accounts ADD COLUMN risk_tier VARCHAR(10)]
+	at liquibase.changelog.ChangeSet.execute(SourceFile:964)
+	at liquibase.changelog.visitor.UpdateVisitor.executeAcceptedChange(SourceFile:127)
+	at liquibase.changelog.visitor.UpdateVisitor.visit(SourceFile:71)
+	at liquibase.changelog.ChangeLogIterator.lambda$run$0(SourceFile:133)
+	at liquibase.Scope.lambda$child$0(SourceFile:254)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:253)
+	at liquibase.Scope.child(SourceFile:232)
+	at liquibase.changelog.ChangeLogIterator.lambda$run$1(SourceFile:122)
+	at liquibase.Scope.lambda$child$0(SourceFile:254)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:253)
+	at liquibase.Scope.child(SourceFile:232)
+	at liquibase.Scope.child(SourceFile:320)
+	at liquibase.Scope.child(SourceFile:324)
+	at liquibase.changelog.ChangeLogIterator.run(SourceFile:91)
+	... 33 more
+Caused by: liquibase.exception.DatabaseException: ERROR: relation "accounts" does not exist [Failed SQL: (0) ALTER TABLE accounts ADD COLUMN risk_tier VARCHAR(10)]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(SourceFile:560)
+	at liquibase.executor.jvm.JdbcExecutor.execute(SourceFile:85)
+	at liquibase.executor.jvm.JdbcExecutor.execute(SourceFile:188)
+	at liquibase.executor.AbstractExecutor.execute(SourceFile:148)
+	at liquibase.database.AbstractJdbcDatabase.executeStatements(SourceFile:1188)
+	at liquibase.changelog.ChangeSet.execute(SourceFile:906)
+	... 48 more
+Caused by: org.postgresql.util.PSQLException: ERROR: relation "accounts" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2904)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2589)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:431)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:534)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:437)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:359)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:344)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:320)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:315)
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(SourceFile:552)
+	... 53 more
+
+[2026-08-19 13:33:59] INFO [liquibase.ui] Logs saved to liquibase.json
+[2026-08-19 13:38:02] INFO [liquibase.ui] ####################################################
+##   _     _             _ _                      ##
+##  | |   (_)           (_) |                     ##
+##  | |    _  __ _ _   _ _| |__   __ _ ___  ___   ##
+##  | |   | |/ _` | | | | | '_ \ / _` / __|/ _ \  ##
+##  | |___| | (_| | |_| | | |_) | (_| \__ \  __/  ##
+##  \_____/_|\__, |\__,_|_|_.__/ \__,_|___/\___|  ##
+##              | |                               ##
+##              |_|                               ##
+##                                                ## 
+##  Get documentation at docs.liquibase.com       ##
+##  Get certified courses at learn.liquibase.com  ## 
+##                                                ##
+####################################################
+Starting Liquibase Secure at 13:38:02 using Java 25.0.1 (version 5.2.1 #63 built at 2026-07-08 14:39:13 UTC)
+[2026-08-19 13:38:02] INFO [liquibase.ui] Liquibase Secure Version: 5.2.1
+[2026-08-19 13:38:02] INFO [liquibase.ui] Liquibase Secure license issued to Liquibase_SA, valid until Thu Dec 31 00:00:00 GMT 2026
+[2026-08-19 13:38:02] INFO [liquibase.integration] Starting command execution.
+[2026-08-19 13:38:03] WARNING [liquibase.configuration] Potentially ignored key(s) in file exists at path liquibase.properties
+ - 'export'
+ - 'java'
+ - 'liquibase.dbclhistory.file'
+[2026-08-19 13:38:04] INFO [liquibase.database] Set default schema name to public
+[2026-08-19 13:38:06] INFO [liquibase.changelog] Reading from public.databasechangelog
+[2026-08-19 13:38:06] INFO [liquibase.lockservice] Successfully acquired change log lock
+[2026-08-19 13:38:06] INFO [liquibase.command] Using deploymentId: 7143080503
+[2026-08-19 13:38:06] INFO [liquibase.changelog] Reading from public.databasechangelog
+[2026-08-19 13:38:06] INFO [liquibase.ui] Running Changeset: demo.sql::100-create-orders-table::jsmith
+[2026-08-19 13:38:06] INFO [liquibase.changelog] Custom SQL executed
+[2026-08-19 13:38:06] INFO [liquibase.changelog] ChangeSet demo.sql::100-create-orders-table::jsmith ran successfully in 143ms
+[2026-08-19 13:38:06] INFO [liquibase.sqlgenerator] Creating database history table with name: public.databasechangeloghistory
+[2026-08-19 13:38:06] INFO [liquibase.ui] INFO: A new table 'databasechangeloghistory' was created in 'postgres.public' to track database changing Liquibase operations. The Pro property 'liquibase.dbclhistory.enabled=true' was configured on the CLI, or as Environment Variable or defaults file property, etc. To pause collecting history, set to 'false'. Learn more at https://docs.liquibase.com/DATABASECHANGELOGHISTORY
+[2026-08-19 13:38:06] INFO [liquibase.ui] Running Changeset: demo.sql::101::jsmith::jsmith
+[2026-08-19 13:38:06] INFO [liquibase.changelog] Custom SQL executed
+[2026-08-19 13:38:06] INFO [liquibase.changelog] ChangeSet demo.sql::101::jsmith::jsmith ran successfully in 30ms
+[2026-08-19 13:38:07] INFO [liquibase.ui] Running Changeset: dml.sql::103::jsmith
+[2026-08-19 13:38:07] INFO [liquibase.changelog] Custom SQL executed
+[2026-08-19 13:38:07] INFO [liquibase.changelog] ChangeSet dml.sql::103::jsmith ran successfully in 18ms
+[2026-08-19 13:38:07] INFO [liquibase.ui] Running Changeset: dmltablealters.sql::104-create-customer-accounts-table::jsmith
+[2026-08-19 13:38:07] INFO [liquibase.changelog] Custom SQL executed
+[2026-08-19 13:38:07] INFO [liquibase.changelog] ChangeSet dmltablealters.sql::104-create-customer-accounts-table::jsmith ran successfully in 22ms
+[2026-08-19 13:38:07] INFO [liquibase.ui] Running Changeset: dmltablealters.sql::105::jsmith
+[2026-08-19 13:38:07] INFO [liquibase.changelog] Custom SQL executed
+[2026-08-19 13:38:07] INFO [liquibase.changelog] ChangeSet dmltablealters.sql::105::jsmith ran successfully in 13ms
+[2026-08-19 13:38:07] INFO [liquibase.ui] Running Changeset: dmltablealters.sql::106::jsmith
+[2026-08-19 13:38:07] INFO [liquibase.changelog] Custom SQL executed
+[2026-08-19 13:38:07] INFO [liquibase.changelog] ChangeSet dmltablealters.sql::106::jsmith ran successfully in 10ms
+[2026-08-19 13:38:07] INFO [liquibase.ui] Running Changeset: dmltablealters.sql::107::jsmith
+[2026-08-19 13:38:07] INFO [liquibase.changelog] Custom SQL executed
+[2026-08-19 13:38:07] INFO [liquibase.changelog] ChangeSet dmltablealters.sql::107::jsmith ran successfully in 11ms
+[2026-08-19 13:38:07] INFO [liquibase.ui] Running Changeset: rollback.sql::102::jsmith
+[2026-08-19 13:38:07] SEVERE [liquibase.changelog] ChangeSet rollback.sql::102::jsmith encountered an exception.
+liquibase.exception.DatabaseException: ERROR: column "promo_code" of relation "orders" already exists [Failed SQL: (0) ALTER TABLE orders ADD COLUMN promo_code VARCHAR(20)]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(SourceFile:560)
+	at liquibase.executor.jvm.JdbcExecutor.execute(SourceFile:85)
+	at liquibase.executor.jvm.JdbcExecutor.execute(SourceFile:188)
+	at liquibase.executor.AbstractExecutor.execute(SourceFile:148)
+	at liquibase.database.AbstractJdbcDatabase.executeStatements(SourceFile:1188)
+	at liquibase.changelog.ChangeSet.execute(SourceFile:906)
+	at liquibase.changelog.visitor.UpdateVisitor.executeAcceptedChange(SourceFile:127)
+	at liquibase.changelog.visitor.UpdateVisitor.visit(SourceFile:71)
+	at liquibase.changelog.ChangeLogIterator.lambda$run$0(SourceFile:133)
+	at liquibase.Scope.lambda$child$0(SourceFile:254)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:253)
+	at liquibase.Scope.child(SourceFile:232)
+	at liquibase.changelog.ChangeLogIterator.lambda$run$1(SourceFile:122)
+	at liquibase.Scope.lambda$child$0(SourceFile:254)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:253)
+	at liquibase.Scope.child(SourceFile:232)
+	at liquibase.Scope.child(SourceFile:320)
+	at liquibase.Scope.child(SourceFile:324)
+	at liquibase.changelog.ChangeLogIterator.run(SourceFile:91)
+	at liquibase.command.core.AbstractUpdateCommandStep.lambda$run$1(SourceFile:126)
+	at liquibase.Scope.lambda$child$0(SourceFile:254)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:253)
+	at liquibase.Scope.child(SourceFile:232)
+	at liquibase.command.core.AbstractUpdateCommandStep.run(SourceFile:124)
+	at liquibase.command.core.UpdateCommandStep.run(SourceFile:100)
+	at com.datical.liquibase.ext.command.ProUpdateCommandStep.run(SourceFile:44)
+	at liquibase.command.CommandScope.lambda$execute$5(SourceFile:346)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:239)
+	at liquibase.command.CommandScope.execute(SourceFile:290)
+	at liquibase.integration.commandline.CommandRunner.call(SourceFile:51)
+	at liquibase.integration.commandline.CommandRunner.call(SourceFile:21)
+	at picocli.CommandLine.executeUserObject(CommandLine.java:2031)
+	at picocli.CommandLine.access$1500(CommandLine.java:148)
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2469)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2461)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2423)
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2277)
+	at picocli.CommandLine$RunLast.execute(CommandLine.java:2425)
+	at picocli.CommandLine.execute(CommandLine.java:2174)
+	at liquibase.integration.commandline.LiquibaseCommandLine.lambda$execute$2(SourceFile:510)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:239)
+	at liquibase.integration.commandline.LiquibaseCommandLine.lambda$execute$3(SourceFile:485)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:239)
+	at liquibase.integration.commandline.LiquibaseCommandLine.execute(SourceFile:482)
+	at liquibase.integration.commandline.LiquibaseCommandLine.main(SourceFile:117)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at liquibase.integration.commandline.LiquibaseLauncher.main(SourceFile:120)
+Caused by: org.postgresql.util.PSQLException: ERROR: column "promo_code" of relation "orders" already exists
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2904)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2589)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:431)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:534)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:437)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:359)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:344)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:320)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:315)
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(SourceFile:552)
+	... 53 more
+
+[2026-08-19 13:38:07] INFO [liquibase.util] UPDATE SUMMARY
+[2026-08-19 13:38:07] INFO [liquibase.util] Run:                          7
+[2026-08-19 13:38:07] INFO [liquibase.util] Previously run:               0
+[2026-08-19 13:38:07] INFO [liquibase.util] Filtered out:                 0
+[2026-08-19 13:38:07] INFO [liquibase.util] Failed deployment:            5
+[2026-08-19 13:38:07] INFO [liquibase.util] -------------------------------
+[2026-08-19 13:38:07] INFO [liquibase.util] Total change sets:           12
+[2026-08-19 13:38:07] INFO [liquibase.util] Update summary generated
+[2026-08-19 13:38:07] INFO [liquibase.command] Update command encountered an exception.
+[2026-08-19 13:38:07] INFO [liquibase.lockservice] Successfully released change log lock
+[2026-08-19 13:38:07] WARNING [liquibase.configuration] Potentially ignored key(s) in file exists at path liquibase.properties
+ - 'changeLogFile'
+ - 'export'
+ - 'java'
+ - 'liquibase.dbclhistory.file'
+[2026-08-19 13:38:07] INFO [liquibase.command] Logging exception.
+[2026-08-19 13:38:07] INFO [liquibase.ui] ERROR: Exception Details
+[2026-08-19 13:38:07] INFO [liquibase.ui] ERROR: Exception Primary Class:  PSQLException
+[2026-08-19 13:38:07] INFO [liquibase.ui] ERROR: Exception Primary Reason:  ERROR: column "promo_code" of relation "orders" already exists
+[2026-08-19 13:38:07] INFO [liquibase.ui] ERROR: Exception Primary Source:  PostgreSQL 18.6 (Debian 18.6-1.pgdg13+2)
+[2026-08-19 13:38:07] INFO [liquibase.command] Command execution complete
+[2026-08-19 13:38:07] INFO [liquibase] Secure Update Report created!
+* File '/Users/benriley/Documents/GitHub/liquibase-jenkins/changelog/release/demosql/Update-report-19-Aug-2026-133807.html' was created.
+** To suppress Update reports add command arg 'liquibase update --report-enabled=false'
+** To suppress all Secure Reports set liquibase.reports.enabled=false, or LIQUIBASE_REPORTS_ENABLED=false
+[2026-08-19 13:38:07] INFO [liquibase.ui] Secure Update Report created!
+* File '/Users/benriley/Documents/GitHub/liquibase-jenkins/changelog/release/demosql/Update-report-19-Aug-2026-133807.html' was created.
+** To suppress Update reports add command arg 'liquibase update --report-enabled=false'
+** To suppress all Secure Reports set liquibase.reports.enabled=false, or LIQUIBASE_REPORTS_ENABLED=false
+[2026-08-19 13:38:11] INFO [liquibase.command] Logging exception.
+[2026-08-19 13:38:11] INFO [liquibase.ui] ERROR: Exception Details
+[2026-08-19 13:38:11] INFO [liquibase.ui] ERROR: Exception Primary Class:  PSQLException
+[2026-08-19 13:38:11] INFO [liquibase.ui] ERROR: Exception Primary Reason:  ERROR: column "promo_code" of relation "orders" already exists
+[2026-08-19 13:38:11] INFO [liquibase.ui] ERROR: Exception Primary Source:  PostgreSQL 18.6 (Debian 18.6-1.pgdg13+2)
+[2026-08-19 13:38:11] INFO [liquibase.command] Command execution complete
+[2026-08-19 13:38:12] SEVERE [liquibase.integration] Migration failed for changeset rollback.sql::102::jsmith:
+     Reason: liquibase.exception.DatabaseException: ERROR: column "promo_code" of relation "orders" already exists [Failed SQL: (0) ALTER TABLE orders ADD COLUMN promo_code VARCHAR(20)]
+liquibase.exception.CommandExecutionException: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset rollback.sql::102::jsmith:
+     Reason: liquibase.exception.DatabaseException: ERROR: column "promo_code" of relation "orders" already exists [Failed SQL: (0) ALTER TABLE orders ADD COLUMN promo_code VARCHAR(20)]
+	at liquibase.command.CommandScope.lambda$execute$5(SourceFile:402)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:239)
+	at liquibase.command.CommandScope.execute(SourceFile:290)
+	at com.datical.liquibase.ext.command.InternalRollbackOnErrorCommandStep.executeCommand(SourceFile:411)
+	at com.datical.liquibase.ext.command.ProUpdateCommandStep.run(SourceFile:60)
+	at liquibase.command.CommandScope.lambda$execute$5(SourceFile:346)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:239)
+	at liquibase.command.CommandScope.execute(SourceFile:290)
+	at liquibase.integration.commandline.CommandRunner.call(SourceFile:51)
+	at liquibase.integration.commandline.CommandRunner.call(SourceFile:21)
+	at picocli.CommandLine.executeUserObject(CommandLine.java:2031)
+	at picocli.CommandLine.access$1500(CommandLine.java:148)
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2469)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2461)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2423)
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2277)
+	at picocli.CommandLine$RunLast.execute(CommandLine.java:2425)
+	at picocli.CommandLine.execute(CommandLine.java:2174)
+	at liquibase.integration.commandline.LiquibaseCommandLine.lambda$execute$2(SourceFile:510)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:239)
+	at liquibase.integration.commandline.LiquibaseCommandLine.lambda$execute$3(SourceFile:485)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:239)
+	at liquibase.integration.commandline.LiquibaseCommandLine.execute(SourceFile:482)
+	at liquibase.integration.commandline.LiquibaseCommandLine.main(SourceFile:117)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at liquibase.integration.commandline.LiquibaseLauncher.main(SourceFile:120)
+Caused by: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset rollback.sql::102::jsmith:
+     Reason: liquibase.exception.DatabaseException: ERROR: column "promo_code" of relation "orders" already exists [Failed SQL: (0) ALTER TABLE orders ADD COLUMN promo_code VARCHAR(20)]
+	at liquibase.changelog.ChangeLogIterator.run(SourceFile:155)
+	at liquibase.command.core.AbstractUpdateCommandStep.lambda$run$1(SourceFile:126)
+	at liquibase.Scope.lambda$child$0(SourceFile:254)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:253)
+	at liquibase.Scope.child(SourceFile:232)
+	at liquibase.command.core.AbstractUpdateCommandStep.run(SourceFile:124)
+	at liquibase.command.core.UpdateCommandStep.run(SourceFile:100)
+	at com.datical.liquibase.ext.command.ProUpdateCommandStep.run(SourceFile:44)
+	... 25 more
+Caused by: liquibase.exception.MigrationFailedException: Migration failed for changeset rollback.sql::102::jsmith:
+     Reason: liquibase.exception.DatabaseException: ERROR: column "promo_code" of relation "orders" already exists [Failed SQL: (0) ALTER TABLE orders ADD COLUMN promo_code VARCHAR(20)]
+	at liquibase.changelog.ChangeSet.execute(SourceFile:964)
+	at liquibase.changelog.visitor.UpdateVisitor.executeAcceptedChange(SourceFile:127)
+	at liquibase.changelog.visitor.UpdateVisitor.visit(SourceFile:71)
+	at liquibase.changelog.ChangeLogIterator.lambda$run$0(SourceFile:133)
+	at liquibase.Scope.lambda$child$0(SourceFile:254)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:253)
+	at liquibase.Scope.child(SourceFile:232)
+	at liquibase.changelog.ChangeLogIterator.lambda$run$1(SourceFile:122)
+	at liquibase.Scope.lambda$child$0(SourceFile:254)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:253)
+	at liquibase.Scope.child(SourceFile:232)
+	at liquibase.Scope.child(SourceFile:320)
+	at liquibase.Scope.child(SourceFile:324)
+	at liquibase.changelog.ChangeLogIterator.run(SourceFile:91)
+	... 33 more
+Caused by: liquibase.exception.DatabaseException: ERROR: column "promo_code" of relation "orders" already exists [Failed SQL: (0) ALTER TABLE orders ADD COLUMN promo_code VARCHAR(20)]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(SourceFile:560)
+	at liquibase.executor.jvm.JdbcExecutor.execute(SourceFile:85)
+	at liquibase.executor.jvm.JdbcExecutor.execute(SourceFile:188)
+	at liquibase.executor.AbstractExecutor.execute(SourceFile:148)
+	at liquibase.database.AbstractJdbcDatabase.executeStatements(SourceFile:1188)
+	at liquibase.changelog.ChangeSet.execute(SourceFile:906)
+	... 48 more
+Caused by: org.postgresql.util.PSQLException: ERROR: column "promo_code" of relation "orders" already exists
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2904)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2589)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:431)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:534)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:437)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:359)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:344)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:320)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:315)
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(SourceFile:552)
+	... 53 more
+
+[2026-08-19 13:38:12] INFO [liquibase.ui] Logs saved to liquibase.json
+[2026-08-19 13:44:20] INFO [liquibase.ui] ####################################################
+##   _     _             _ _                      ##
+##  | |   (_)           (_) |                     ##
+##  | |    _  __ _ _   _ _| |__   __ _ ___  ___   ##
+##  | |   | |/ _` | | | | | '_ \ / _` / __|/ _ \  ##
+##  | |___| | (_| | |_| | | |_) | (_| \__ \  __/  ##
+##  \_____/_|\__, |\__,_|_|_.__/ \__,_|___/\___|  ##
+##              | |                               ##
+##              |_|                               ##
+##                                                ## 
+##  Get documentation at docs.liquibase.com       ##
+##  Get certified courses at learn.liquibase.com  ## 
+##                                                ##
+####################################################
+Starting Liquibase Secure at 13:44:20 using Java 25.0.1 (version 5.2.1 #63 built at 2026-07-08 14:39:13 UTC)
+[2026-08-19 13:44:20] INFO [liquibase.ui] Liquibase Secure Version: 5.2.1
+[2026-08-19 13:44:20] INFO [liquibase.ui] Liquibase Secure license issued to Liquibase_SA, valid until Thu Dec 31 00:00:00 GMT 2026
+[2026-08-19 13:44:20] INFO [liquibase.integration] Starting command execution.
+[2026-08-19 13:44:21] WARNING [liquibase.configuration] Potentially ignored key(s) in file exists at path liquibase.properties
+ - 'export'
+ - 'java'
+ - 'liquibase.dbclhistory.file'
+[2026-08-19 13:44:21] INFO [liquibase.database] Set default schema name to public
+[2026-08-19 13:44:21] INFO [liquibase.changelog] Reading from public.databasechangelog
+[2026-08-19 13:44:21] INFO [liquibase.lockservice] Successfully acquired change log lock
+[2026-08-19 13:44:21] INFO [liquibase.command] Using deploymentId: 7143459747
+[2026-08-19 13:44:21] INFO [liquibase.changelog] Reading from public.databasechangelog
+[2026-08-19 13:44:21] INFO [liquibase.ui] Running Changeset: demo.sql::100-create-orders-table::jsmith
+[2026-08-19 13:44:21] INFO [liquibase.changelog] Custom SQL executed
+[2026-08-19 13:44:21] INFO [liquibase.changelog] ChangeSet demo.sql::100-create-orders-table::jsmith ran successfully in 15ms
+[2026-08-19 13:44:21] INFO [liquibase.sqlgenerator] Creating database history table with name: public.databasechangeloghistory
+[2026-08-19 13:44:21] INFO [liquibase.ui] INFO: A new table 'databasechangeloghistory' was created in 'postgres.public' to track database changing Liquibase operations. The Pro property 'liquibase.dbclhistory.enabled=true' was configured on the CLI, or as Environment Variable or defaults file property, etc. To pause collecting history, set to 'false'. Learn more at https://docs.liquibase.com/DATABASECHANGELOGHISTORY
+[2026-08-19 13:44:21] INFO [liquibase.ui] Running Changeset: demo.sql::101::jsmith::jsmith
+[2026-08-19 13:44:21] INFO [liquibase.changelog] Custom SQL executed
+[2026-08-19 13:44:21] INFO [liquibase.changelog] ChangeSet demo.sql::101::jsmith::jsmith ran successfully in 3ms
+[2026-08-19 13:44:22] INFO [liquibase.ui] Running Changeset: dml.sql::103::jsmith
+[2026-08-19 13:44:22] INFO [liquibase.changelog] Custom SQL executed
+[2026-08-19 13:44:22] INFO [liquibase.changelog] ChangeSet dml.sql::103::jsmith ran successfully in 3ms
+[2026-08-19 13:44:22] INFO [liquibase.ui] Running Changeset: dmltablealters.sql::104-create-customer-accounts-table::jsmith
+[2026-08-19 13:44:22] INFO [liquibase.changelog] Custom SQL executed
+[2026-08-19 13:44:22] INFO [liquibase.changelog] ChangeSet dmltablealters.sql::104-create-customer-accounts-table::jsmith ran successfully in 3ms
+[2026-08-19 13:44:22] INFO [liquibase.ui] Running Changeset: dmltablealters.sql::105::jsmith
+[2026-08-19 13:44:22] INFO [liquibase.changelog] Custom SQL executed
+[2026-08-19 13:44:22] INFO [liquibase.changelog] ChangeSet dmltablealters.sql::105::jsmith ran successfully in 2ms
+[2026-08-19 13:44:22] INFO [liquibase.ui] Running Changeset: dmltablealters.sql::106::jsmith
+[2026-08-19 13:44:22] INFO [liquibase.changelog] Custom SQL executed
+[2026-08-19 13:44:22] INFO [liquibase.changelog] ChangeSet dmltablealters.sql::106::jsmith ran successfully in 4ms
+[2026-08-19 13:44:22] INFO [liquibase.ui] Running Changeset: dmltablealters.sql::107::jsmith
+[2026-08-19 13:44:22] INFO [liquibase.changelog] Custom SQL executed
+[2026-08-19 13:44:22] INFO [liquibase.changelog] ChangeSet dmltablealters.sql::107::jsmith ran successfully in 7ms
+[2026-08-19 13:44:22] INFO [liquibase.ui] Running Changeset: rollback.sql::102-create-shipments-table::jsmith
+[2026-08-19 13:44:22] INFO [liquibase.changelog] Custom SQL executed
+[2026-08-19 13:44:22] INFO [liquibase.changelog] ChangeSet rollback.sql::102-create-shipments-table::jsmith ran successfully in 6ms
+[2026-08-19 13:44:22] INFO [liquibase.ui] Running Changeset: rollback.sql::103-add-column::jsmith
+[2026-08-19 13:44:22] INFO [liquibase.changelog] Custom SQL executed
+[2026-08-19 13:44:22] INFO [liquibase.changelog] ChangeSet rollback.sql::103-add-column::jsmith ran successfully in 2ms
+[2026-08-19 13:44:22] INFO [liquibase.ui] Running Changeset: null.sql::104-create-table::jsmith
+[2026-08-19 13:44:22] INFO [liquibase.changelog] Custom SQL executed
+[2026-08-19 13:44:22] INFO [liquibase.changelog] ChangeSet null.sql::104-create-table::jsmith ran successfully in 3ms
+[2026-08-19 13:44:22] INFO [liquibase.ui] Running Changeset: null.sql::105-add-column::jsmith
+[2026-08-19 13:44:22] INFO [liquibase.changelog] Custom SQL executed
+[2026-08-19 13:44:22] INFO [liquibase.changelog] ChangeSet null.sql::105-add-column::jsmith ran successfully in 1ms
+[2026-08-19 13:44:22] INFO [liquibase.ui] Running Changeset: null.sql::106-backfill::jsmith
+[2026-08-19 13:44:22] INFO [liquibase.changelog] Custom SQL executed
+[2026-08-19 13:44:22] INFO [liquibase.changelog] ChangeSet null.sql::106-backfill::jsmith ran successfully in 3ms
+[2026-08-19 13:44:22] INFO [liquibase.ui] Running Changeset: null.sql::107-add-not-null::jsmith
+[2026-08-19 13:44:22] INFO [liquibase.changelog] Custom SQL executed
+[2026-08-19 13:44:22] INFO [liquibase.changelog] ChangeSet null.sql::107-add-not-null::jsmith ran successfully in 2ms
+[2026-08-19 13:44:22] INFO [liquibase.util] UPDATE SUMMARY
+[2026-08-19 13:44:22] INFO [liquibase.util] Run:                         13
+[2026-08-19 13:44:22] INFO [liquibase.util] Previously run:               0
+[2026-08-19 13:44:22] INFO [liquibase.util] Filtered out:                 0
+[2026-08-19 13:44:22] INFO [liquibase.util] Failed deployment:            0
+[2026-08-19 13:44:22] INFO [liquibase.util] -------------------------------
+[2026-08-19 13:44:22] INFO [liquibase.util] Total change sets:           13
+[2026-08-19 13:44:22] INFO [liquibase.util] Update summary generated
+[2026-08-19 13:44:22] INFO [liquibase.command] Update command completed successfully.
+[2026-08-19 13:44:22] INFO [liquibase.ui] Liquibase: Update has been successful. Rows affected: 0
+[2026-08-19 13:44:22] INFO [liquibase.lockservice] Successfully released change log lock
+[2026-08-19 13:44:22] INFO [liquibase] Secure Update Report created!
+* File '/Users/benriley/Documents/GitHub/liquibase-jenkins/changelog/release/demosql/Update-report-19-Aug-2026-134422.html' was created.
+** To suppress Update reports add command arg 'liquibase update --report-enabled=false'
+** To suppress all Secure Reports set liquibase.reports.enabled=false, or LIQUIBASE_REPORTS_ENABLED=false
+[2026-08-19 13:44:22] INFO [liquibase.ui] Secure Update Report created!
+* File '/Users/benriley/Documents/GitHub/liquibase-jenkins/changelog/release/demosql/Update-report-19-Aug-2026-134422.html' was created.
+** To suppress Update reports add command arg 'liquibase update --report-enabled=false'
+** To suppress all Secure Reports set liquibase.reports.enabled=false, or LIQUIBASE_REPORTS_ENABLED=false
+[2026-08-19 13:44:23] INFO [liquibase.ext] Resetting CouchbaseLockService
+[2026-08-19 13:44:23] INFO [liquibase.command] Command execution complete
+[2026-08-19 13:44:25] INFO [liquibase.ui] Logs saved to liquibase.json
+[2026-08-19 13:44:25] INFO [liquibase.ui] Liquibase command 'update' was executed successfully.
+[2026-08-19 13:44:40] INFO [liquibase.ui] ####################################################
+##   _     _             _ _                      ##
+##  | |   (_)           (_) |                     ##
+##  | |    _  __ _ _   _ _| |__   __ _ ___  ___   ##
+##  | |   | |/ _` | | | | | '_ \ / _` / __|/ _ \  ##
+##  | |___| | (_| | |_| | | |_) | (_| \__ \  __/  ##
+##  \_____/_|\__, |\__,_|_|_.__/ \__,_|___/\___|  ##
+##              | |                               ##
+##              |_|                               ##
+##                                                ## 
+##  Get documentation at docs.liquibase.com       ##
+##  Get certified courses at learn.liquibase.com  ## 
+##                                                ##
+####################################################
+Starting Liquibase Secure at 13:44:40 using Java 25.0.1 (version 5.2.1 #63 built at 2026-07-08 14:39:13 UTC)
+[2026-08-19 13:44:40] INFO [liquibase.ui] Liquibase Secure Version: 5.2.1
+[2026-08-19 13:44:40] INFO [liquibase.ui] Liquibase Secure license issued to Liquibase_SA, valid until Thu Dec 31 00:00:00 GMT 2026
+[2026-08-19 13:44:40] INFO [liquibase.integration] Starting command execution.
+[2026-08-19 13:44:43] WARNING [liquibase.configuration] Potentially ignored key(s) in file exists at path liquibase.properties
+ - 'changeLogFile'
+ - 'export'
+ - 'java'
+ - 'liquibase.dbclhistory.file'
+[2026-08-19 13:44:44] INFO [liquibase.database] Set default schema name to public
+[2026-08-19 13:44:44] INFO [liquibase.changelog] Reading from public.databasechangelog
+[2026-08-19 13:44:44] INFO [liquibase.command] Command execution complete
+[2026-08-19 13:44:45] INFO [liquibase.ui] Logs saved to liquibase.json
+[2026-08-19 13:44:45] INFO [liquibase.ui] Liquibase command 'history' was executed successfully.
+[2026-08-19 13:44:58] INFO [liquibase.ui] ####################################################
+##   _     _             _ _                      ##
+##  | |   (_)           (_) |                     ##
+##  | |    _  __ _ _   _ _| |__   __ _ ___  ___   ##
+##  | |   | |/ _` | | | | | '_ \ / _` / __|/ _ \  ##
+##  | |___| | (_| | |_| | | |_) | (_| \__ \  __/  ##
+##  \_____/_|\__, |\__,_|_|_.__/ \__,_|___/\___|  ##
+##              | |                               ##
+##              |_|                               ##
+##                                                ## 
+##  Get documentation at docs.liquibase.com       ##
+##  Get certified courses at learn.liquibase.com  ## 
+##                                                ##
+####################################################
+Starting Liquibase Secure at 13:44:58 using Java 25.0.1 (version 5.2.1 #63 built at 2026-07-08 14:39:13 UTC)
+[2026-08-19 13:44:58] INFO [liquibase.ui] Liquibase Secure Version: 5.2.1
+[2026-08-19 13:44:58] INFO [liquibase.ui] Liquibase Secure license issued to Liquibase_SA, valid until Thu Dec 31 00:00:00 GMT 2026
+[2026-08-19 13:44:58] INFO [liquibase.integration] Starting command execution.
+[2026-08-19 13:44:59] WARNING [liquibase.configuration] Potentially ignored key(s) in file exists at path liquibase.properties
+ - 'export'
+ - 'java'
+ - 'liquibase.dbclhistory.file'
+[2026-08-19 13:44:59] INFO [liquibase.database] Set default schema name to public
+[2026-08-19 13:44:59] INFO [liquibase.changelog] Reading from public.databasechangelog
+[2026-08-19 13:44:59] INFO [liquibase.lockservice] Successfully acquired change log lock
+[2026-08-19 13:44:59] INFO [liquibase.changelog] Reading from public.databasechangelog
+[2026-08-19 13:44:59] INFO [liquibase] Secure Rollback Report created!
+* File '/Users/benriley/Documents/GitHub/liquibase-jenkins/changelog/release/demosql/Rollback-report-19-Aug-2026-134459.html' was created.
+** To suppress Rollback reports add command arg 'liquibase rollback --report-enabled=false'
+** To suppress all Secure Reports set liquibase.reports.enabled=false, or LIQUIBASE_REPORTS_ENABLED=false
+[2026-08-19 13:44:59] INFO [liquibase.ui] Secure Rollback Report created!
+* File '/Users/benriley/Documents/GitHub/liquibase-jenkins/changelog/release/demosql/Rollback-report-19-Aug-2026-134459.html' was created.
+** To suppress Rollback reports add command arg 'liquibase rollback --report-enabled=false'
+** To suppress all Secure Reports set liquibase.reports.enabled=false, or LIQUIBASE_REPORTS_ENABLED=false
+[2026-08-19 13:45:01] INFO [liquibase.lockservice] Successfully released change log lock
+[2026-08-19 13:45:01] INFO [liquibase.ext] Resetting CouchbaseLockService
+[2026-08-19 13:45:01] INFO [liquibase.command] Logging exception.
+[2026-08-19 13:45:01] INFO [liquibase.ui] ERROR: Exception Details
+[2026-08-19 13:45:01] INFO [liquibase.ui] ERROR: Exception Primary Class:  RollbackFailedException
+[2026-08-19 13:45:01] INFO [liquibase.ui] ERROR: Exception Primary Reason:  Could not find tag 'release-4.2' in the database
+[2026-08-19 13:45:01] INFO [liquibase.ui] ERROR: Exception Primary Source:  5.2.1
+[2026-08-19 13:45:01] INFO [liquibase.command] Command execution complete
+[2026-08-19 13:45:02] SEVERE [liquibase.integration] Could not find tag 'release-4.2' in the database
+liquibase.exception.CommandExecutionException: liquibase.exception.RollbackFailedException: Could not find tag 'release-4.2' in the database
+	at liquibase.command.CommandScope.lambda$execute$5(SourceFile:402)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:239)
+	at liquibase.command.CommandScope.execute(SourceFile:290)
+	at liquibase.integration.commandline.CommandRunner.call(SourceFile:51)
+	at liquibase.integration.commandline.CommandRunner.call(SourceFile:21)
+	at picocli.CommandLine.executeUserObject(CommandLine.java:2031)
+	at picocli.CommandLine.access$1500(CommandLine.java:148)
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2469)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2461)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2423)
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2277)
+	at picocli.CommandLine$RunLast.execute(CommandLine.java:2425)
+	at picocli.CommandLine.execute(CommandLine.java:2174)
+	at liquibase.integration.commandline.LiquibaseCommandLine.lambda$execute$2(SourceFile:510)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:239)
+	at liquibase.integration.commandline.LiquibaseCommandLine.lambda$execute$3(SourceFile:485)
+	at liquibase.Scope.child(SourceFile:263)
+	at liquibase.Scope.child(SourceFile:239)
+	at liquibase.integration.commandline.LiquibaseCommandLine.execute(SourceFile:482)
+	at liquibase.integration.commandline.LiquibaseCommandLine.main(SourceFile:117)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at liquibase.integration.commandline.LiquibaseLauncher.main(SourceFile:120)
+Caused by: liquibase.exception.RollbackFailedException: Could not find tag 'release-4.2' in the database
+	at liquibase.changelog.filter.AfterTagChangeSetFilter.oldestVersion(SourceFile:101)
+	at liquibase.changelog.filter.AfterTagChangeSetFilter.<init>(SourceFile:38)
+	at liquibase.command.core.RollbackCommandStep.run(SourceFile:61)
+	at com.datical.liquibase.ext.command.ProRollbackCommandStep.run(SourceFile:34)
+	at liquibase.command.CommandScope.lambda$execute$5(SourceFile:346)
+	... 24 more
+
+[2026-08-19 13:45:02] INFO [liquibase.ui] Logs saved to liquibase.json
+[2026-08-19 13:45:10] INFO [liquibase.ui] ####################################################
+##   _     _             _ _                      ##
+##  | |   (_)           (_) |                     ##
+##  | |    _  __ _ _   _ _| |__   __ _ ___  ___   ##
+##  | |   | |/ _` | | | | | '_ \ / _` / __|/ _ \  ##
+##  | |___| | (_| | |_| | | |_) | (_| \__ \  __/  ##
+##  \_____/_|\__, |\__,_|_|_.__/ \__,_|___/\___|  ##
+##              | |                               ##
+##              |_|                               ##
+##                                                ## 
+##  Get documentation at docs.liquibase.com       ##
+##  Get certified courses at learn.liquibase.com  ## 
+##                                                ##
+####################################################
+Starting Liquibase Secure at 13:45:10 using Java 25.0.1 (version 5.2.1 #63 built at 2026-07-08 14:39:13 UTC)
+[2026-08-19 13:45:10] INFO [liquibase.ui] Liquibase Secure Version: 5.2.1
+[2026-08-19 13:45:10] INFO [liquibase.ui] Liquibase Secure license issued to Liquibase_SA, valid until Thu Dec 31 00:00:00 GMT 2026
+[2026-08-19 13:45:10] INFO [liquibase.integration] Starting command execution.
+[2026-08-19 13:45:11] WARNING [liquibase.configuration] Potentially ignored key(s) in file exists at path liquibase.properties
+ - 'changeLogFile'
+ - 'export'
+ - 'java'
+ - 'liquibase.dbclhistory.file'
+[2026-08-19 13:45:11] INFO [liquibase.database] Set default schema name to public
+[2026-08-19 13:45:11] INFO [liquibase.lockservice] Successfully acquired change log lock
+[2026-08-19 13:45:11] INFO [liquibase.ui] Successfully tagged 'postgres@jdbc:postgresql://localhost:5433/postgres'
+[2026-08-19 13:45:11] INFO [liquibase.lockservice] Successfully released change log lock
+[2026-08-19 13:45:11] INFO [liquibase.ext] Resetting CouchbaseLockService
+[2026-08-19 13:45:11] INFO [liquibase.command] Command execution complete
+[2026-08-19 13:45:12] INFO [liquibase.ui] Logs saved to liquibase.json
+[2026-08-19 13:45:12] INFO [liquibase.ui] Liquibase command 'tag' was executed successfully.
+[2026-08-19 13:45:18] INFO [liquibase.ui] ####################################################
+##   _     _             _ _                      ##
+##  | |   (_)           (_) |                     ##
+##  | |    _  __ _ _   _ _| |__   __ _ ___  ___   ##
+##  | |   | |/ _` | | | | | '_ \ / _` / __|/ _ \  ##
+##  | |___| | (_| | |_| | | |_) | (_| \__ \  __/  ##
+##  \_____/_|\__, |\__,_|_|_.__/ \__,_|___/\___|  ##
+##              | |                               ##
+##              |_|                               ##
+##                                                ## 
+##  Get documentation at docs.liquibase.com       ##
+##  Get certified courses at learn.liquibase.com  ## 
+##                                                ##
+####################################################
+Starting Liquibase Secure at 13:45:18 using Java 25.0.1 (version 5.2.1 #63 built at 2026-07-08 14:39:13 UTC)
+[2026-08-19 13:45:18] INFO [liquibase.ui] Liquibase Secure Version: 5.2.1
+[2026-08-19 13:45:18] INFO [liquibase.ui] Liquibase Secure license issued to Liquibase_SA, valid until Thu Dec 31 00:00:00 GMT 2026
+[2026-08-19 13:45:18] INFO [liquibase.integration] Starting command execution.
+[2026-08-19 13:45:18] WARNING [liquibase.configuration] Potentially ignored key(s) in file exists at path liquibase.properties
+ - 'changeLogFile'
+ - 'export'
+ - 'java'
+ - 'liquibase.dbclhistory.file'
+[2026-08-19 13:45:19] INFO [liquibase.database] Set default schema name to public
+[2026-08-19 13:45:19] INFO [liquibase.changelog] Reading from public.databasechangelog
+[2026-08-19 13:45:19] INFO [liquibase.command] Command execution complete
+[2026-08-19 13:45:20] INFO [liquibase.ui] Logs saved to liquibase.json
+[2026-08-19 13:45:20] INFO [liquibase.ui] Liquibase command 'history' was executed successfully.
+[2026-08-19 13:45:39] INFO [liquibase.ui] ####################################################
+##   _     _             _ _                      ##
+##  | |   (_)           (_) |                     ##
+##  | |    _  __ _ _   _ _| |__   __ _ ___  ___   ##
+##  | |   | |/ _` | | | | | '_ \ / _` / __|/ _ \  ##
+##  | |___| | (_| | |_| | | |_) | (_| \__ \  __/  ##
+##  \_____/_|\__, |\__,_|_|_.__/ \__,_|___/\___|  ##
+##              | |                               ##
+##              |_|                               ##
+##                                                ## 
+##  Get documentation at docs.liquibase.com       ##
+##  Get certified courses at learn.liquibase.com  ## 
+##                                                ##
+####################################################
+Starting Liquibase Secure at 13:45:39 using Java 25.0.1 (version 5.2.1 #63 built at 2026-07-08 14:39:13 UTC)
+[2026-08-19 13:45:39] INFO [liquibase.ui] Liquibase Secure Version: 5.2.1
+[2026-08-19 13:45:39] INFO [liquibase.ui] Liquibase Secure license issued to Liquibase_SA, valid until Thu Dec 31 00:00:00 GMT 2026
+[2026-08-19 13:45:39] INFO [liquibase.integration] Starting command execution.
+[2026-08-19 13:45:39] WARNING [liquibase.configuration] Potentially ignored key(s) in file exists at path liquibase.properties
+ - 'export'
+ - 'java'
+ - 'liquibase.dbclhistory.file'
+[2026-08-19 13:45:40] INFO [liquibase.database] Set default schema name to public
+[2026-08-19 13:45:40] INFO [liquibase.changelog] Reading from public.databasechangelog
+[2026-08-19 13:45:40] INFO [liquibase.lockservice] Successfully acquired change log lock
+[2026-08-19 13:45:40] INFO [liquibase.command] Using deploymentId: 7143538743
+[2026-08-19 13:45:40] INFO [liquibase.changelog] Reading from public.databasechangelog
+[2026-08-19 13:45:40] INFO [liquibase.ui] Running Changeset: demo.sql::102-backfill::jsmith
+[2026-08-19 13:45:40] INFO [liquibase.changelog] Custom SQL executed
+[2026-08-19 13:45:40] INFO [liquibase.changelog] ChangeSet demo.sql::102-backfill::jsmith ran successfully in 12ms
+[2026-08-19 13:45:40] INFO [liquibase.util] UPDATE SUMMARY
+[2026-08-19 13:45:40] INFO [liquibase.util] Run:                          1
+[2026-08-19 13:45:40] INFO [liquibase.util] Previously run:              13
+[2026-08-19 13:45:40] INFO [liquibase.util] Filtered out:                 0
+[2026-08-19 13:45:40] INFO [liquibase.util] Failed deployment:            0
+[2026-08-19 13:45:40] INFO [liquibase.util] -------------------------------
+[2026-08-19 13:45:40] INFO [liquibase.util] Total change sets:           14
+[2026-08-19 13:45:40] INFO [liquibase.util] Update summary generated
+[2026-08-19 13:45:40] INFO [liquibase.command] Update command completed successfully.
+[2026-08-19 13:45:40] INFO [liquibase.ui] Liquibase: Update has been successful. Rows affected: 0
+[2026-08-19 13:45:40] INFO [liquibase.lockservice] Successfully released change log lock
+[2026-08-19 13:45:40] INFO [liquibase] Secure Update Report created!
+* File '/Users/benriley/Documents/GitHub/liquibase-jenkins/changelog/release/demosql/Update-report-19-Aug-2026-134540.html' was created.
+** To suppress Update reports add command arg 'liquibase update --report-enabled=false'
+** To suppress all Secure Reports set liquibase.reports.enabled=false, or LIQUIBASE_REPORTS_ENABLED=false
+[2026-08-19 13:45:40] INFO [liquibase.ui] Secure Update Report created!
+* File '/Users/benriley/Documents/GitHub/liquibase-jenkins/changelog/release/demosql/Update-report-19-Aug-2026-134540.html' was created.
+** To suppress Update reports add command arg 'liquibase update --report-enabled=false'
+** To suppress all Secure Reports set liquibase.reports.enabled=false, or LIQUIBASE_REPORTS_ENABLED=false
+[2026-08-19 13:45:42] INFO [liquibase.ext] Resetting CouchbaseLockService
+[2026-08-19 13:45:42] INFO [liquibase.command] Command execution complete
+[2026-08-19 13:45:43] INFO [liquibase.ui] Logs saved to liquibase.json
+[2026-08-19 13:45:43] INFO [liquibase.ui] Liquibase command 'update' was executed successfully.
+[2026-08-19 13:46:10] INFO [liquibase.ui] ####################################################
+##   _     _             _ _                      ##
+##  | |   (_)           (_) |                     ##
+##  | |    _  __ _ _   _ _| |__   __ _ ___  ___   ##
+##  | |   | |/ _` | | | | | '_ \ / _` / __|/ _ \  ##
+##  | |___| | (_| | |_| | | |_) | (_| \__ \  __/  ##
+##  \_____/_|\__, |\__,_|_|_.__/ \__,_|___/\___|  ##
+##              | |                               ##
+##              |_|                               ##
+##                                                ## 
+##  Get documentation at docs.liquibase.com       ##
+##  Get certified courses at learn.liquibase.com  ## 
+##                                                ##
+####################################################
+Starting Liquibase Secure at 13:46:10 using Java 25.0.1 (version 5.2.1 #63 built at 2026-07-08 14:39:13 UTC)
+[2026-08-19 13:46:10] INFO [liquibase.ui] Liquibase Secure Version: 5.2.1
+[2026-08-19 13:46:10] INFO [liquibase.ui] Liquibase Secure license issued to Liquibase_SA, valid until Thu Dec 31 00:00:00 GMT 2026
+[2026-08-19 13:46:10] INFO [liquibase.integration] Starting command execution.
+[2026-08-19 13:46:11] WARNING [liquibase.configuration] Potentially ignored key(s) in file exists at path liquibase.properties
+ - 'changeLogFile'
+ - 'export'
+ - 'java'
+ - 'liquibase.dbclhistory.file'
+[2026-08-19 13:46:11] INFO [liquibase.database] Set default schema name to public
+[2026-08-19 13:46:11] INFO [liquibase.changelog] Reading from public.databasechangelog
+[2026-08-19 13:46:11] INFO [liquibase.command] Command execution complete
+[2026-08-19 13:46:12] INFO [liquibase.ui] Logs saved to liquibase.json
+[2026-08-19 13:46:12] INFO [liquibase.ui] Liquibase command 'history' was executed successfully.
+[2026-08-19 13:46:18] INFO [liquibase.ui] ####################################################
+##   _     _             _ _                      ##
+##  | |   (_)           (_) |                     ##
+##  | |    _  __ _ _   _ _| |__   __ _ ___  ___   ##
+##  | |   | |/ _` | | | | | '_ \ / _` / __|/ _ \  ##
+##  | |___| | (_| | |_| | | |_) | (_| \__ \  __/  ##
+##  \_____/_|\__, |\__,_|_|_.__/ \__,_|___/\___|  ##
+##              | |                               ##
+##              |_|                               ##
+##                                                ## 
+##  Get documentation at docs.liquibase.com       ##
+##  Get certified courses at learn.liquibase.com  ## 
+##                                                ##
+####################################################
+Starting Liquibase Secure at 13:46:18 using Java 25.0.1 (version 5.2.1 #63 built at 2026-07-08 14:39:13 UTC)
+[2026-08-19 13:46:18] INFO [liquibase.ui] Liquibase Secure Version: 5.2.1
+[2026-08-19 13:46:18] INFO [liquibase.ui] Liquibase Secure license issued to Liquibase_SA, valid until Thu Dec 31 00:00:00 GMT 2026
+[2026-08-19 13:46:18] INFO [liquibase.integration] Starting command execution.
+[2026-08-19 13:46:18] WARNING [liquibase.configuration] Potentially ignored key(s) in file exists at path liquibase.properties
+ - 'changeLogFile'
+ - 'export'
+ - 'java'
+ - 'liquibase.dbclhistory.file'
+[2026-08-19 13:46:19] INFO [liquibase.database] Set default schema name to public
+[2026-08-19 13:46:19] INFO [liquibase.lockservice] Successfully acquired change log lock
+[2026-08-19 13:46:19] INFO [liquibase.ui] Successfully tagged 'postgres@jdbc:postgresql://localhost:5433/postgres'
+[2026-08-19 13:46:19] INFO [liquibase.lockservice] Successfully released change log lock
+[2026-08-19 13:46:19] INFO [liquibase.ext] Resetting CouchbaseLockService
+[2026-08-19 13:46:19] INFO [liquibase.command] Command execution complete
+[2026-08-19 13:46:20] INFO [liquibase.ui] Logs saved to liquibase.json
+[2026-08-19 13:46:20] INFO [liquibase.ui] Liquibase command 'tag' was executed successfully.
+[2026-08-19 13:46:28] INFO [liquibase.ui] ####################################################
+##   _     _             _ _                      ##
+##  | |   (_)           (_) |                     ##
+##  | |    _  __ _ _   _ _| |__   __ _ ___  ___   ##
+##  | |   | |/ _` | | | | | '_ \ / _` / __|/ _ \  ##
+##  | |___| | (_| | |_| | | |_) | (_| \__ \  __/  ##
+##  \_____/_|\__, |\__,_|_|_.__/ \__,_|___/\___|  ##
+##              | |                               ##
+##              |_|                               ##
+##                                                ## 
+##  Get documentation at docs.liquibase.com       ##
+##  Get certified courses at learn.liquibase.com  ## 
+##                                                ##
+####################################################
+Starting Liquibase Secure at 13:46:28 using Java 25.0.1 (version 5.2.1 #63 built at 2026-07-08 14:39:13 UTC)
+[2026-08-19 13:46:28] INFO [liquibase.ui] Liquibase Secure Version: 5.2.1
+[2026-08-19 13:46:28] INFO [liquibase.ui] Liquibase Secure license issued to Liquibase_SA, valid until Thu Dec 31 00:00:00 GMT 2026
+[2026-08-19 13:46:28] INFO [liquibase.integration] Starting command execution.
+[2026-08-19 13:46:29] WARNING [liquibase.configuration] Potentially ignored key(s) in file exists at path liquibase.properties
+ - 'export'
+ - 'java'
+ - 'liquibase.dbclhistory.file'
+[2026-08-19 13:46:29] INFO [liquibase.database] Set default schema name to public
+[2026-08-19 13:46:29] INFO [liquibase.changelog] Reading from public.databasechangelog
+[2026-08-19 13:46:29] INFO [liquibase.lockservice] Successfully acquired change log lock
+[2026-08-19 13:46:29] INFO [liquibase.changelog] Reading from public.databasechangelog
+[2026-08-19 13:46:29] INFO [liquibase.ui] Rolling Back Changeset: demo.sql::102-backfill::jsmith
+[2026-08-19 13:46:29] INFO [liquibase.command] Rollback command completed successfully.
+[2026-08-19 13:46:29] INFO [liquibase] Secure Rollback Report created!
+* File '/Users/benriley/Documents/GitHub/liquibase-jenkins/changelog/release/demosql/Rollback-report-19-Aug-2026-134629.html' was created.
+** To suppress Rollback reports add command arg 'liquibase rollback --report-enabled=false'
+** To suppress all Secure Reports set liquibase.reports.enabled=false, or LIQUIBASE_REPORTS_ENABLED=false
+[2026-08-19 13:46:29] INFO [liquibase.ui] Secure Rollback Report created!
+* File '/Users/benriley/Documents/GitHub/liquibase-jenkins/changelog/release/demosql/Rollback-report-19-Aug-2026-134629.html' was created.
+** To suppress Rollback reports add command arg 'liquibase rollback --report-enabled=false'
+** To suppress all Secure Reports set liquibase.reports.enabled=false, or LIQUIBASE_REPORTS_ENABLED=false
+[2026-08-19 13:46:30] INFO [liquibase.lockservice] Successfully released change log lock
+[2026-08-19 13:46:30] INFO [liquibase.ext] Resetting CouchbaseLockService
+[2026-08-19 13:46:30] INFO [liquibase.command] Command execution complete
+[2026-08-19 13:46:31] INFO [liquibase.ui] Logs saved to liquibase.json
+[2026-08-19 13:46:31] INFO [liquibase.ui] Liquibase command 'rollback' was executed successfully.
+[2026-08-19 13:46:35] INFO [liquibase.ui] ####################################################
+##   _     _             _ _                      ##
+##  | |   (_)           (_) |                     ##
+##  | |    _  __ _ _   _ _| |__   __ _ ___  ___   ##
+##  | |   | |/ _` | | | | | '_ \ / _` / __|/ _ \  ##
+##  | |___| | (_| | |_| | | |_) | (_| \__ \  __/  ##
+##  \_____/_|\__, |\__,_|_|_.__/ \__,_|___/\___|  ##
+##              | |                               ##
+##              |_|                               ##
+##                                                ## 
+##  Get documentation at docs.liquibase.com       ##
+##  Get certified courses at learn.liquibase.com  ## 
+##                                                ##
+####################################################
+Starting Liquibase Secure at 13:46:35 using Java 25.0.1 (version 5.2.1 #63 built at 2026-07-08 14:39:13 UTC)
+[2026-08-19 13:46:35] INFO [liquibase.ui] Liquibase Secure Version: 5.2.1
+[2026-08-19 13:46:35] INFO [liquibase.ui] Liquibase Secure license issued to Liquibase_SA, valid until Thu Dec 31 00:00:00 GMT 2026
+[2026-08-19 13:46:35] INFO [liquibase.integration] Starting command execution.
+[2026-08-19 13:46:36] WARNING [liquibase.configuration] Potentially ignored key(s) in file exists at path liquibase.properties
+ - 'changeLogFile'
+ - 'export'
+ - 'java'
+ - 'liquibase.dbclhistory.file'
+[2026-08-19 13:46:36] INFO [liquibase.database] Set default schema name to public
+[2026-08-19 13:46:36] INFO [liquibase.changelog] Reading from public.databasechangelog
+[2026-08-19 13:46:36] INFO [liquibase.command] Command execution complete
+[2026-08-19 13:46:37] INFO [liquibase.ui] Logs saved to liquibase.json
+[2026-08-19 13:46:37] INFO [liquibase.ui] Liquibase command 'history' was executed successfully.
+[2026-08-19 13:46:42] INFO [liquibase.ui] ####################################################
+##   _     _             _ _                      ##
+##  | |   (_)           (_) |                     ##
+##  | |    _  __ _ _   _ _| |__   __ _ ___  ___   ##
+##  | |   | |/ _` | | | | | '_ \ / _` / __|/ _ \  ##
+##  | |___| | (_| | |_| | | |_) | (_| \__ \  __/  ##
+##  \_____/_|\__, |\__,_|_|_.__/ \__,_|___/\___|  ##
+##              | |                               ##
+##              |_|                               ##
+##                                                ## 
+##  Get documentation at docs.liquibase.com       ##
+##  Get certified courses at learn.liquibase.com  ## 
+##                                                ##
+####################################################
+Starting Liquibase Secure at 13:46:42 using Java 25.0.1 (version 5.2.1 #63 built at 2026-07-08 14:39:13 UTC)
+[2026-08-19 13:46:42] INFO [liquibase.ui] Liquibase Secure Version: 5.2.1
+[2026-08-19 13:46:42] INFO [liquibase.ui] Liquibase Secure license issued to Liquibase_SA, valid until Thu Dec 31 00:00:00 GMT 2026
+[2026-08-19 13:46:42] INFO [liquibase.integration] Starting command execution.
+[2026-08-19 13:46:42] WARNING [liquibase.configuration] Potentially ignored key(s) in file exists at path liquibase.properties
+ - 'export'
+ - 'java'
+ - 'liquibase.dbclhistory.file'
+[2026-08-19 13:46:43] INFO [liquibase.database] Set default schema name to public
+[2026-08-19 13:46:43] INFO [liquibase.changelog] Reading from public.databasechangelog
+[2026-08-19 13:46:43] INFO [liquibase.command] Command execution complete
+[2026-08-19 13:46:44] INFO [liquibase.ui] Logs saved to liquibase.json
+[2026-08-19 13:46:44] INFO [liquibase.ui] Liquibase command 'status' was executed successfully.
+[2026-08-20 13:27:38] INFO [liquibase.ui] ####################################################
+##   _     _             _ _                      ##
+##  | |   (_)           (_) |                     ##
+##  | |    _  __ _ _   _ _| |__   __ _ ___  ___   ##
+##  | |   | |/ _` | | | | | '_ \ / _` / __|/ _ \  ##
+##  | |___| | (_| | |_| | | |_) | (_| \__ \  __/  ##
+##  \_____/_|\__, |\__,_|_|_.__/ \__,_|___/\___|  ##
+##              | |                               ##
+##              |_|                               ##
+##                                                ## 
+##  Get documentation at docs.liquibase.com       ##
+##  Get certified courses at learn.liquibase.com  ## 
+##                                                ##
+####################################################
+Starting Liquibase Secure at 13:27:38 using Java 25.0.1 (version 5.2.1 #63 built at 2026-07-08 14:39:13 UTC)
+[2026-08-20 13:27:38] INFO [liquibase.ui] Liquibase Secure Version: 5.2.1
+[2026-08-20 13:27:38] INFO [liquibase.ui] Liquibase Secure license issued to Liquibase_SA, valid until Thu Dec 31 00:00:00 GMT 2026
+[2026-08-20 13:27:38] INFO [liquibase.integration] Starting command execution.
+[2026-08-20 13:27:38] WARNING [liquibase.configuration] Potentially ignored key(s) in file exists at path liquibase.properties
+ - 'export'
+ - 'java'
+ - 'liquibase.dbclhistory.file'
+[2026-08-20 13:27:38] INFO [liquibase.database] Set default schema name to public
+[2026-08-20 13:27:39] INFO [liquibase.changelog] Reading from public.databasechangelog
+[2026-08-20 13:27:39] INFO [liquibase.command] Command execution complete
+[2026-08-20 13:27:39] INFO [liquibase.ui] Logs saved to liquibase.json
+[2026-08-20 13:27:39] INFO [liquibase.ui] Liquibase command 'status' was executed successfully.

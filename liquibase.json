@@ -10302,3 +10302,592 @@ Starting Liquibase Secure at 14:37:43 using Java 25.0.1 (version 5.1.0 #57 built
 [2026-08-10 14:37:45] INFO [liquibase.command] Command execution complete
 [2026-08-10 14:37:46] INFO [liquibase.ui] Logs saved to liquibase.json
 [2026-08-10 14:37:46] INFO [liquibase.ui] Liquibase command 'status' was executed successfully.
+{"timestamp":"2026-08-12T10:49:27.875Z","level":"INFO","class":"liquibase.integration","thread":"3","message":"Starting command execution.","changesetOutcome":"NOOP","liquibaseSystemUser":"benriley","deploymentOutcome":"NOOP","liquibaseSchemaName":"","deploymentOutcomeCount":"0","liquibaseHostName":"Mac","liquibaseVersion":"5.2.1","operationStop":"","changelogFile":"","changesetsUpdated":{"changeset":"null","changesetCount":0},"operationStart":"","deploymentId":"","rowsAffected":"0","liquibaseCatalogName":"","changesetId":"","changesetAuthor":"","liquibaseTargetUrl":"","liquibaseSystemName":"Mac"}
+{"timestamp":"2026-08-12T10:49:27.892Z","level":"INFO","class":"liquibase.integration","thread":"3","message":"Generated version info","changesetOutcome":"NOOP","liquibaseSystemUser":"benriley","deploymentOutcome":"NOOP","liquibaseSchemaName":"","deploymentOutcomeCount":"0","version":{"javaHome":{"path":"/opt/homebrew/Cellar/openjdk/25.0.1/libexec/openjdk.jdk/Contents/Home","version":"25.0.1"},"liquibaseLibraries":{"libraries":[{"name":"Liquibase AWS Extension","path":"internal/extensions/liquibase-aws-extension.jar"},{"name":"Liquibase Azure Extension","path":"internal/extensions/liquibase-azure.jar"},{"name":"Checks Extension","path":"internal/extensions/liquibase-checks.jar"},{"name":"Liquibase Commercial BigQuery Extension","path":"internal/extensions/liquibase-commercial-bigquery.jar"},{"name":"Liquibase Commercial Cassandra Extension","path":"internal/extensions/liquibase-commercial-cassandra.jar"},{"name":"Liquibase Commercial Couchbase Extension","path":"internal/extensions/liquibase-commercial-couchbase.jar"},{"name":"Liquibase Commercial Databricks Extension","path":"internal/extensions/liquibase-commercial-databricks.jar"},{"name":"Liquibase MongoDB Commercial Extension","path":"internal/extensions/liquibase-commercial-mongodb.jar"},{"name":"Liquibase Commercial Snowflake Extension","path":"internal/extensions/liquibase-commercial-snowflake.jar"},{"name":"Liquibase Commercial Teradata Extension","path":"internal/extensions/liquibase-commercial-teradata.jar"},{"name":"HashiCorp Vault Extension","path":"internal/extensions/liquibase-hashicorp-vault.jar"},{"name":"Apache Commons Collections","path":"internal/lib/commons-collections4.jar"},{"name":"Apache Commons IO","path":"internal/lib/commons-io.jar"},{"name":"Apache Commons Lang","path":"internal/lib/commons-lang3.jar"},{"name":"Apache Commons Text","path":"internal/lib/commons-text.jar"},{"name":"H2 Database Engine","path":"internal/lib/h2.jar"},{"name":"HSQLDB","path":"internal/lib/hsqldb.jar"},{"name":"jaxb-api","path":"internal/lib/jaxb-api.jar"},{"name":"JAXB Core","path":"internal/lib/jaxb-core.jar"},{"name":"JAXB Runtime","path":"internal/lib/jaxb-runtime.jar"},{"name":"Jaybird","path":"internal/lib/jaybird.jar"},{"name":"IBM JCC JDBC 4 Driver","path":"internal/lib/jcc.jar"},{"name":"Azure Dependencies","path":"internal/lib/liquibase-azure-deps.jar"},{"name":"Commercial Liquibase Functionality","path":"internal/lib/liquibase-commercial.jar"},{"name":"liquibase-slf4j-nop","path":"internal/lib/liquibase-slf4j-nop.jar"},{"name":"mariadb-java-client","path":"internal/lib/mariadb-java-client.jar"},{"name":"Microsoft JDBC Driver for SQL Server","path":"internal/lib/mssql-jdbc.jar"},{"name":"JDBC","path":"internal/lib/ojdbc8.jar"},{"name":"opencsv","path":"internal/lib/opencsv.jar"},{"name":"picocli","path":"internal/lib/picocli.jar"},{"name":"PostgreSQL JDBC Driver","path":"internal/lib/postgresql.jar"},{"name":"SLF4J API Module","path":"internal/lib/slf4j-api.jar"},{"name":"SnakeYAML","path":"internal/lib/snakeyaml.jar"},{"name":"snowflake-jdbc","path":"internal/lib/snowflake-jdbc.jar"},{"name":"SQLite JDBC","path":"internal/lib/sqlite-jdbc.jar"}],"libraryCount":35},"liquibaseVersion":{"build":"63","built":"2026-07-08 14:39:13 UTC","javaVersion":"25.0.1","licenseEndDate":"Thu Dec 31 00:00:00 GMT 2026","licensee":"Liquibase_SA","path":"/Users/benriley/Documents/GitHub/liquibase-secure-5.0.0","version":"5.2.1"}},"liquibaseVersion":"","operationStop":"","changelogFile":"","changesetsUpdated":{"changeset":"null","changesetCount":0},"operationStart":"","deploymentId":"","rowsAffected":"0","liquibaseCatalogName":"","changesetId":"","changesetAuthor":"","liquibaseTargetUrl":"","liquibaseSystemName":""}
+{"timestamp":"2026-08-12T10:55:18.817Z","level":"INFO","class":"liquibase.integration","thread":"3","message":"Starting command execution.","changesetOutcome":"NOOP","liquibaseSystemUser":"benriley","deploymentOutcome":"NOOP","liquibaseSchemaName":"","deploymentOutcomeCount":"0","liquibaseHostName":"Mac","liquibaseVersion":"5.2.1","operationStop":"","changelogFile":"","changesetsUpdated":{"changeset":"null","changesetCount":0},"operationStart":"","deploymentId":"","rowsAffected":"0","liquibaseCatalogName":"","changesetId":"","changesetAuthor":"","liquibaseTargetUrl":"","liquibaseSystemName":"Mac"}
+{"timestamp":"2026-08-12T10:55:18.833Z","level":"INFO","class":"liquibase.integration","thread":"3","message":"Generated version info","changesetOutcome":"NOOP","liquibaseSystemUser":"benriley","deploymentOutcome":"NOOP","liquibaseSchemaName":"","deploymentOutcomeCount":"0","version":{"javaHome":{"path":"/opt/homebrew/Cellar/openjdk/25.0.1/libexec/openjdk.jdk/Contents/Home","version":"25.0.1"},"liquibaseLibraries":{"libraries":[{"name":"Liquibase AWS Extension","path":"internal/extensions/liquibase-aws-extension.jar"},{"name":"Liquibase Azure Extension","path":"internal/extensions/liquibase-azure.jar"},{"name":"Checks Extension","path":"internal/extensions/liquibase-checks.jar"},{"name":"Liquibase Commercial BigQuery Extension","path":"internal/extensions/liquibase-commercial-bigquery.jar"},{"name":"Liquibase Commercial Cassandra Extension","path":"internal/extensions/liquibase-commercial-cassandra.jar"},{"name":"Liquibase Commercial Couchbase Extension","path":"internal/extensions/liquibase-commercial-couchbase.jar"},{"name":"Liquibase Commercial Databricks Extension","path":"internal/extensions/liquibase-commercial-databricks.jar"},{"name":"Liquibase MongoDB Commercial Extension","path":"internal/extensions/liquibase-commercial-mongodb.jar"},{"name":"Liquibase Commercial Snowflake Extension","path":"internal/extensions/liquibase-commercial-snowflake.jar"},{"name":"Liquibase Commercial Teradata Extension","path":"internal/extensions/liquibase-commercial-teradata.jar"},{"name":"HashiCorp Vault Extension","path":"internal/extensions/liquibase-hashicorp-vault.jar"},{"name":"Apache Commons Collections","path":"internal/lib/commons-collections4.jar"},{"name":"Apache Commons IO","path":"internal/lib/commons-io.jar"},{"name":"Apache Commons Lang","path":"internal/lib/commons-lang3.jar"},{"name":"Apache Commons Text","path":"internal/lib/commons-text.jar"},{"name":"H2 Database Engine","path":"internal/lib/h2.jar"},{"name":"HSQLDB","path":"internal/lib/hsqldb.jar"},{"name":"jaxb-api","path":"internal/lib/jaxb-api.jar"},{"name":"JAXB Core","path":"internal/lib/jaxb-core.jar"},{"name":"JAXB Runtime","path":"internal/lib/jaxb-runtime.jar"},{"name":"Jaybird","path":"internal/lib/jaybird.jar"},{"name":"IBM JCC JDBC 4 Driver","path":"internal/lib/jcc.jar"},{"name":"Azure Dependencies","path":"internal/lib/liquibase-azure-deps.jar"},{"name":"Commercial Liquibase Functionality","path":"internal/lib/liquibase-commercial.jar"},{"name":"liquibase-insights-extension-0.1.0-SNAPSHOT","path":"internal/lib/liquibase-insights-extension-0.1.0-SNAPSHOT.jar"},{"name":"liquibase-slf4j-nop","path":"internal/lib/liquibase-slf4j-nop.jar"},{"name":"mariadb-java-client","path":"internal/lib/mariadb-java-client.jar"},{"name":"Microsoft JDBC Driver for SQL Server","path":"internal/lib/mssql-jdbc.jar"},{"name":"JDBC","path":"internal/lib/ojdbc8.jar"},{"name":"opencsv","path":"internal/lib/opencsv.jar"},{"name":"picocli","path":"internal/lib/picocli.jar"},{"name":"PostgreSQL JDBC Driver","path":"internal/lib/postgresql.jar"},{"name":"SLF4J API Module","path":"internal/lib/slf4j-api.jar"},{"name":"SnakeYAML","path":"internal/lib/snakeyaml.jar"},{"name":"snowflake-jdbc","path":"internal/lib/snowflake-jdbc.jar"},{"name":"SQLite JDBC","path":"internal/lib/sqlite-jdbc.jar"}],"libraryCount":36},"liquibaseVersion":{"build":"63","built":"2026-07-08 14:39:13 UTC","javaVersion":"25.0.1","licenseEndDate":"Thu Dec 31 00:00:00 GMT 2026","licensee":"Liquibase_SA","path":"/Users/benriley/Documents/GitHub/liquibase-secure-5.0.0","version":"5.2.1"}},"liquibaseVersion":"","operationStop":"","changelogFile":"","changesetsUpdated":{"changeset":"null","changesetCount":0},"operationStart":"","deploymentId":"","rowsAffected":"0","liquibaseCatalogName":"","changesetId":"","changesetAuthor":"","liquibaseTargetUrl":"","liquibaseSystemName":""}
+[2026-08-12 13:25:14] INFO [liquibase.ui] ####################################################
+##   _     _             _ _                      ##
+##  | |   (_)           (_) |                     ##
+##  | |    _  __ _ _   _ _| |__   __ _ ___  ___   ##
+##  | |   | |/ _` | | | | | '_ \ / _` / __|/ _ \  ##
+##  | |___| | (_| | |_| | | |_) | (_| \__ \  __/  ##
+##  \_____/_|\__, |\__,_|_|_.__/ \__,_|___/\___|  ##
+##              | |                               ##
+##              |_|                               ##
+##                                                ## 
+##  Get documentation at docs.liquibase.com       ##
+##  Get certified courses at learn.liquibase.com  ## 
+##                                                ##
+####################################################
+Starting Liquibase Secure at 13:25:14 using Java 25.0.1 (version 5.2.1 #63 built at 2026-07-08 14:39:13 UTC)
+[2026-08-12 13:25:14] INFO [liquibase.ui] Liquibase Secure Version: 5.2.1
+[2026-08-12 13:25:14] INFO [liquibase.ui] Liquibase Secure license issued to Liquibase_SA, valid until Thu Dec 31 00:00:00 GMT 2026
+[2026-08-12 13:25:14] INFO [liquibase.integration] Starting command execution.
+[2026-08-12 13:25:15] WARNING [liquibase.configuration] Potentially ignored key(s) in file exists at path liquibase.properties
+ - 'export'
+ - 'java'
+ - 'liquibase.dbclhistory.file'
+[2026-08-12 13:25:16] INFO [liquibase.database] Set default schema name to public
+[2026-08-12 13:25:16] INFO [liquibase.changelog] Reading from public.databasechangelog
+[2026-08-12 13:25:16] INFO [liquibase.command] Command execution complete
+[2026-08-12 13:25:17] INFO [liquibase.ui] Logs saved to liquibase.json
+[2026-08-12 13:25:17] INFO [liquibase.ui] Liquibase command 'status' was executed successfully.
+{"timestamp":"2026-08-12T13:25:10.109Z","level":"INFO","class":"liquibase.ui","thread":"3","message":"####################################################\n##   _     _             _ _                      ##\n##  | |   (_)           (_) |                     ##\n##  | |    _  __ _ _   _ _| |__   __ _ ___  ___   ##\n##  | |   | |/ _` | | | | | '_ \\ / _` / __|/ _ \\  ##\n##  | |___| | (_| | |_| | | |_) | (_| \\__ \\  __/  ##\n##  \\_____/_|\\__, |\\__,_|_|_.__/ \\__,_|___/\\___|  ##\n##              | |                               ##\n##              |_|                               ##\n##                                                ## \n##  Get documentation at docs.liquibase.com       ##\n##  Get certified courses at learn.liquibase.com  ## \n##                                                ##\n####################################################\nStarting Liquibase Secure at 14:25:10 using Java 25.0.1 (version 5.2.1 #63 built at 2026-07-08 14:39:13 UTC)","changesetOutcome":"NOOP","liquibaseSystemUser":"","deploymentOutcome":"NOOP","liquibaseSchemaName":"","deploymentOutcomeCount":"0","liquibaseVersion":"","operationStop":"","changelogFile":"","changesetsUpdated":{"changeset":"null","changesetCount":0},"operationStart":"","deploymentId":"","rowsAffected":"0","liquibaseCatalogName":"","changesetId":"","changesetAuthor":"","liquibaseTargetUrl":"","liquibaseSystemName":""}
+{"timestamp":"2026-08-12T13:25:10.116Z","level":"INFO","class":"liquibase.ui","thread":"3","message":"Liquibase Secure Version: 5.2.1","changesetOutcome":"NOOP","liquibaseSystemUser":"","deploymentOutcome":"NOOP","liquibaseSchemaName":"","deploymentOutcomeCount":"0","liquibaseVersion":"","operationStop":"","changelogFile":"","changesetsUpdated":{"changeset":"null","changesetCount":0},"operationStart":"","deploymentId":"","rowsAffected":"0","liquibaseCatalogName":"","changesetId":"","changesetAuthor":"","liquibaseTargetUrl":"","liquibaseSystemName":""}
+{"timestamp":"2026-08-12T13:25:10.123Z","level":"INFO","class":"liquibase.ui","thread":"3","message":"Liquibase Secure license issued to Liquibase_SA, valid until Thu Dec 31 00:00:00 GMT 2026","changesetOutcome":"NOOP","liquibaseSystemUser":"","deploymentOutcome":"NOOP","liquibaseSchemaName":"","deploymentOutcomeCount":"0","liquibaseVersion":"","operationStop":"","changelogFile":"","changesetsUpdated":{"changeset":"null","changesetCount":0},"operationStart":"","deploymentId":"","rowsAffected":"0","liquibaseCatalogName":"","changesetId":"","changesetAuthor":"","liquibaseTargetUrl":"","liquibaseSystemName":""}
+{"timestamp":"2026-08-12T13:25:10.137Z","level":"INFO","class":"liquibase.integration","thread":"3","message":"Starting command execution.","changesetOutcome":"NOOP","liquibaseSystemUser":"benriley","deploymentOutcome":"NOOP","liquibaseSchemaName":"","deploymentOutcomeCount":"0","liquibaseHostName":"Mac","liquibaseVersion":"5.2.1","operationStop":"","changelogFile":"","changesetsUpdated":{"changeset":"null","changesetCount":0},"operationStart":"","deploymentId":"","rowsAffected":"0","liquibaseCatalogName":"","changesetId":"","changesetAuthor":"","liquibaseTargetUrl":"","liquibaseSystemName":"Mac"}
+{"timestamp":"2026-08-12T13:25:10.637Z","level":"WARNING","class":"liquibase.configuration","thread":"3","message":"Potentially ignored key(s) in file exists at path liquibase.properties\n - 'export'\n - 'java'\n - 'liquibase.dbclhistory.file'","changesetOutcome":"NOOP","liquibaseSystemUser":"benriley","deploymentOutcome":"NOOP","liquibaseSchemaName":"","deploymentOutcomeCount":"0","liquibaseVersion":"","operationStop":"","changelogFile":"","changesetsUpdated":{"changeset":"null","changesetCount":0},"operationStart":"2026-08-12T13:25:10.142Z","liquibaseCommandName":"status","deploymentId":"","rowsAffected":"0","liquibaseCatalogName":"","changesetId":"","changesetAuthor":"","liquibaseTargetUrl":"","liquibaseSystemName":""}
+{"timestamp":"2026-08-12T13:25:11.189Z","level":"INFO","class":"liquibase.database","thread":"3","message":"Set default schema name to public","changesetOutcome":"NOOP","liquibaseSystemUser":"benriley","deploymentOutcome":"NOOP","liquibaseSchemaName":"","liquibaseInternalCommand":"dbUrlConnectionCommandStep","deploymentOutcomeCount":"0","liquibaseVersion":"","operationStop":"","changelogFile":"","changesetsUpdated":{"changeset":"null","changesetCount":0},"operationStart":"2026-08-12T13:25:10.142Z","liquibaseCommandName":"status","deploymentId":"","rowsAffected":"0","liquibaseCatalogName":"postgres","changesetId":"","changesetAuthor":"","liquibaseTargetUrl":"jdbc:postgresql://localhost:5433/postgres","liquibaseSystemName":""}
+{"timestamp":"2026-08-12T13:25:11.405Z","level":"INFO","class":"liquibase.changelog","thread":"3","message":"Reading from public.databasechangelog","changesetOutcome":"NOOP","liquibaseSystemUser":"benriley","deploymentOutcome":"NOOP","liquibaseSchemaName":"public","commandLabelFilter":"","liquibaseInternalCommand":"changelogCommandStep","deploymentOutcomeCount":"0","liquibaseVersion":"","operationStop":"","changelogFile":"/release/1.0/changelog.demo.sql","changesetsUpdated":{"changeset":"null","changesetCount":0},"operationStart":"2026-08-12T13:25:10.142Z","liquibaseCommandName":"status","deploymentId":"","rowsAffected":"0","liquibaseCatalogName":"postgres","changesetId":"","changesetAuthor":"","liquibaseTargetUrl":"jdbc:postgresql://localhost:5433/postgres","liquibaseSystemName":"","commandContextFilter":""}
+{"timestamp":"2026-08-12T13:25:11.430Z","level":"INFO","class":"liquibase.command","thread":"3","message":"Command execution complete","changesetOutcome":"NOOP","liquibaseSystemUser":"benriley","deploymentOutcome":"NOOP","liquibaseSchemaName":"public","commandLabelFilter":"","liquibaseInternalCommand":"","deploymentOutcomeCount":"0","liquibaseVersion":"","operationStop":"2026-08-12T13:25:11.430Z","operationOutcome":"success","changelogFile":"changelog/main.root.xml","changesetsUpdated":{"changeset":"null","changesetCount":0},"operationStart":"2026-08-12T13:25:10.142Z","liquibaseCommandName":"status","deploymentId":"","rowsAffected":"0","liquibaseCatalogName":"postgres","changesetId":"","changesetAuthor":"","liquibaseTargetUrl":"jdbc:postgresql://localhost:5433/postgres","liquibaseSystemName":"","commandContextFilter":""}
+{"timestamp":"2026-08-12T13:25:12.053Z","level":"INFO","class":"liquibase.ui","thread":"3","message":"Logs saved to liquibase.json","changesetOutcome":"NOOP","liquibaseSystemUser":"benriley","deploymentOutcome":"NOOP","liquibaseSchemaName":"","deploymentOutcomeCount":"0","liquibaseVersion":"","operationStop":"","operationOutcome":"success","changelogFile":"","changesetsUpdated":{"changeset":"null","changesetCount":0},"operationStart":"2026-08-12T13:25:10.142Z","liquibaseCommandName":"status","deploymentId":"","rowsAffected":"0","liquibaseCatalogName":"","changesetId":"","changesetAuthor":"","liquibaseTargetUrl":"","liquibaseSystemName":""}
+{"timestamp":"2026-08-12T13:25:12.055Z","level":"INFO","class":"liquibase.ui","thread":"3","message":"Liquibase command 'status' was executed successfully.","changesetOutcome":"NOOP","liquibaseSystemUser":"benriley","deploymentOutcome":"NOOP","liquibaseSchemaName":"","deploymentOutcomeCount":"0","liquibaseVersion":"","operationStop":"","operationOutcome":"success","changelogFile":"","changesetsUpdated":{"changeset":"null","changesetCount":0},"operationStart":"2026-08-12T13:25:10.142Z","liquibaseCommandName":"status","deploymentId":"","rowsAffected":"0","liquibaseCatalogName":"","changesetId":"","changesetAuthor":"","liquibaseTargetUrl":"","liquibaseSystemName":""}
+[2026-08-12 14:40:31] INFO [liquibase.ui] ####################################################
+##   _     _             _ _                      ##
+##  | |   (_)           (_) |                     ##
+##  | |    _  __ _ _   _ _| |__   __ _ ___  ___   ##
+##  | |   | |/ _` | | | | | '_ \ / _` / __|/ _ \  ##
+##  | |___| | (_| | |_| | | |_) | (_| \__ \  __/  ##
+##  \_____/_|\__, |\__,_|_|_.__/ \__,_|___/\___|  ##
+##              | |                               ##
+##              |_|                               ##
+##                                                ## 
+##  Get documentation at docs.liquibase.com       ##
+##  Get certified courses at learn.liquibase.com  ## 
+##                                                ##
+####################################################
+Starting Liquibase Secure at 14:40:31 using Java 25.0.1 (version 5.2.1 #63 built at 2026-07-08 14:39:13 UTC)
+[2026-08-12 14:40:31] INFO [liquibase.ui] Liquibase Secure Version: 5.2.1
+[2026-08-12 14:40:31] INFO [liquibase.ui] Liquibase Secure license issued to Liquibase_SA, valid until Thu Dec 31 00:00:00 GMT 2026
+[2026-08-12 14:40:31] INFO [liquibase.integration] Starting command execution.
+[2026-08-12 14:40:31] WARNING [liquibase.configuration] Potentially ignored key(s) in file exists at path liquibase.properties
+ - 'changeLogFile'
+ - 'export'
+ - 'java'
+ - 'liquibase.dbclhistory.file'
+[2026-08-12 14:40:31] INFO [liquibase.database] Set default schema name to public
+[2026-08-12 14:40:31] INFO [liquibase.changelog] Reading from public.databasechangelog
+[2026-08-12 14:40:31] INFO [liquibase.command] Command execution complete
+[2026-08-12 14:40:32] INFO [liquibase.ui] Logs saved to liquibase.json
+[2026-08-12 14:40:32] INFO [liquibase.ui] Liquibase command 'history' was executed successfully.
+[2026-08-12 14:42:28] INFO [liquibase.ui] ####################################################
+##   _     _             _ _                      ##
+##  | |   (_)           (_) |                     ##
+##  | |    _  __ _ _   _ _| |__   __ _ ___  ___   ##
+##  | |   | |/ _` | | | | | '_ \ / _` / __|/ _ \  ##
+##  | |___| | (_| | |_| | | |_) | (_| \__ \  __/  ##
+##  \_____/_|\__, |\__,_|_|_.__/ \__,_|___/\___|  ##
+##              | |                               ##
+##              |_|                               ##
+##                                                ## 
+##  Get documentation at docs.liquibase.com       ##
+##  Get certified courses at learn.liquibase.com  ## 
+##                                                ##
+####################################################
+Starting Liquibase Secure at 14:42:28 using Java 25.0.1 (version 5.2.1 #63 built at 2026-07-08 14:39:13 UTC)
+[2026-08-12 14:42:28] INFO [liquibase.ui] Liquibase Secure Version: 5.2.1
+[2026-08-12 14:42:28] INFO [liquibase.ui] Liquibase Secure license issued to Liquibase_SA, valid until Thu Dec 31 00:00:00 GMT 2026
+[2026-08-12 14:42:28] INFO [liquibase.integration] Starting command execution.
+[2026-08-12 14:42:28] WARNING [liquibase.configuration] Potentially ignored key(s) in file exists at path liquibase.properties
+ - 'changeLogFile'
+ - 'export'
+ - 'java'
+ - 'liquibase.dbclhistory.file'
+[2026-08-12 14:42:29] INFO [liquibase.database] Set default schema name to public
+[2026-08-12 14:42:29] INFO [liquibase.changelog] Reading from public.databasechangelog
+[2026-08-12 14:42:29] INFO [liquibase.command] Command execution complete
+[2026-08-12 14:42:29] INFO [liquibase.ui] Logs saved to liquibase.json
+[2026-08-12 14:42:29] INFO [liquibase.ui] Liquibase command 'history' was executed successfully.
+[2026-08-12 14:58:52] INFO [liquibase.ui] ####################################################
+##   _     _             _ _                      ##
+##  | |   (_)           (_) |                     ##
+##  | |    _  __ _ _   _ _| |__   __ _ ___  ___   ##
+##  | |   | |/ _` | | | | | '_ \ / _` / __|/ _ \  ##
+##  | |___| | (_| | |_| | | |_) | (_| \__ \  __/  ##
+##  \_____/_|\__, |\__,_|_|_.__/ \__,_|___/\___|  ##
+##              | |                               ##
+##              |_|                               ##
+##                                                ## 
+##  Get documentation at docs.liquibase.com       ##
+##  Get certified courses at learn.liquibase.com  ## 
+##                                                ##
+####################################################
+Starting Liquibase Secure at 14:58:52 using Java 25.0.1 (version 5.2.1 #63 built at 2026-07-08 14:39:13 UTC)
+[2026-08-12 14:58:52] INFO [liquibase.ui] Liquibase Secure Version: 5.2.1
+[2026-08-12 14:58:52] INFO [liquibase.ui] Liquibase Secure license issued to Liquibase_SA, valid until Thu Dec 31 00:00:00 GMT 2026
+[2026-08-12 14:58:52] INFO [liquibase.integration] Starting command execution.
+[2026-08-12 14:58:52] WARNING [liquibase.configuration] Potentially ignored key(s) in file exists at path liquibase.properties
+ - 'changeLogFile'
+ - 'export'
+ - 'java'
+ - 'liquibase.dbclhistory.file'
+[2026-08-12 14:58:53] INFO [liquibase.database] Set default schema name to public
+[2026-08-12 14:58:53] INFO [liquibase.changelog] Reading from public.databasechangelog
+[2026-08-12 14:58:53] INFO [liquibase.command] Command execution complete
+[2026-08-12 14:58:53] INFO [liquibase.ui] Logs saved to liquibase.json
+[2026-08-12 14:58:53] INFO [liquibase.ui] Liquibase command 'history' was executed successfully.
+[2026-08-12 15:18:19] INFO [liquibase.ui] ####################################################
+##   _     _             _ _                      ##
+##  | |   (_)           (_) |                     ##
+##  | |    _  __ _ _   _ _| |__   __ _ ___  ___   ##
+##  | |   | |/ _` | | | | | '_ \ / _` / __|/ _ \  ##
+##  | |___| | (_| | |_| | | |_) | (_| \__ \  __/  ##
+##  \_____/_|\__, |\__,_|_|_.__/ \__,_|___/\___|  ##
+##              | |                               ##
+##              |_|                               ##
+##                                                ## 
+##  Get documentation at docs.liquibase.com       ##
+##  Get certified courses at learn.liquibase.com  ## 
+##                                                ##
+####################################################
+Starting Liquibase Secure at 15:18:19 using Java 25.0.1 (version 5.2.1 #63 built at 2026-07-08 14:39:13 UTC)
+[2026-08-12 15:18:19] INFO [liquibase.ui] Liquibase Secure Version: 5.2.1
+[2026-08-12 15:18:19] INFO [liquibase.ui] Liquibase Secure license issued to Liquibase_SA, valid until Thu Dec 31 00:00:00 GMT 2026
+[2026-08-12 15:18:19] INFO [liquibase.integration] Starting command execution.
+[2026-08-12 15:18:20] WARNING [liquibase.configuration] Potentially ignored key(s) in file exists at path liquibase.properties
+ - 'changeLogFile'
+ - 'export'
+ - 'java'
+ - 'liquibase.dbclhistory.file'
+[2026-08-12 15:18:21] INFO [liquibase.database] Set default schema name to public
+[2026-08-12 15:18:21] INFO [liquibase.changelog] Reading from public.databasechangelog
+[2026-08-12 15:18:21] INFO [liquibase.command] Command execution complete
+[2026-08-12 15:18:21] INFO [liquibase.ui] Logs saved to liquibase.json
+[2026-08-12 15:18:21] INFO [liquibase.ui] Liquibase command 'history' was executed successfully.
+[2026-08-12 17:51:20] INFO [liquibase.ui] ####################################################
+##   _     _             _ _                      ##
+##  | |   (_)           (_) |                     ##
+##  | |    _  __ _ _   _ _| |__   __ _ ___  ___   ##
+##  | |   | |/ _` | | | | | '_ \ / _` / __|/ _ \  ##
+##  | |___| | (_| | |_| | | |_) | (_| \__ \  __/  ##
+##  \_____/_|\__, |\__,_|_|_.__/ \__,_|___/\___|  ##
+##              | |                               ##
+##              |_|                               ##
+##                                                ## 
+##  Get documentation at docs.liquibase.com       ##
+##  Get certified courses at learn.liquibase.com  ## 
+##                                                ##
+####################################################
+Starting Liquibase Secure at 17:51:20 using Java 25.0.1 (version 5.2.1 #63 built at 2026-07-08 14:39:13 UTC)
+[2026-08-12 17:51:20] INFO [liquibase.ui] Liquibase Secure Version: 5.2.1
+[2026-08-12 17:51:20] INFO [liquibase.ui] Liquibase Secure license issued to Liquibase_SA, valid until Thu Dec 31 00:00:00 GMT 2026
+[2026-08-12 17:51:20] INFO [liquibase.integration] Starting command execution.
+[2026-08-12 17:51:20] WARNING [liquibase.configuration] Potentially ignored key(s) in file exists at path liquibase.properties
+ - 'export'
+ - 'java'
+ - 'liquibase.dbclhistory.file'
+[2026-08-12 17:51:21] INFO [liquibase.database] Set default schema name to public
+[2026-08-12 17:51:21] INFO [liquibase.changelog] Reading from public.databasechangelog
+[2026-08-12 17:51:21] INFO [liquibase.command] Command execution complete
+[2026-08-12 17:51:22] INFO [liquibase.ui] Logs saved to liquibase.json
+[2026-08-12 17:51:22] INFO [liquibase.ui] Liquibase command 'status' was executed successfully.
+[2026-08-19 13:07:50] INFO [liquibase.ui] ####################################################
+##   _     _             _ _                      ##
+##  | |   (_)           (_) |                     ##
+##  | |    _  __ _ _   _ _| |__   __ _ ___  ___   ##
+##  | |   | |/ _` | | | | | '_ \ / _` / __|/ _ \  ##
+##  | |___| | (_| | |_| | | |_) | (_| \__ \  __/  ##
+##  \_____/_|\__, |\__,_|_|_.__/ \__,_|___/\___|  ##
+##              | |                               ##
+##              |_|                               ##
+##                                                ## 
+##  Get documentation at docs.liquibase.com       ##
+##  Get certified courses at learn.liquibase.com  ## 
+##                                                ##
+####################################################
+Starting Liquibase Secure at 13:07:50 using Java 25.0.1 (version 5.2.1 #63 built at 2026-07-08 14:39:13 UTC)
+[2026-08-19 13:07:50] INFO [liquibase.ui] Liquibase Secure Version: 5.2.1
+[2026-08-19 13:07:50] INFO [liquibase.ui] Liquibase Secure license issued to Liquibase_SA, valid until Thu Dec 31 00:00:00 GMT 2026
+[2026-08-19 13:07:50] INFO [liquibase.integration] Starting command execution.
+[2026-08-19 13:07:50] WARNING [liquibase.configuration] Potentially ignored key(s) in file exists at path liquibase.properties
+ - 'export'
+ - 'java'
+ - 'liquibase.dbclhistory.file'
+[2026-08-19 13:07:51] INFO [liquibase.database] Set default schema name to public
+[2026-08-19 13:07:51] INFO [liquibase.snapshot] Creating snapshot for jdbc:postgresql://localhost:5433/postgres
+[2026-08-19 13:07:51] INFO [liquibase.snapshot] Loaded 6 tables for schema public
+[2026-08-19 13:07:52] INFO [liquibase.command] Reference snapshot duration: 0s
+[2026-08-19 13:07:52] INFO [liquibase.command] Comparing snapshots...
+[2026-08-19 13:07:52] INFO [liquibase.command] Diff command completed
+[2026-08-19 13:07:52] INFO [liquibase.ui] BEST PRACTICE: The changelog generated by diffChangeLog/generateChangeLog should be inspected for correctness and completeness before being deployed. Some database objects and their dependencies cannot be represented automatically, and they may need to be manually updated before being deployed.
+[2026-08-19 13:07:52] INFO [liquibase.ui] Taking snapshot
+[2026-08-19 13:07:52] INFO [liquibase.command] Taking snapshot
+[2026-08-19 13:07:52] INFO [liquibase.ui] 
+BEST PRACTICE: When generating formatted SQL changelogs, always check if the 'splitStatements' attribute
+works for your environment. See https://docs.liquibase.com/commands/inspection/generate-changelog.html for more information. 
+
+[2026-08-19 13:07:52] INFO [liquibase.command] 
+BEST PRACTICE: When generating formatted SQL changelogs, always check if the 'splitStatements' attribute
+works for your environment. See https://docs.liquibase.com/commands/inspection/generate-changelog.html for more information. 
+
+[2026-08-19 13:07:52] INFO [liquibase.ui] Generating changesets
+[2026-08-19 13:07:52] INFO [liquibase.diff] Generating changesets
+[2026-08-19 13:07:52] INFO [liquibase.diff] Found 1 missing Catalog object(s)
+[2026-08-19 13:07:52] INFO [liquibase.diff] Found 1 missing Schema object(s)
+[2026-08-19 13:07:52] INFO [liquibase.diff] Found 4 missing Table object(s)
+[2026-08-19 13:07:52] INFO [liquibase.diff] Found 21 missing Column object(s)
+[2026-08-19 13:07:52] INFO [liquibase.diff] Found 4 missing PrimaryKey object(s)
+[2026-08-19 13:07:52] INFO [liquibase.diff] Found 5 missing Index object(s)
+[2026-08-19 13:07:52] INFO [liquibase.diff] Found 2 missing ForeignKey object(s)
+[2026-08-19 13:07:52] INFO [liquibase.diff] Collected 38 missing objects total, sorting by dependencies...
+[2026-08-19 13:07:52] INFO [liquibase.diff] Sorting complete in 0.0 seconds. Generating changesets for 38 missing objects
+[2026-08-19 13:07:52] INFO [liquibase.diff] Generated changesets for 38 of 38 missing objects
+[2026-08-19 13:07:52] INFO [liquibase.diff] Total changesets generated: 7 (create: 7, delete: 0, update: 0)
+[2026-08-19 13:07:52] INFO [liquibase.diff] changeSets count: 7
+[2026-08-19 13:07:52] INFO [liquibase.diff] baseline.sql does not exist, creating and adding 7 changesets.
+[2026-08-19 13:07:52] INFO [liquibase.ui] Writing 7 formatted SQL changeset(s)
+[2026-08-19 13:07:52] INFO [liquibase.serializer] Writing 7 formatted SQL changeset(s)
+[2026-08-19 13:07:52] INFO [liquibase.serializer] Written 7 of 7 changeset(s)
+[2026-08-19 13:07:52] INFO [liquibase.ui] Generated changelog written to baseline.sql
+[2026-08-19 13:07:52] INFO [liquibase.command] Generate changelog duration: 0s
+[2026-08-19 13:07:52] INFO [liquibase.command] Command execution complete
+[2026-08-19 13:07:52] INFO [liquibase.ui] Logs saved to liquibase.json
+[2026-08-19 13:07:52] INFO [liquibase.ui] Liquibase command 'generateChangelog' was executed successfully.
+[2026-08-20 13:38:31] INFO [liquibase.ui] ####################################################
+##   _     _             _ _                      ##
+##  | |   (_)           (_) |                     ##
+##  | |    _  __ _ _   _ _| |__   __ _ ___  ___   ##
+##  | |   | |/ _` | | | | | '_ \ / _` / __|/ _ \  ##
+##  | |___| | (_| | |_| | | |_) | (_| \__ \  __/  ##
+##  \_____/_|\__, |\__,_|_|_.__/ \__,_|___/\___|  ##
+##              | |                               ##
+##              |_|                               ##
+##                                                ## 
+##  Get documentation at docs.liquibase.com       ##
+##  Get certified courses at learn.liquibase.com  ## 
+##                                                ##
+####################################################
+Starting Liquibase Secure at 13:38:31 using Java 25.0.1 (version 5.2.1 #63 built at 2026-07-08 14:39:13 UTC)
+[2026-08-20 13:38:31] INFO [liquibase.ui] Liquibase Secure Version: 5.2.1
+[2026-08-20 13:38:31] INFO [liquibase.ui] Liquibase Secure license issued to Liquibase_SA, valid until Thu Dec 31 00:00:00 GMT 2026
+[2026-08-20 13:38:31] INFO [liquibase.integration] Starting command execution.
+[2026-08-20 13:38:31] WARNING [liquibase.configuration] Potentially ignored key(s) in file exists at path liquibase.properties
+ - 'export'
+ - 'java'
+ - 'liquibase.dbclhistory.file'
+[2026-08-20 13:38:32] INFO [liquibase.database] Set default schema name to public
+[2026-08-20 13:38:32] INFO [liquibase.changelog] Reading from public.databasechangelog
+[2026-08-20 13:38:32] INFO [liquibase.command] Command execution complete
+[2026-08-20 13:38:33] INFO [liquibase.ui] Logs saved to liquibase.json
+[2026-08-20 13:38:33] INFO [liquibase.ui] Liquibase command 'status' was executed successfully.
+[2026-08-20 14:06:24] INFO [liquibase.ui] ####################################################
+##   _     _             _ _                      ##
+##  | |   (_)           (_) |                     ##
+##  | |    _  __ _ _   _ _| |__   __ _ ___  ___   ##
+##  | |   | |/ _` | | | | | '_ \ / _` / __|/ _ \  ##
+##  | |___| | (_| | |_| | | |_) | (_| \__ \  __/  ##
+##  \_____/_|\__, |\__,_|_|_.__/ \__,_|___/\___|  ##
+##              | |                               ##
+##              |_|                               ##
+##                                                ## 
+##  Get documentation at docs.liquibase.com       ##
+##  Get certified courses at learn.liquibase.com  ## 
+##                                                ##
+####################################################
+Starting Liquibase Secure at 14:06:24 using Java 25.0.1 (version 5.2.1 #63 built at 2026-07-08 14:39:13 UTC)
+[2026-08-20 14:06:24] INFO [liquibase.ui] Liquibase Secure Version: 5.2.1
+[2026-08-20 14:06:24] INFO [liquibase.ui] Liquibase Secure license issued to Liquibase_SA, valid until Thu Dec 31 00:00:00 GMT 2026
+[2026-08-20 14:06:24] INFO [liquibase.integration] Starting command execution.
+[2026-08-20 14:06:24] WARNING [liquibase.configuration] Potentially ignored key(s) in file exists at path liquibase.properties
+ - 'export'
+ - 'java'
+ - 'liquibase.dbclhistory.file'
+[2026-08-20 14:06:25] INFO [liquibase.ui] INFO: Checks executed against changes generated by PostgreSQL at jdbc:postgresql://localhost:5433/postgres.
+[2026-08-20 14:06:25] INFO [liquibase.ui] Executing Policy Checks against changelog/main.root.xml
+
+[2026-08-20 14:06:25] INFO [liquibase.database] Set default schema name to public
+[2026-08-20 14:06:25] INFO [liquibase.changelog] Reading from databasechangelog
+[2026-08-20 14:06:25] INFO [liquibase] Check settings configuration file located at 'file:///Users/benriley/Documents/GitHub/liquibase-jenkins/liquibase.checks-settings.conf'.
+[2026-08-20 14:06:25] INFO [liquibase] Check settings configuration file contents read from 'file:///Users/benriley/Documents/GitHub/liquibase-jenkins/liquibase.checks-settings.conf'.
+[2026-08-20 14:06:25] INFO [liquibase] The contents of this settings file are not versioned
+[2026-08-20 14:06:25] WARNING [liquibase] The file '/Users/benriley/Documents/GitHub/liquibase-jenkins/liquibase.checks-settings.conf' has been updated so it can be used by your current version of Liquibase, and to simplify resolving merge conflicts in Source Control. No action is required from you. Your original file was backed up as '/Users/benriley/Documents/GitHub/liquibase-jenkins/liquibase.checks-settings.conf.v1.1'. The checks settings file has been upgraded from version 1.1 to version 2.0.
+[2026-08-20 14:06:25] INFO [liquibase.ui] WARNING: The file '/Users/benriley/Documents/GitHub/liquibase-jenkins/liquibase.checks-settings.conf' has been updated so it can be used by your current version of Liquibase, and to simplify resolving merge conflicts in Source Control. No action is required from you. Your original file was backed up as '/Users/benriley/Documents/GitHub/liquibase-jenkins/liquibase.checks-settings.conf.v1.1'. The checks settings file has been upgraded from version 1.1 to version 2.0.
+[2026-08-20 14:06:25] INFO [liquibase] Check settings configuration file located at '/Users/benriley/Documents/GitHub/liquibase-jenkins/liquibase.checks-settings.conf'.
+[2026-08-20 14:06:31] INFO [liquibase.ui] Executing all changelog checks because a valid license key was found!
+
+[2026-08-20 14:06:31] INFO [liquibase.ui] WARNING: No database checks were run. Make sure the checks-scope property includes "database" to run database checks. In the CLI set --checks-scope="changelog,database" or set an environment variable LIQUIBASE_COMMAND_CHECKS_SCOPE=database. Learn more at https://docs.liquibase.com/policy-checks
+
+[2026-08-20 14:06:31] INFO [liquibase] Executing check 'SqlGrantWarn'
+[2026-08-20 14:06:31] INFO [liquibase] Starting check 'SqlGrantWarn' on 8 changesets
+[2026-08-20 14:06:31] INFO [liquibase] Check 'SqlGrantWarn' completed in 13ms
+[2026-08-20 14:06:31] INFO [liquibase] Executing check 'SqlRevokeWarn'
+[2026-08-20 14:06:31] INFO [liquibase] Starting check 'SqlRevokeWarn' on 8 changesets
+[2026-08-20 14:06:31] INFO [liquibase] Check 'SqlRevokeWarn' completed in 1ms
+[2026-08-20 14:06:31] INFO [liquibase] Executing check 'WarnOnUseDatabase'
+[2026-08-20 14:06:31] INFO [liquibase] Starting check 'WarnOnUseDatabase' on 8 changesets
+[2026-08-20 14:06:31] INFO [liquibase] Check 'WarnOnUseDatabase' completed in 1ms
+[2026-08-20 14:06:31] INFO [liquibase] Executing check 'ChangeDropTableWarn'
+[2026-08-20 14:06:31] INFO [liquibase] Starting check 'ChangeDropTableWarn' on 8 changesets
+[2026-08-20 14:06:31] INFO [liquibase] Check 'ChangeDropTableWarn' completed in 0ms
+[2026-08-20 14:06:31] INFO [liquibase] Rule 'Warn when 'DROP TABLE' detected' triggered
+[2026-08-20 14:06:31] INFO [liquibase] Executing check 'ChangeDropColumnWarn'
+[2026-08-20 14:06:31] INFO [liquibase] Starting check 'ChangeDropColumnWarn' on 8 changesets
+[2026-08-20 14:06:31] INFO [liquibase] Check 'ChangeDropColumnWarn' completed in 0ms
+[2026-08-20 14:06:31] INFO [liquibase] Executing check 'ModifyDataTypeWarn'
+[2026-08-20 14:06:31] INFO [liquibase] Starting check 'ModifyDataTypeWarn' on 8 changesets
+[2026-08-20 14:06:31] INFO [liquibase] Check 'ModifyDataTypeWarn' completed in 0ms
+[2026-08-20 14:06:31] INFO [liquibase] Executing check 'SqlSelectStarWarn'
+[2026-08-20 14:06:31] INFO [liquibase] Starting check 'SqlSelectStarWarn' on 8 changesets
+[2026-08-20 14:06:31] INFO [liquibase] Check 'SqlSelectStarWarn' completed in 0ms
+[2026-08-20 14:06:31] INFO [liquibase] Executing check 'TableColumnLimit'
+[2026-08-20 14:06:31] INFO [liquibase] Starting check 'TableColumnLimit' on 8 changesets
+[2026-08-20 14:06:31] INFO [liquibase] Check 'TableColumnLimit' completed in 121ms
+[2026-08-20 14:06:31] INFO [liquibase] Executing check 'MaxAffectedRowsAllowedDelete'
+[2026-08-20 14:06:31] INFO [liquibase] Starting check 'MaxAffectedRowsAllowedDelete' on 8 changesets
+[2026-08-20 14:06:31] INFO [liquibase] Check 'MaxAffectedRowsAllowedDelete' completed in 5ms
+[2026-08-20 14:06:31] INFO [liquibase] Executing check 'MaxAffectedRowsAllowedInsert'
+[2026-08-20 14:06:31] INFO [liquibase] Starting check 'MaxAffectedRowsAllowedInsert' on 8 changesets
+[2026-08-20 14:06:31] INFO [liquibase] Check 'MaxAffectedRowsAllowedInsert' completed in 1ms
+[2026-08-20 14:06:31] INFO [liquibase] Executing check 'MaxAffectedRowsAllowedUpdate'
+[2026-08-20 14:06:31] INFO [liquibase] Starting check 'MaxAffectedRowsAllowedUpdate' on 8 changesets
+[2026-08-20 14:06:31] INFO [liquibase] Check 'MaxAffectedRowsAllowedUpdate' completed in 1ms
+[2026-08-20 14:06:31] INFO [liquibase] Executing check 'CheckRunInTransactionValue'
+[2026-08-20 14:06:31] INFO [liquibase] Starting check 'CheckRunInTransactionValue' on 8 changesets
+[2026-08-20 14:06:31] INFO [liquibase] Check 'CheckRunInTransactionValue' completed in 0ms
+[2026-08-20 14:06:31] INFO [liquibase] Executing check 'FormattedSqlHeaderRequired'
+[2026-08-20 14:06:31] INFO [liquibase] Starting check 'FormattedSqlHeaderRequired' on 8 changesets
+[2026-08-20 14:06:31] INFO [liquibase] Check 'FormattedSqlHeaderRequired' completed in 0ms
+[2026-08-20 14:06:31] INFO [liquibase] Executing check 'ChangeTruncateTableWarn'
+[2026-08-20 14:06:31] INFO [liquibase] Starting check 'ChangeTruncateTableWarn' on 8 changesets
+[2026-08-20 14:06:31] INFO [liquibase] Check 'ChangeTruncateTableWarn' completed in 0ms
+[2026-08-20 14:06:31] INFO [liquibase] Executing check 'SqlGrantOptionWarn'
+[2026-08-20 14:06:31] INFO [liquibase] Starting check 'SqlGrantOptionWarn' on 8 changesets
+[2026-08-20 14:06:31] INFO [liquibase] Check 'SqlGrantOptionWarn' completed in 0ms
+[2026-08-20 14:06:31] INFO [liquibase] Executing check 'SqlGrantAdminWarn'
+[2026-08-20 14:06:31] INFO [liquibase] Starting check 'SqlGrantAdminWarn' on 8 changesets
+[2026-08-20 14:06:31] INFO [liquibase] Check 'SqlGrantAdminWarn' completed in 0ms
+[2026-08-20 14:06:31] INFO [liquibase] Executing check 'DetectChangeType'
+[2026-08-20 14:06:31] INFO [liquibase] Starting check 'DetectChangeType' on 8 changesets
+[2026-08-20 14:06:36] INFO [liquibase] Evaluating SQL changeset for forbidden change types: dropColumn, dropTable
+[2026-08-20 14:06:36] INFO [liquibase] Evaluating SQL changeset for forbidden change types: dropColumn, dropTable
+[2026-08-20 14:06:36] INFO [liquibase] Evaluating SQL changeset for forbidden change types: dropColumn, dropTable
+[2026-08-20 14:06:36] INFO [liquibase] Evaluating SQL changeset for forbidden change types: dropColumn, dropTable
+[2026-08-20 14:06:36] INFO [liquibase] Evaluating SQL changeset for forbidden change types: dropColumn, dropTable
+[2026-08-20 14:06:37] INFO [liquibase] Evaluating SQL changeset for forbidden change types: dropColumn, dropTable
+[2026-08-20 14:06:37] INFO [liquibase] Evaluating SQL changeset for forbidden change types: dropColumn, dropTable
+[2026-08-20 14:06:37] INFO [liquibase] Evaluating SQL changeset for forbidden change types: dropColumn, dropTable
+[2026-08-20 14:06:37] INFO [liquibase] Check 'DetectChangeType' completed in 5407ms
+[2026-08-20 14:06:37] INFO [liquibase] Rule 'Warn on Use of User Defined ChangeTypes' triggered
+[2026-08-20 14:06:37] INFO [liquibase] Executing check 'RollbackRequired'
+[2026-08-20 14:06:37] INFO [liquibase] Starting check 'RollbackRequired' on 8 changesets
+[2026-08-20 14:06:37] INFO [liquibase] Check 'RollbackRequired' completed in 0ms
+[2026-08-20 14:06:37] INFO [liquibase] Rule 'Rollback Required for Changeset' triggered
+[2026-08-20 14:06:37] INFO [liquibase] Executing check 'ChangesetLabelCheck'
+[2026-08-20 14:06:37] INFO [liquibase] Starting check 'ChangesetLabelCheck' on 8 changesets
+[2026-08-20 14:06:37] INFO [liquibase] Check 'ChangesetLabelCheck' completed in 0ms
+[2026-08-20 14:06:37] INFO [liquibase] Executing check 'ChangesetContextCheck'
+[2026-08-20 14:06:37] INFO [liquibase] Starting check 'ChangesetContextCheck' on 8 changesets
+[2026-08-20 14:06:37] INFO [liquibase] Check 'ChangesetContextCheck' completed in 0ms
+[2026-08-20 14:06:37] INFO [liquibase] Executing check 'ChangesetCommentCheck'
+[2026-08-20 14:06:37] INFO [liquibase] Starting check 'ChangesetCommentCheck' on 8 changesets
+[2026-08-20 14:06:37] INFO [liquibase] Check 'ChangesetCommentCheck' completed in 0ms
+[2026-08-20 14:06:37] INFO [liquibase] Executing check 'OneChangePerChangeset'
+[2026-08-20 14:06:37] INFO [liquibase] Starting check 'OneChangePerChangeset' on 8 changesets
+[2026-08-20 14:06:37] INFO [liquibase] Check 'OneChangePerChangeset' completed in 1ms
+[2026-08-20 14:06:37] INFO [liquibase] Rule 'One Change Per Changeset' triggered
+[2026-08-20 14:06:37] INFO [liquibase] Executing check 'PrimaryKeyOnCreateTable'
+[2026-08-20 14:06:37] INFO [liquibase] Starting check 'PrimaryKeyOnCreateTable' on 8 changesets
+[2026-08-20 14:06:37] INFO [liquibase] Evaluating SQL changeset for CREATE TABLE without primary key
+[2026-08-20 14:06:37] INFO [liquibase] Evaluating SQL changeset for CREATE TABLE without primary key
+[2026-08-20 14:06:37] INFO [liquibase] Evaluating SQL changeset for CREATE TABLE without primary key
+[2026-08-20 14:06:37] INFO [liquibase] Evaluating SQL changeset for CREATE TABLE without primary key
+[2026-08-20 14:06:37] INFO [liquibase] Evaluating SQL changeset for CREATE TABLE without primary key
+[2026-08-20 14:06:37] INFO [liquibase] Evaluating SQL changeset for CREATE TABLE without primary key
+[2026-08-20 14:06:37] INFO [liquibase] Evaluating SQL changeset for CREATE TABLE without primary key
+[2026-08-20 14:06:37] INFO [liquibase] Evaluating SQL changeset for CREATE TABLE without primary key
+[2026-08-20 14:06:37] INFO [liquibase] Check 'PrimaryKeyOnCreateTable' completed in 155ms
+[2026-08-20 14:06:37] INFO [liquibase] Executing check 'TableColumnLimit'
+[2026-08-20 14:06:37] INFO [liquibase] Check 'TableColumnLimit' completed in 0ms
+[2026-08-20 14:06:37] INFO [liquibase] Executing check 'CheckTablesForIndex'
+[2026-08-20 14:06:37] INFO [liquibase] Check 'CheckTablesForIndex' completed in 0ms
+[2026-08-20 14:06:37] INFO [liquibase.ui] INFO: Customize this output with the 'checks-output' property. See list of options with 'liquibase checks run --help' or https://docs.liquibase.com/policy-checks
+[2026-08-20 14:06:37] INFO [liquibase.ui] INFO: The return code of all SQL Parser failures can be customized by setting the --sql-parser-fail-severity/LIQUIBASE_COMMAND_CHECKS_RUN_SQL_PARSER_FAIL_SEVERITY property, including setting it to '0' to prevent job interruptions. Learn more at https://docs.liquibase.com/policy-checks
+[2026-08-20 14:06:37] INFO [liquibase.command] Generated JSON report
+[2026-08-20 14:06:37] INFO [liquibase] Secure Checks Run Report created!
+* File '/Users/benriley/Documents/GitHub/liquibase-jenkins/Checks-run-report-20-Aug-2026-140637.html' was created.
+** To suppress Checks Run reports add command arg 'liquibase checks run --report-enabled=false'
+** To suppress all Secure Reports set liquibase.reports.enabled=false, or LIQUIBASE_REPORTS_ENABLED=false
+[2026-08-20 14:06:37] INFO [liquibase.ui] Secure Checks Run Report created!
+* File '/Users/benriley/Documents/GitHub/liquibase-jenkins/Checks-run-report-20-Aug-2026-140637.html' was created.
+** To suppress Checks Run reports add command arg 'liquibase checks run --report-enabled=false'
+** To suppress all Secure Reports set liquibase.reports.enabled=false, or LIQUIBASE_REPORTS_ENABLED=false
+[2026-08-20 14:06:38] INFO [liquibase.command] Logging exception.
+[2026-08-20 14:06:38] INFO [liquibase.ui] ERROR: Exception Details
+[2026-08-20 14:06:38] INFO [liquibase.ui] ERROR: Exception Primary Class:  CommandFailedException
+[2026-08-20 14:06:38] INFO [liquibase.ui] ERROR: Exception Primary Reason:  Checks run command exited with error code of 4
+[2026-08-20 14:06:38] INFO [liquibase.ui] ERROR: Exception Primary Source:  5.2.1
+[2026-08-20 14:06:38] INFO [liquibase.command] Command execution complete
+[2026-08-20 14:06:39] INFO [liquibase.ui] Logs saved to liquibase.json
+[2026-08-20 14:06:48] INFO [liquibase.ui] ####################################################
+##   _     _             _ _                      ##
+##  | |   (_)           (_) |                     ##
+##  | |    _  __ _ _   _ _| |__   __ _ ___  ___   ##
+##  | |   | |/ _` | | | | | '_ \ / _` / __|/ _ \  ##
+##  | |___| | (_| | |_| | | |_) | (_| \__ \  __/  ##
+##  \_____/_|\__, |\__,_|_|_.__/ \__,_|___/\___|  ##
+##              | |                               ##
+##              |_|                               ##
+##                                                ## 
+##  Get documentation at docs.liquibase.com       ##
+##  Get certified courses at learn.liquibase.com  ## 
+##                                                ##
+####################################################
+Starting Liquibase Secure at 14:06:48 using Java 25.0.1 (version 5.2.1 #63 built at 2026-07-08 14:39:13 UTC)
+[2026-08-20 14:06:48] INFO [liquibase.ui] Liquibase Secure Version: 5.2.1
+[2026-08-20 14:06:48] INFO [liquibase.ui] Liquibase Secure license issued to Liquibase_SA, valid until Thu Dec 31 00:00:00 GMT 2026
+[2026-08-20 14:06:48] INFO [liquibase.integration] Starting command execution.
+[2026-08-20 14:06:48] WARNING [liquibase.configuration] Potentially ignored key(s) in file exists at path liquibase.properties
+ - 'export'
+ - 'java'
+ - 'liquibase.dbclhistory.file'
+[2026-08-20 14:06:49] INFO [liquibase.ui] INFO: Checks executed against changes generated by PostgreSQL at jdbc:postgresql://localhost:5433/postgres.
+[2026-08-20 14:06:49] INFO [liquibase.ui] Executing Policy Checks against changelog/main.root.xml
+
+[2026-08-20 14:06:49] INFO [liquibase.database] Set default schema name to public
+[2026-08-20 14:06:49] INFO [liquibase.changelog] Reading from databasechangelog
+[2026-08-20 14:06:49] INFO [liquibase] Check settings configuration file located at 'file:///Users/benriley/Documents/GitHub/liquibase-jenkins/liquibase.checks-settings.conf'.
+[2026-08-20 14:06:49] INFO [liquibase] Check settings configuration file contents read from 'file:///Users/benriley/Documents/GitHub/liquibase-jenkins/liquibase.checks-settings.conf'.
+[2026-08-20 14:06:49] INFO [liquibase] The contents of this settings file are not versioned
+[2026-08-20 14:06:49] INFO [liquibase.ui] Executing all changelog checks because a valid license key was found!
+
+[2026-08-20 14:06:49] INFO [liquibase.ui] WARNING: No database checks were run. Make sure the checks-scope property includes "database" to run database checks. In the CLI set --checks-scope="changelog,database" or set an environment variable LIQUIBASE_COMMAND_CHECKS_SCOPE=database. Learn more at https://docs.liquibase.com/policy-checks
+
+[2026-08-20 14:06:49] INFO [liquibase] Executing check 'SqlGrantWarn'
+[2026-08-20 14:06:49] INFO [liquibase] Starting check 'SqlGrantWarn' on 8 changesets
+[2026-08-20 14:06:49] INFO [liquibase] Check 'SqlGrantWarn' completed in 8ms
+[2026-08-20 14:06:49] INFO [liquibase] Executing check 'SqlRevokeWarn'
+[2026-08-20 14:06:49] INFO [liquibase] Starting check 'SqlRevokeWarn' on 8 changesets
+[2026-08-20 14:06:49] INFO [liquibase] Check 'SqlRevokeWarn' completed in 0ms
+[2026-08-20 14:06:49] INFO [liquibase] Executing check 'WarnOnUseDatabase'
+[2026-08-20 14:06:49] INFO [liquibase] Starting check 'WarnOnUseDatabase' on 8 changesets
+[2026-08-20 14:06:49] INFO [liquibase] Check 'WarnOnUseDatabase' completed in 1ms
+[2026-08-20 14:06:49] INFO [liquibase] Executing check 'ChangeDropTableWarn'
+[2026-08-20 14:06:49] INFO [liquibase] Starting check 'ChangeDropTableWarn' on 8 changesets
+[2026-08-20 14:06:49] INFO [liquibase] Check 'ChangeDropTableWarn' completed in 0ms
+[2026-08-20 14:06:49] INFO [liquibase] Rule 'Warn when 'DROP TABLE' detected' triggered
+[2026-08-20 14:06:49] INFO [liquibase] Executing check 'ChangeDropColumnWarn'
+[2026-08-20 14:06:49] INFO [liquibase] Starting check 'ChangeDropColumnWarn' on 8 changesets
+[2026-08-20 14:06:49] INFO [liquibase] Check 'ChangeDropColumnWarn' completed in 0ms
+[2026-08-20 14:06:49] INFO [liquibase] Executing check 'ModifyDataTypeWarn'
+[2026-08-20 14:06:49] INFO [liquibase] Starting check 'ModifyDataTypeWarn' on 8 changesets
+[2026-08-20 14:06:49] INFO [liquibase] Check 'ModifyDataTypeWarn' completed in 0ms
+[2026-08-20 14:06:49] INFO [liquibase] Executing check 'SqlSelectStarWarn'
+[2026-08-20 14:06:49] INFO [liquibase] Starting check 'SqlSelectStarWarn' on 8 changesets
+[2026-08-20 14:06:49] INFO [liquibase] Check 'SqlSelectStarWarn' completed in 0ms
+[2026-08-20 14:06:49] INFO [liquibase] Executing check 'TableColumnLimit'
+[2026-08-20 14:06:49] INFO [liquibase] Starting check 'TableColumnLimit' on 8 changesets
+[2026-08-20 14:06:49] INFO [liquibase] Check 'TableColumnLimit' completed in 64ms
+[2026-08-20 14:06:49] INFO [liquibase] Executing check 'MaxAffectedRowsAllowedDelete'
+[2026-08-20 14:06:49] INFO [liquibase] Starting check 'MaxAffectedRowsAllowedDelete' on 8 changesets
+[2026-08-20 14:06:49] INFO [liquibase] Check 'MaxAffectedRowsAllowedDelete' completed in 6ms
+[2026-08-20 14:06:49] INFO [liquibase] Executing check 'MaxAffectedRowsAllowedInsert'
+[2026-08-20 14:06:49] INFO [liquibase] Starting check 'MaxAffectedRowsAllowedInsert' on 8 changesets
+[2026-08-20 14:06:49] INFO [liquibase] Check 'MaxAffectedRowsAllowedInsert' completed in 4ms
+[2026-08-20 14:06:49] INFO [liquibase] Executing check 'MaxAffectedRowsAllowedUpdate'
+[2026-08-20 14:06:49] INFO [liquibase] Starting check 'MaxAffectedRowsAllowedUpdate' on 8 changesets
+[2026-08-20 14:06:49] INFO [liquibase] Check 'MaxAffectedRowsAllowedUpdate' completed in 3ms
+[2026-08-20 14:06:49] INFO [liquibase] Executing check 'CheckRunInTransactionValue'
+[2026-08-20 14:06:49] INFO [liquibase] Starting check 'CheckRunInTransactionValue' on 8 changesets
+[2026-08-20 14:06:49] INFO [liquibase] Check 'CheckRunInTransactionValue' completed in 0ms
+[2026-08-20 14:06:49] INFO [liquibase] Executing check 'FormattedSqlHeaderRequired'
+[2026-08-20 14:06:49] INFO [liquibase] Starting check 'FormattedSqlHeaderRequired' on 8 changesets
+[2026-08-20 14:06:49] INFO [liquibase] Check 'FormattedSqlHeaderRequired' completed in 0ms
+[2026-08-20 14:06:49] INFO [liquibase] Executing check 'ChangeTruncateTableWarn'
+[2026-08-20 14:06:49] INFO [liquibase] Starting check 'ChangeTruncateTableWarn' on 8 changesets
+[2026-08-20 14:06:49] INFO [liquibase] Check 'ChangeTruncateTableWarn' completed in 0ms
+[2026-08-20 14:06:49] INFO [liquibase] Executing check 'SqlGrantOptionWarn'
+[2026-08-20 14:06:49] INFO [liquibase] Starting check 'SqlGrantOptionWarn' on 8 changesets
+[2026-08-20 14:06:49] INFO [liquibase] Check 'SqlGrantOptionWarn' completed in 0ms
+[2026-08-20 14:06:49] INFO [liquibase] Executing check 'SqlGrantAdminWarn'
+[2026-08-20 14:06:49] INFO [liquibase] Starting check 'SqlGrantAdminWarn' on 8 changesets
+[2026-08-20 14:06:49] INFO [liquibase] Check 'SqlGrantAdminWarn' completed in 0ms
+[2026-08-20 14:06:49] INFO [liquibase] Executing check 'DetectChangeType'
+[2026-08-20 14:06:49] INFO [liquibase] Starting check 'DetectChangeType' on 8 changesets
+[2026-08-20 14:06:56] INFO [liquibase] Evaluating SQL changeset for forbidden change types: dropColumn, dropTable
+[2026-08-20 14:06:56] INFO [liquibase] Evaluating SQL changeset for forbidden change types: dropColumn, dropTable
+[2026-08-20 14:06:56] INFO [liquibase] Evaluating SQL changeset for forbidden change types: dropColumn, dropTable
+[2026-08-20 14:06:56] INFO [liquibase] Evaluating SQL changeset for forbidden change types: dropColumn, dropTable
+[2026-08-20 14:06:56] INFO [liquibase] Evaluating SQL changeset for forbidden change types: dropColumn, dropTable
+[2026-08-20 14:06:56] INFO [liquibase] Evaluating SQL changeset for forbidden change types: dropColumn, dropTable
+[2026-08-20 14:06:56] INFO [liquibase] Evaluating SQL changeset for forbidden change types: dropColumn, dropTable
+[2026-08-20 14:06:56] INFO [liquibase] Evaluating SQL changeset for forbidden change types: dropColumn, dropTable
+[2026-08-20 14:06:56] INFO [liquibase] Check 'DetectChangeType' completed in 6626ms
+[2026-08-20 14:06:56] INFO [liquibase] Rule 'Warn on Use of User Defined ChangeTypes' triggered
+[2026-08-20 14:06:56] INFO [liquibase] Executing check 'RollbackRequired'
+[2026-08-20 14:06:56] INFO [liquibase] Starting check 'RollbackRequired' on 8 changesets
+[2026-08-20 14:06:56] INFO [liquibase] Check 'RollbackRequired' completed in 0ms
+[2026-08-20 14:06:56] INFO [liquibase] Rule 'Rollback Required for Changeset' triggered
+[2026-08-20 14:06:56] INFO [liquibase] Executing check 'ChangesetLabelCheck'
+[2026-08-20 14:06:56] INFO [liquibase] Starting check 'ChangesetLabelCheck' on 8 changesets
+[2026-08-20 14:06:56] INFO [liquibase] Check 'ChangesetLabelCheck' completed in 0ms
+[2026-08-20 14:06:56] INFO [liquibase] Executing check 'ChangesetContextCheck'
+[2026-08-20 14:06:56] INFO [liquibase] Starting check 'ChangesetContextCheck' on 8 changesets
+[2026-08-20 14:06:56] INFO [liquibase] Check 'ChangesetContextCheck' completed in 0ms
+[2026-08-20 14:06:56] INFO [liquibase] Executing check 'ChangesetCommentCheck'
+[2026-08-20 14:06:56] INFO [liquibase] Starting check 'ChangesetCommentCheck' on 8 changesets
+[2026-08-20 14:06:56] INFO [liquibase] Check 'ChangesetCommentCheck' completed in 0ms
+[2026-08-20 14:06:56] INFO [liquibase] Executing check 'OneChangePerChangeset'
+[2026-08-20 14:06:56] INFO [liquibase] Starting check 'OneChangePerChangeset' on 8 changesets
+[2026-08-20 14:06:56] INFO [liquibase] Check 'OneChangePerChangeset' completed in 1ms
+[2026-08-20 14:06:56] INFO [liquibase] Rule 'One Change Per Changeset' triggered
+[2026-08-20 14:06:56] INFO [liquibase] Executing check 'PrimaryKeyOnCreateTable'
+[2026-08-20 14:06:56] INFO [liquibase] Starting check 'PrimaryKeyOnCreateTable' on 8 changesets
+[2026-08-20 14:06:56] INFO [liquibase] Evaluating SQL changeset for CREATE TABLE without primary key
+[2026-08-20 14:06:56] INFO [liquibase] Evaluating SQL changeset for CREATE TABLE without primary key
+[2026-08-20 14:06:56] INFO [liquibase] Evaluating SQL changeset for CREATE TABLE without primary key
+[2026-08-20 14:06:56] INFO [liquibase] Evaluating SQL changeset for CREATE TABLE without primary key
+[2026-08-20 14:06:56] INFO [liquibase] Evaluating SQL changeset for CREATE TABLE without primary key
+[2026-08-20 14:06:56] INFO [liquibase] Evaluating SQL changeset for CREATE TABLE without primary key
+[2026-08-20 14:06:56] INFO [liquibase] Evaluating SQL changeset for CREATE TABLE without primary key
+[2026-08-20 14:06:56] INFO [liquibase] Evaluating SQL changeset for CREATE TABLE without primary key
+[2026-08-20 14:06:56] INFO [liquibase] Check 'PrimaryKeyOnCreateTable' completed in 196ms
+[2026-08-20 14:06:56] INFO [liquibase] Executing check 'TableColumnLimit'
+[2026-08-20 14:06:56] INFO [liquibase] Check 'TableColumnLimit' completed in 0ms
+[2026-08-20 14:06:56] INFO [liquibase] Executing check 'CheckTablesForIndex'
+[2026-08-20 14:06:56] INFO [liquibase] Check 'CheckTablesForIndex' completed in 0ms
+[2026-08-20 14:06:56] INFO [liquibase.ui] INFO: Customize this output with the 'checks-output' property. See list of options with 'liquibase checks run --help' or https://docs.liquibase.com/policy-checks
+[2026-08-20 14:06:56] INFO [liquibase.ui] INFO: The return code of all SQL Parser failures can be customized by setting the --sql-parser-fail-severity/LIQUIBASE_COMMAND_CHECKS_RUN_SQL_PARSER_FAIL_SEVERITY property, including setting it to '0' to prevent job interruptions. Learn more at https://docs.liquibase.com/policy-checks
+[2026-08-20 14:06:56] INFO [liquibase.command] Generated JSON report
+[2026-08-20 14:06:56] INFO [liquibase] Secure Checks Run Report created!
+* File '/Users/benriley/Documents/GitHub/liquibase-jenkins/Checks-run-report-20-Aug-2026-140656.html' was created.
+** To suppress Checks Run reports add command arg 'liquibase checks run --report-enabled=false'
+** To suppress all Secure Reports set liquibase.reports.enabled=false, or LIQUIBASE_REPORTS_ENABLED=false
+[2026-08-20 14:06:56] INFO [liquibase.ui] Secure Checks Run Report created!
+* File '/Users/benriley/Documents/GitHub/liquibase-jenkins/Checks-run-report-20-Aug-2026-140656.html' was created.
+** To suppress Checks Run reports add command arg 'liquibase checks run --report-enabled=false'
+** To suppress all Secure Reports set liquibase.reports.enabled=false, or LIQUIBASE_REPORTS_ENABLED=false
+[2026-08-20 14:06:57] INFO [liquibase.command] Logging exception.
+[2026-08-20 14:06:57] INFO [liquibase.ui] ERROR: Exception Details
+[2026-08-20 14:06:57] INFO [liquibase.ui] ERROR: Exception Primary Class:  CommandFailedException
+[2026-08-20 14:06:57] INFO [liquibase.ui] ERROR: Exception Primary Reason:  Checks run command exited with error code of 4
+[2026-08-20 14:06:57] INFO [liquibase.ui] ERROR: Exception Primary Source:  5.2.1
+[2026-08-20 14:06:57] INFO [liquibase.command] Command execution complete
+[2026-08-20 14:06:58] INFO [liquibase.ui] Logs saved to liquibase.json
+[2026-08-20 14:25:26] INFO [liquibase.ui] ####################################################
+##   _     _             _ _                      ##
+##  | |   (_)           (_) |                     ##
+##  | |    _  __ _ _   _ _| |__   __ _ ___  ___   ##
+##  | |   | |/ _` | | | | | '_ \ / _` / __|/ _ \  ##
+##  | |___| | (_| | |_| | | |_) | (_| \__ \  __/  ##
+##  \_____/_|\__, |\__,_|_|_.__/ \__,_|___/\___|  ##
+##              | |                               ##
+##              |_|                               ##
+##                                                ## 
+##  Get documentation at docs.liquibase.com       ##
+##  Get certified courses at learn.liquibase.com  ## 
+##                                                ##
+####################################################
+Starting Liquibase Secure at 14:25:26 using Java 25.0.1 (version 5.2.1 #63 built at 2026-07-08 14:39:13 UTC)
+[2026-08-20 14:25:26] INFO [liquibase.ui] Liquibase Secure Version: 5.2.1
+[2026-08-20 14:25:26] INFO [liquibase.ui] Liquibase Secure license issued to Liquibase_SA, valid until Thu Dec 31 00:00:00 GMT 2026
+[2026-08-20 14:25:26] INFO [liquibase.integration] Starting command execution.
+[2026-08-20 14:25:27] WARNING [liquibase.configuration] Potentially ignored key(s) in file exists at path liquibase.properties
+ - 'export'
+ - 'java'
+ - 'liquibase.dbclhistory.file'
+[2026-08-20 14:25:27] INFO [liquibase.database] Set default schema name to public
+[2026-08-20 14:25:27] INFO [liquibase.changelog] Reading from public.databasechangelog
+[2026-08-20 14:25:27] INFO [liquibase.command] Command execution complete
+[2026-08-20 14:25:28] INFO [liquibase.ui] Logs saved to liquibase.json
+[2026-08-20 14:25:28] INFO [liquibase.ui] Liquibase command 'status' was executed successfully.
