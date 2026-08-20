@@ -8,7 +8,7 @@
 
   <!-- Include PostgreSQL changelog with finance-themed changesets -->
   <include file="/release/1.0/changelog.demo.sql" relativeToChangelogFile="true"/>
-  <include file="/release/2.0/changelog.postgres.sql" relativeToChangelogFile="true"/>
+  <!-- <include file="/release/2.0/changelog.postgres.sql" relativeToChangelogFile="true"/> -->
 
 
 </databaseChangeLog>

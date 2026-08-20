@@ -28,7 +28,7 @@ CREATE TABLE tax_return (
   filing_date date NOT NULL,
   created_at timestamp NOT NULL DEFAULT now()
 );
---rollback DROP TABLE tax_return;
+DROP TABLE tax_return;
 
 --changeset benriley:CreateFilesTable labels:demo context:dev,test,prod
 --comment Create PostgreSQL demo table files
@@ -41,10 +41,9 @@ CREATE TABLE files (
   uploaded_at timestamp NOT NULL DEFAULT now(),
   is_active boolean NOT NULL DEFAULT true
 );
-
  --rollback DROP TABLE files;
 
---changeset benriley:CreateNiceTable labels:demo context:dev,test
+--changeset benriley:CreateNiceTable labels:active context:dev,test,prod
 --comment Create PostgreSQL demo table rick
 CREATE TABLE NICE (
   NICE_ID UUID NOT NULL PRIMARY KEY,
@@ -55,19 +54,13 @@ CREATE TABLE NICE (
 );
 --rollback DROP TABLE NICE;
 
---changeset benriley:CreateJenkinsTable labels:demo context:dev,test
---comment Build a PostgreSQL demo table jenkins
-CREATE TABLE jenkins (
-  jenkins_id UUID NOT NULL PRIMARY KEY,
-  job_name varchar(200) NOT NULL,
-  build_number integer NOT NULL,
-  status varchar(50) NOT NULL,
-  triggered_by varchar(100),
-  triggered_at timestamp NOT NULL DEFAULT now(),
-  completed_at timestamp,
-  created_at timestamp NOT NULL DEFAULT now()
+---changeset benriley:CreateTableAF labels:active context:dev,test,prod
+--comment Create PostgreSQL demo table af
+CREATE TABLE AF (
+  AF_ID UUID NOT NULL PRIMARY KEY,
+  name varchar(100) NOT NULL,
+  description text,
+  created_at timestamp NOT NULL DEFAULT now(),
+  updated_at timestamp NOT NULL DEFAULT now()
 );
---rollback DROP TABLE jenkins;
-
-
-
+--rollback DROP TABLE AF;
