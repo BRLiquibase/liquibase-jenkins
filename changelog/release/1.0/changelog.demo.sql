@@ -42,7 +42,7 @@ CREATE TABLE files (
   is_active boolean NOT NULL DEFAULT true
 );
 
- DROP TABLE files;
+ --rollback DROP TABLE files;
 
 --changeset benriley:CreateNiceTable labels:demo context:dev,test
 --comment Create PostgreSQL demo table rick
