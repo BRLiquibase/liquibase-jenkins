@@ -56,6 +56,7 @@ CREATE TABLE NICE (
 --rollback DROP TABLE NICE;
 
 --changeset benriley:CreateJenkinsTable labels:demo context:dev,test
+--comment Build a PostgreSQL demo table jenkins
 CREATE TABLE jenkins (
   jenkins_id UUID NOT NULL PRIMARY KEY,
   job_name varchar(200) NOT NULL,
